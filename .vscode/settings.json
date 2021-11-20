@@ -1,24 +1,12 @@
 {
-  "peacock.color": "#639",
-  "terminal.integrated.env.linux": {
-    "ZSH_INIT_COMMAND": "mux start dotfiles"
+  "solidity.enabledAsYouTypeCompilationErrorCheck": true,
+  "solidity.linter": "solhint",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.packageDefaultDependenciesDirectory": "node_modules",
+  "solidity.solhintRules": {
+    "avoid-sha3": "warn"
   },
   "terminal.integrated.env.osx": {
-    "ZSH_INIT_COMMAND": "mux start dotfiles"
-  },
-  "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#7f40bf",
-    "activityBar.activeBorder": "#c78f58",
-    "activityBar.background": "#7f40bf",
-    "activityBar.foreground": "#e7e7e7",
-    "activityBar.inactiveForeground": "#e7e7e799",
-    "activityBarBadge.background": "#c78f58",
-    "activityBarBadge.foreground": "#15202b",
-    "tab.activeBorder": "#7f40bf",
-    "titleBar.activeBackground": "#663399",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#66339999",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "sash.hoverBorder": "#7f40bf"
+    "ZSH_INIT_COMMAND": "mux start contracts"
   }
 }
