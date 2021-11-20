@@ -1,0 +1,7 @@
+name: contracts
+root: ~/ghq/github.com/shunkakinoki/contracts
+attach: true
+windows:
+  - zsh: neofetch
+  - zsh: neofetch
+  - zsh: neofetch

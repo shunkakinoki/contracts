@@ -1,0 +1,72 @@
+{
+  "name": "@shunkakinoki/contracts",
+  "version": "1.8.1",
+  "private": true,
+  "homepage": "https://github.com/shunkakinoki/packages",
+  "bugs": {
+    "url": "https://github.com/shunkakinoki/packages/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunkakinoki/packages.git"
+  },
+  "license": "MIT",
+  "author": "Shun Kakinoki",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "check": "scripty",
+    "cmd:eslint": "scripty",
+    "cmd:prettier": "scripty",
+    "depcheck": "scripty",
+    "depcheck:exec": "scripty",
+    "depcheck:root": "scripty",
+    "fix": "scripty",
+    "fix:eslint": "scripty",
+    "fix:prettier": "scripty",
+    "fix:sort-package-json": "scripty",
+    "lint": "scripty",
+    "lint:eslint": "scripty",
+    "lint:npm-package-json": "scripty",
+    "lint:prettier": "scripty",
+    "ncu": "scripty",
+    "ncu:check": "scripty",
+    "ncu:upgrade": "scripty",
+    "prepare": "scripty",
+    "prepublishOnly": "scripty",
+    "prettier:fix": "scripty",
+    "prettier:lint": "scripty",
+    "postpublish": "scripty",
+    "release": "scripty",
+    "release:multi-semantic-release": "scripty",
+    "release:semantic-release": "scripty"
+  },
+  "npmpackagejsonlint": {
+    "extends": "@shunkakinoki/npm-package-json-lint-config"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@shunkakinoki/commitlint": "^1.0.2",
+    "@shunkakinoki/depcheck": "^1.0.1",
+    "@shunkakinoki/dev": "^1.2.5",
+    "@shunkakinoki/eslint-config": "^1.1.17",
+    "@shunkakinoki/husky": "^1.0.2",
+    "@shunkakinoki/lint-staged": "^1.1.4",
+    "@shunkakinoki/npm-check-updates": "^1.0.2",
+    "@shunkakinoki/npm-package-json-lint-config": "^1.0.2",
+    "@shunkakinoki/prettier": "^1.0.0",
+    "@shunkakinoki/semantic-release": "^1.2.4",
+    "@shunkakinoki/stylelint": "^1.0.1",
+    "@shunkakinoki/tsconfig": "^1.1.1"
+  },
+  "scripty": {
+    "logLevel": "warn",
+    "modules": [
+      "@shunkakinoki/dev"
+    ],
+    "parallel": true
+  }
+}
