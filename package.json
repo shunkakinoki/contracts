@@ -14,7 +14,7 @@
   "author": "Shun Kakinoki",
   "workspaces": {
     "packages": [
-      "packages/*"
+      "contracts/*"
     ]
   },
   "scripts": {
