@@ -31,7 +31,7 @@
     "deploy:arbitrum": "yarn run deploy:cmd --network arbitrum",
     "deploy:arbitrumRinkeby": "yarn run deploy:cmd --network arbitrumRinkeby",
     "deploy:avalanche": "yarn run deploy:cmd --network avalanche",
-    "deploy:cmd": "hardhat deploy --write true",
+    "deploy:cmd": "hardhat deploy",
     "deploy:fuji": "yarn run deploy:cmd --network fuji",
     "deploy:hardhat": "yarn run deploy:cmd --network hardhat",
     "deploy:harmony": "yarn run deploy:cmd --network harmony",
@@ -85,6 +85,7 @@
     "extends": "@shunkakinoki/npm-package-json-lint-config"
   },
   "resolutions": {
+    "@typechain/ethers-v5": "^8.0.3",
     "@typechain/hardhat": "^3.0.0",
     "typechain": "^6.0.3"
   },
@@ -93,7 +94,6 @@
     "@float-capital/solidity-coverage": "^0.7.17",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^2.1.7",
-    "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^4.3.3",
     "@openzeppelin/contracts-upgradeable": "^4.3.3",
     "@openzeppelin/hardhat-upgrades": "^1.12.0",
@@ -104,7 +104,6 @@
     "@types/node": "^16.11.9",
     "chai": "^4.3.4",
     "dotenv": "^10.0.0",
-    "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.1",
     "hardhat": "^2.6.8",
     "hardhat-abi-exporter": "^2.3.1",
@@ -118,7 +117,8 @@
     "solidity-coverage": "^0.7.17",
     "ts-node": "^10.4.0",
     "tsconfig-paths": "^3.12.0",
-    "typechain": "^6.0.3"
+    "typechain": "^6.0.3",
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
     "@shunkakinoki/commitlint": "^1.0.6",
