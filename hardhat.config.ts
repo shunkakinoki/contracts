@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
 
-import "tsconfig-paths/register";
+// import "tsconfig-paths/register";
 
 import { removeConsoleLog } from "hardhat-preprocessor";
 import type { HardhatUserConfig } from "hardhat/config";
