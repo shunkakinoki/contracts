@@ -6,15 +6,15 @@
     "esModuleInterop": true,
     "module": "commonjs",
     "outDir": "./dist",
+    "paths": {
+      "@/typechain/*": ["./typechain/*"]
+    },
+    "rootDir": ".",
     "rootDirs": ["./deploy", "./tasks", "./test", "./types", "./scripts"],
     "sourceMap": true,
     "strict": true,
-    "rootDir": ".",
     "target": "ES2017",
-    "types": [],
-    "paths": {
-      "@/typechain/*": ["./typechain/*"]
-    }
+    "types": []
   },
   "exclude": ["node_modules"],
   "extends": "@shunkakinoki/tsconfig",

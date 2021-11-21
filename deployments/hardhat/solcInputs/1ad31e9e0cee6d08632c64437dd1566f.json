@@ -1,12 +1,16 @@
 {
   "language": "Solidity",
   "settings": {
+    "metadata": {
+      "useLiteralContent": true
+    },
     "optimizer": {
       "enabled": false,
       "runs": 200
     },
     "outputSelection": {
       "*": {
+        "": ["ast"],
         "*": [
           "abi",
           "evm.bytecode",
@@ -17,12 +21,8 @@
           "userdoc",
           "storageLayout",
           "evm.gasEstimates"
-        ],
-        "": ["ast"]
+        ]
       }
-    },
-    "metadata": {
-      "useLiteralContent": true
     }
   },
   "sources": {
