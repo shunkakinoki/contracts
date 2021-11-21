@@ -31,7 +31,7 @@
     "deploy:arbitrum": "yarn run deploy:cmd --network arbitrum",
     "deploy:arbitrumRinkeby": "yarn run deploy:cmd --network arbitrumRinkeby",
     "deploy:avalanche": "yarn run deploy:cmd --network avalanche",
-    "deploy:cmd": "hardhat deploy",
+    "deploy:cmd": "hardhat deploy --write true",
     "deploy:fuji": "yarn run deploy:cmd --network fuji",
     "deploy:hardhat": "yarn run deploy:cmd --network hardhat",
     "deploy:harmony": "yarn run deploy:cmd --network harmony",
