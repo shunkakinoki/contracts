@@ -1,8 +1,30 @@
 {
   "compilerOptions": {
-    "rootDir": "."
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDirs": ["./deploy", "./tasks", "./test", "./types", "./scripts"],
+    "sourceMap": true,
+    "strict": true,
+    "rootDir": ".",
+    "target": "ES2017",
+    "types": [],
+    "paths": {
+      "@/typechain/*": ["./typechain/*"]
+    }
   },
   "exclude": ["node_modules"],
   "extends": "@shunkakinoki/tsconfig",
-  "include": ["tsconfig.json"]
+  "files": ["./hardhat.config.ts"],
+  "include": [
+    "./deploy",
+    "./scripts",
+    "./tasks",
+    "./test",
+    "./types",
+    "./hardhat.config.ts"
+  ]
 }
