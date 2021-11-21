@@ -84,6 +84,10 @@
   "npmpackagejsonlint": {
     "extends": "@shunkakinoki/npm-package-json-lint-config"
   },
+  "resolutions": {
+    "@typechain/hardhat": "^3.0.0",
+    "typechain": "^6.0.3"
+  },
   "dependencies": {
     "@ethersproject/providers": "^5.5.0",
     "@float-capital/solidity-coverage": "^0.7.17",
