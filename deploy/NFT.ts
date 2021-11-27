@@ -6,7 +6,12 @@ const deploy = async ({
   getNamedAccounts,
   deployments,
   ethers,
+  network,
 }: HardhatRuntimeEnvironment) => {
+  if (network.name === "hardhat") {
+    return;
+  }
+
   // eslint-disable-next-line @typescript-eslint/unbound-method
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
