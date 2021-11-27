@@ -1,7 +1,4 @@
 import * as dotenv from "dotenv";
-
-// import "tsconfig-paths/register";
-
 import { removeConsoleLog } from "hardhat-preprocessor";
 import type { HardhatUserConfig } from "hardhat/config";
 import "@nomiclabs/hardhat-ethers";
@@ -13,7 +10,6 @@ import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import "hardhat-spdx-license-identifier";
 import "hardhat-watcher";
-import "./tasks";
 
 dotenv.config();
 
