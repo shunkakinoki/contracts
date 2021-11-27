@@ -1,6 +1,6 @@
 import type { HardhatRuntimeEnvironment } from "hardhat/types";
 
-import type { Greeter } from "@/typechain/Greeter";
+import type { NFT } from "@/typechain/NFT";
 
 const deploy = async ({
   getNamedAccounts,
@@ -15,17 +15,17 @@ const deploy = async ({
   // eslint-disable-next-line @typescript-eslint/unbound-method
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
-  await deploy("Greeter", {
-    args: ["Hello World"],
+  await deploy("NFT", {
+    args: [],
     from: deployer,
     log: true,
   });
 
-  const greeterFactory = await ethers.getContractFactory("Greeter");
-  const greeter: Greeter = await greeterFactory.deploy("Hello from Greeter");
-  await greeter.deployed();
+  const nftFactory = await ethers.getContractFactory("NFT");
+  const nft: NFT = await nftFactory.deploy();
+  await nft.deployed();
 };
 
-deploy.tags = ["Greeter"];
+deploy.tags = ["NFT"];
 
 export default deploy;
