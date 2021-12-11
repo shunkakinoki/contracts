@@ -35,8 +35,6 @@ contract KiyoSanBirthday is ERC721, ReentrancyGuard, Ownable {
   Counters.Counter private supplyCounter;
 
   function mint() public nonReentrant {
-    require(saleIsActive, "Sale not active");
-
     if (allowedMintCount(_msgSender()) >= 1) {
       updateMintCount(_msgSender(), 1);
     } else {
@@ -52,12 +50,6 @@ contract KiyoSanBirthday is ERC721, ReentrancyGuard, Ownable {
 
   function totalSupply() public view returns (uint256) {
     return supplyCounter.current();
-  }
-
-  bool public saleIsActive = false;
-
-  function setSaleIsActive(bool saleIsActive_) external onlyOwner {
-    saleIsActive = saleIsActive_;
   }
 
   string private customBaseURI;
