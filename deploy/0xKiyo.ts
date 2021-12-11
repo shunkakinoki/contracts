@@ -15,8 +15,8 @@ const deploy = async ({
   // eslint-disable-next-line @typescript-eslint/unbound-method
   const { deploy } = deployments;
   const { deployer } = await getNamedAccounts();
-  await deploy("NFT", {
-    args: [],
+  await deploy("KiyoSanBirthday", {
+    args: ["https://0xkiyo.xyz/metadata/"],
     from: deployer,
     log: true,
   });
