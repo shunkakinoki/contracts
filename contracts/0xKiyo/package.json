@@ -1,0 +1,15 @@
+{
+  "name": "@shunkakinoki/0xkiyo",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/shunkakinoki/packages",
+  "bugs": {
+    "url": "https://github.com/shunkakinoki/packages/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunkakinoki/packages.git"
+  },
+  "license": "MIT",
+  "author": "Shun Kakinoki"
+}
