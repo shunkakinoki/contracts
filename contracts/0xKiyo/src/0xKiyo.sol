@@ -23,7 +23,7 @@ contract KiyoSanBirthday is ERC721Enumerable, ReentrancyGuard, Ownable {
 
   mapping(address => uint256) private allowedMintCountMap;
 
-  uint256 public constant MINT_LIMIT_PER_WALLET = 3;
+  uint256 public constant MINT_LIMIT_PER_WALLET = 1;
 
   function allowedMintCount(address minter) public view returns (uint256) {
     return MINT_LIMIT_PER_WALLET - mintCountMap[minter];
