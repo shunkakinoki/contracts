@@ -11,9 +11,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract KiyoSanBirthday is ERC721Enumerable, ReentrancyGuard, Ownable {
   using Counters for Counters.Counter;
 
-  constructor(string memory customBaseURI_)
-    ERC721("KiyoSanBirthday", "0xKiyo")
-  {
+  constructor(string memory customBaseURI_) ERC721("KiyoSanBirthday", "Kiyo") {
     customBaseURI = customBaseURI_;
   }
 
