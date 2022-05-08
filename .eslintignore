@@ -1,1 +1,7 @@
-.gitignore
+abi
+artifacts
+lib
+cache
+out
+node_modules
+typechain
