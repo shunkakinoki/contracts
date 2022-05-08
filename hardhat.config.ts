@@ -1,8 +1,8 @@
 import * as dotenv from "dotenv";
 
 import "tsconfig-paths/register";
-
 import { removeConsoleLog } from "hardhat-preprocessor";
+import { TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS } from "hardhat/builtin-tasks/task-names";
 import type { HardhatUserConfig } from "hardhat/config";
 import "@nomiclabs/hardhat-ethers";
 import "@nomiclabs/hardhat-etherscan";
@@ -13,6 +13,18 @@ import "hardhat-deploy";
 import "hardhat-gas-reporter";
 import "hardhat-spdx-license-identifier";
 import "hardhat-watcher";
+import { subtask } from "hardhat/config";
+
+subtask(TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS).setAction(
+  async (_, __, runSuper) => {
+    const paths = await runSuper();
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return paths.filter((p: any) => {
+      return !p.endsWith(".t.sol");
+    });
+  },
+);
 
 dotenv.config();
 
