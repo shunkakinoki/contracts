@@ -12,6 +12,9 @@
   },
   "license": "MIT",
   "author": "Shun Kakinoki",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "fix": "cd ../.. && yarn run fix"
   }
