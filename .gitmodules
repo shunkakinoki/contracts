@@ -13,3 +13,6 @@
 [submodule "lib/hardhat"]
 	path = lib/hardhat
 	url = https://github.com/NomicFoundation/hardhat
+[submodule "lib/hot-chain-svg"]
+	path = lib/hot-chain-svg
+	url = https://github.com/w1nt3r-eth/hot-chain-svg
