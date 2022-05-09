@@ -1,3 +1,9 @@
+## @shunkakinoki/0xkiyo [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/0xkiyo@1.0.0...@shunkakinoki/0xkiyo@1.0.1) (2022-05-09)
+
+### Performance Improvements
+
+- specify files package ([be7a755](https://github.com/shunkakinoki/contracts/commit/be7a7553720ffbf0d193d58a89634ea7624da7d2))
+
 # @shunkakinoki/0xkiyo 1.0.0 (2022-05-09)
 
 ### Features
