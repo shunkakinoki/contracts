@@ -59,7 +59,7 @@
     "lint:prettier": "scripty",
     "ncu": "scripty",
     "ncu:check": "scripty",
-    "ncu:upgrade": "scripty",
+    "ncu:upgrade": "npx npm-check-updates",
     "node": "hardhat node --hostname 0.0.0.0 --show-accounts",
     "prepare": "scripty",
     "prepublishOnly": "scripty",
