@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Taken from: https://github.com/tomoima525/solidity-sandbox/pull/1/files
 
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.13;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
