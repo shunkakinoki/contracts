@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/shunkakinoki/contracts/compare/v1.0.1...v1.1.0) (2022-05-09)
+
+### Features
+
+- ini flash plop ([5effe32](https://github.com/shunkakinoki/contracts/commit/5effe3268ff8bb85003451e38d10c24104f78f7b))
+- ini plop ([4902a42](https://github.com/shunkakinoki/contracts/commit/4902a42cb444649ca80bfbffd33285da9d43f218))
+
 ## [1.0.1](https://github.com/shunkakinoki/contracts/compare/v1.0.0...v1.0.1) (2022-05-09)
 
 ### Performance Improvements
