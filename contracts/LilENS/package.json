@@ -1,5 +1,5 @@
 {
-  "name": "@shunkakinoki/0xkiyo",
+  "name": "@shunkakinoki/lilens",
   "version": "1.0.0",
   "private": true,
   "homepage": "https://github.com/shunkakinoki/contracts",
@@ -10,6 +10,6 @@
     "type": "git",
     "url": "https://github.com/shunkakinoki/contracts.git"
   },
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "author": "Shun Kakinoki"
 }
