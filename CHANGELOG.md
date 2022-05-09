@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/shunkakinoki/contracts/compare/v1.2.0...v1.3.0) (2022-05-09)
+
+### Features
+
+- ini hot chain svg ([4e5832f](https://github.com/shunkakinoki/contracts/commit/4e5832f305ca09d330ebcb7330936ee3505b4dca))
+- ini Hot Chain Svg solidity file ([d46b16c](https://github.com/shunkakinoki/contracts/commit/d46b16c6bbf3ba105fb16c51dc8be58f92f3c09b))
+
 # [1.2.0](https://github.com/shunkakinoki/contracts/compare/v1.1.0...v1.2.0) (2022-05-09)
 
 ### Features
