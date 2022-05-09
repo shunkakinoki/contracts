@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/shunkakinoki/contracts/compare/v1.1.0...v1.2.0) (2022-05-09)
+
+### Features
+
+- ini view and pure ([fa52c78](https://github.com/shunkakinoki/contracts/commit/fa52c781b925a07dd49519c903fc75ccd6ef0dd5))
+
 # [1.1.0](https://github.com/shunkakinoki/contracts/compare/v1.0.1...v1.1.0) (2022-05-09)
 
 ### Features
