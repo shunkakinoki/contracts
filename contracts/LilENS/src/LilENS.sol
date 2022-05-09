@@ -22,7 +22,9 @@ contract LilENS {
   /// @notice Registers a new name, and points it to your address
   /// @param name The name to register
   function register(string memory name) public payable {
-    if (lookup[name] != address(0)) revert AlreadyRegistered();
+    if (lookup[name] != address(0)) {
+      revert AlreadyRegistered();
+    }
 
     lookup[name] = msg.sender;
   }
@@ -31,7 +33,9 @@ contract LilENS {
   /// @param name The name to update
   /// @param addr The new address this name should point to
   function update(string memory name, address addr) public payable {
-    if (msg.sender != lookup[name]) revert Unauthorized();
+    if (msg.sender != lookup[name]) {
+      revert Unauthorized();
+    }
 
     lookup[name] = addr;
   }
