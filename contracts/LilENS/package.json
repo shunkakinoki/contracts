@@ -11,5 +11,8 @@
     "url": "https://github.com/shunkakinoki/contracts.git"
   },
   "license": "AGPL-3.0-only",
-  "author": "Shun Kakinoki"
+  "author": "Shun Kakinoki",
+  "scripts": {
+    "fix": "cd ../.. && yarn run fix"
+  }
 }

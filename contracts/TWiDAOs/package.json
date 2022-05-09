@@ -11,5 +11,8 @@
     "url": "https://github.com/shunkakinoki/contracts.git"
   },
   "license": "MIT",
-  "author": "Shun Kakinoki"
+  "author": "Shun Kakinoki",
+  "scripts": {
+    "fix": "cd ../.. && yarn run fix"
+  }
 }
