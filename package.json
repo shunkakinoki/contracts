@@ -61,6 +61,7 @@
     "ncu:check": "scripty",
     "ncu:upgrade": "npx npm-check-updates",
     "node": "hardhat node --hostname 0.0.0.0 --show-accounts",
+    "plop": "plop",
     "prepare": "scripty",
     "prepublishOnly": "scripty",
     "prettier:fix": "scripty",

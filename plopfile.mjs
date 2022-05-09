@@ -16,6 +16,16 @@ export default function (plop) {
         path: "./contracts/{{name}}/package.json",
         templateFile: "./templates/package.json.template",
       },
+      {
+        type: "add",
+        path: "./contracts/{{name}}/src/{{name}}.sol",
+        templateFile: "./templates/Greeter.sol.template",
+      },
+      {
+        type: "add",
+        path: "./contracts/{{name}}/src/tests/{{name}}.t.sol",
+        templateFile: "./templates/Test.t.sol.template",
+      },
     ],
   });
 }
