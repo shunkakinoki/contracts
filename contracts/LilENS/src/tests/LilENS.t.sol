@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // Taken from: https://github.com/m1guelpf/lil-web3/blob/main/src/test/LilENS.t.sol
 
-pragma solidity >=0.8.4;
+pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import { LilENS } from "../LilENS.sol";

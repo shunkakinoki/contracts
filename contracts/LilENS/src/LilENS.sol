@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 // Taken from: https://github.com/m1guelpf/lil-web3/blob/main/src/LilENS.sol
 
-pragma solidity >=0.8.4;
+pragma solidity ^0.8.13;
 
 /// @title lil ens
 /// @author Miguel Piedrafita
