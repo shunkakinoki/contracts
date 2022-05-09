@@ -1,0 +1,9 @@
+# @shunkakinoki/upgradeable 1.0.0 (2022-05-09)
+
+### Features
+
+- ini lil ens ([10388e5](https://github.com/shunkakinoki/contracts/commit/10388e52c5cd60b323e46c720c51fb19a465d827))
+
+### Performance Improvements
+
+- ini upgradable contracts ([6815994](https://github.com/shunkakinoki/contracts/commit/6815994dc1022c4c6ad1a39c6e58c262dc59fe87))
