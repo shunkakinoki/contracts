@@ -1,6 +1,6 @@
 {
-  "name": "@shunkakinoki/box",
-  "version": "1.0.1",
+  "name": "@shunkakinoki/{{lowerCase name}}",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://github.com/shunkakinoki/contracts",
   "bugs": {
