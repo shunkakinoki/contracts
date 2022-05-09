@@ -1,5 +1,6 @@
-//SPDX-License-Identifier: MIT
-//Code from: https://raw.githubusercontent.com/w1nt3r-eth/hot-chain-svg/main/contracts/Utils.sol
+// SPDX-License-Identifier: MIT
+// Code from: https://raw.githubusercontent.com/w1nt3r-eth/hot-chain-svg/main/contracts/Utils.sol
+
 pragma solidity ^0.8.13;
 
 // Core utils used extensively to format CSS and numbers.

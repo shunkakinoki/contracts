@@ -1,5 +1,5 @@
-//SPDX-License-Identifier: MIT
-//Code from: https://raw.githubusercontent.com/w1nt3r-eth/hot-chain-svg/main/contracts/Renderer.sol
+// SPDX-License-Identifier: MIT
+// Code from: https://raw.githubusercontent.com/w1nt3r-eth/hot-chain-svg/main/contracts/Renderer.sol
 
 pragma solidity ^0.8.13;
 
