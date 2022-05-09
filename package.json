@@ -59,7 +59,7 @@
     "lint:prettier": "scripty",
     "ncu": "scripty",
     "ncu:check": "scripty",
-    "ncu:upgrade": "npx npm-check-updates",
+    "ncu:upgrade": "npx npm-check-updates -u --packageFile 'contracts/**/package.json'",
     "node": "hardhat node --hostname 0.0.0.0 --show-accounts",
     "plop": "plop",
     "prepare": "scripty",

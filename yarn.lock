@@ -451,7 +451,7 @@
     "@ethereumjs/common" "^2.6.3"
     ethereumjs-util "^7.1.4"
 
-"@ethereumjs/vm@^5.6.0":
+"@ethereumjs/vm@^5.6.0", "@ethereumjs/vm@^5.9.0":
   version "5.9.0"
   resolved "https://registry.yarnpkg.com/@ethereumjs/vm/-/vm-5.9.0.tgz#54e485097c6dbb42554d541ef8d84d06b7ddf12f"
   integrity sha512-0IRsj4IuF8lFDWVVLc4mFOImaSX8VWF8CGm3mXHG/LLlQ/Tryy/kKXMw/bU9D+Zw03CdteW+wCGqNFS6+mPjpg==
@@ -484,7 +484,7 @@
     "@ethersproject/properties" "^5.0.3"
     "@ethersproject/strings" "^5.0.4"
 
-"@ethersproject/abi@5.6.1", "@ethersproject/abi@^5.6.0":
+"@ethersproject/abi@5.6.1", "@ethersproject/abi@^5.6.0", "@ethersproject/abi@^5.6.1":
   version "5.6.1"
   resolved "https://registry.yarnpkg.com/@ethersproject/abi/-/abi-5.6.1.tgz#f7de888edeb56b0a657b672bdd1b3a1135cd14f7"
   integrity sha512-0cqssYh6FXjlwKWBmLm3+zH2BNARoS5u/hxbz+LpQmcDB3w0W553h2btWui1/uZp2GBM/SI3KniTuMcYyHpA5w==
@@ -13552,6 +13552,11 @@ xhr@^2.0.4, xhr@^2.3.3:
     is-function "^1.0.1"
     parse-headers "^2.0.0"
     xtend "^4.0.0"
+
+xmldom@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.6.0.tgz#43a96ecb8beece991cef382c08397d82d4d0c46f"
+  integrity sha512-iAcin401y58LckRZ0TkI4k0VSM1Qg0KGSc3i8rU+xrxe19A/BN1zHyVSJY7uoutVlaTSzYyk/v5AmkewAP7jtg==
 
 xmlhttprequest@1.8.0:
   version "1.8.0"
