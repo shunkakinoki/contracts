@@ -5,7 +5,7 @@ pragma solidity ^0.8.13;
 
 /// ============ Imports ============
 
-import { ERC20 } from "@rari-capital/solmate/tokens/ERC20.sol"; // Solmate: ERC20
+import { ERC20 } from "@rari-capital/solmate/src/tokens/ERC20.sol"; // Solmate: ERC20
 import { MerkleProof } from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol"; // OZ: MerkleProof
 
 /// @title MerkleAirdropStarter

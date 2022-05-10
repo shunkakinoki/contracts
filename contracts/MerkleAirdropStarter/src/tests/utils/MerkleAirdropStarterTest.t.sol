@@ -5,7 +5,7 @@ pragma solidity >=0.8.0;
 
 import { DSTest } from "ds-test/test.sol"; // DSTest
 import { MerkleAirdropStarter } from "../../MerkleAirdropStarter.sol"; // MerkleAirdropStarter
-import { MerkleAirdropStarterUser } from "./MerkleAirdropStarterUser.sol"; // MerkleAirdropStarter user
+import { MerkleAirdropStarterUser } from "./MerkleAirdropStarterUser.t.sol"; // MerkleAirdropStarter user
 
 /// @title MerkleAirdropStarterTest
 /// @notice Scaffolding for MerkleAirdropStarter tests
