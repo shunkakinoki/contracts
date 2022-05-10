@@ -23,7 +23,9 @@
     ]
   },
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
+    "build": "yarn run clean && yarn run build:hh && yarn run build:ts",
+    "build:hh": "yarn run compile",
+    "build:ts": "tsc",
     "check": "scripty",
     "clean": "yarn run clean:sol",
     "clean:sol": "hardhat clean",

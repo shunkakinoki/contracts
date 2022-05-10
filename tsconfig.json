@@ -10,5 +10,6 @@
     "target": "es5"
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "twin.d.ts", "**/*.ts", "**/*.tsx"]
+  "extends": "@shunkakinoki/tsconfig",
+  "include": ["**/*.ts", "**/*.tsx"]
 }
