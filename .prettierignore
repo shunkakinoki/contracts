@@ -2,6 +2,7 @@ abi
 artifacts
 lib
 cache
+dist
 out
 node_modules
 templates

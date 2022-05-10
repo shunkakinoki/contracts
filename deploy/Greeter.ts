@@ -1,6 +1,7 @@
 import type { HardhatRuntimeEnvironment } from "hardhat/types";
 
-import type { Greeter } from "@/typechain/Greeter";
+import type { Greeter } from "@shunkakinoki/typechain/contracts/Greeter/src/Greeter";
+import type { Greeter__factory } from "@shunkakinoki/typechain/factories/contracts/Greeter/src/Greeter__factory";
 
 const deploy = async ({
   getNamedAccounts,
@@ -21,7 +22,9 @@ const deploy = async ({
     log: true,
   });
 
-  const greeterFactory = await ethers.getContractFactory("Greeter");
+  const greeterFactory = (await ethers.getContractFactory(
+    "Greeter",
+  )) as Greeter__factory;
   const greeter: Greeter = await greeterFactory.deploy("Hello from Greeter");
   await greeter.deployed();
 };

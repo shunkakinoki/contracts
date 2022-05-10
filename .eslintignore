@@ -1,7 +1,8 @@
 abi
 artifacts
-lib
 cache
+dist
+lib
 out
 node_modules
 typechain

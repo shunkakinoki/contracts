@@ -12,13 +12,20 @@
   },
   "license": "MIT",
   "author": "Shun Kakinoki",
+  "files": [
+    "contracts",
+    "deployments",
+    "src"
+  ],
   "workspaces": {
     "packages": [
       "contracts/*"
     ]
   },
   "scripts": {
-    "build": "yarn run clean && yarn run compile",
+    "build": "yarn run clean && yarn run build:hh && yarn run build:ts",
+    "build:hh": "yarn run compile",
+    "build:ts": "tsc",
     "check": "scripty",
     "clean": "yarn run clean:sol",
     "clean:sol": "hardhat clean",
@@ -129,7 +136,6 @@
     "dotenv": "^16.0.0",
     "plop": "^3.1.0",
     "solhint": "^3.3.7",
-    "tsconfig-paths": "^4.0.0",
     "typechain": "^8.0.0",
     "typescript": "^4.6.4"
   },
