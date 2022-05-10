@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "baseUrl": ".",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "outDir": "dist",
     "paths": {
       "@shunkakinoki/contracts/*": ["./src/*"],
       "@shunkakinoki/typechain/*": ["./typechain/*"]
     },
-    "target": "es5"
+    "strict": true,
+    "target": "es2018"
   },
   "exclude": ["node_modules"],
-  "extends": "@shunkakinoki/tsconfig",
-  "include": ["**/*.ts", "**/*.tsx"]
+  "files": ["./hardhat.config.ts"],
+  "include": ["deploy", "src", "tasks"]
 }
