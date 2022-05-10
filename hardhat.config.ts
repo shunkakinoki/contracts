@@ -1,6 +1,5 @@
 import * as dotenv from "dotenv";
 
-import "tsconfig-paths/register";
 import { removeConsoleLog } from "hardhat-preprocessor";
 import { TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS } from "hardhat/builtin-tasks/task-names";
 import type { HardhatUserConfig } from "hardhat/config";

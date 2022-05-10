@@ -1,31 +1,14 @@
 {
   "compilerOptions": {
+    "allowJs": true,
     "baseUrl": ".",
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "outDir": "./dist",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "paths": {
-      "@/typechain/*": ["./typechain/*"]
+      "@shunkakinoki/contracts/*": ["./src/*"],
+      "@shunkakinoki/typechain/*": ["./typechain/*"]
     },
-    "rootDir": ".",
-    "rootDirs": ["./deploy", "./tasks", "./test", "./types", "./scripts"],
-    "sourceMap": true,
-    "strict": true,
-    "target": "ES2017"
+    "target": "es5"
   },
   "exclude": ["node_modules"],
-  "extends": "@shunkakinoki/tsconfig",
-  "files": ["./hardhat.config.ts"],
-  "include": [
-    "./deploy",
-    "./scripts",
-    "./tasks",
-    "./test",
-    "./types",
-    "./typechain",
-    "./hardhat.config.ts"
-  ]
+  "include": ["next-env.d.ts", "twin.d.ts", "**/*.ts", "**/*.tsx"]
 }

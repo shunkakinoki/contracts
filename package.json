@@ -12,6 +12,10 @@
   },
   "license": "MIT",
   "author": "Shun Kakinoki",
+  "files": [
+    "contracts",
+    "src"
+  ],
   "workspaces": {
     "packages": [
       "contracts/*"
