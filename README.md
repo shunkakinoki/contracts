@@ -9,3 +9,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/no-ragrets.svg)](https://forthebadge.com)
 
 </div>
+
+All rights reserved to the individual authors and licensing of the specific packages.
+I do not at all reserve the rights to the contracts that are not derived from my work (specified in the package licensing field)
+This repository is specifically for my learning purposes.
