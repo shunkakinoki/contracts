@@ -5,7 +5,7 @@ pragma solidity ^0.8.13;
 
 /// ============ Imports ============
 
-import { MerkleAirdropStarterTest } from "./utils/MerkleAirdropStarterTest.sol"; // Test scaffolding
+import { MerkleAirdropStarterTest } from "./utils/MerkleAirdropStarterTest.t.sol"; // Test scaffolding
 
 /// @title Tests
 /// @notice MerkleAirdropStarter tests
