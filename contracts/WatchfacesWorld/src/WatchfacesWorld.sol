@@ -2,7 +2,7 @@
 // Contract derived from etherscan at: https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1#code
 // All rights reserved to the author.
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.13;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
