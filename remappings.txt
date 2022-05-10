@@ -1,6 +1,6 @@
 @openzeppelin/contracts=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
-@solmate/=lib/solmate/src/
+@rari-capital/solmate/=lib/solmate/src/
 forge-std/=lib/forge-std/src/
 hardhat/=lib/hardhat/packages/hardhat-core/
 ds-test/=lib/ds-test/src/
