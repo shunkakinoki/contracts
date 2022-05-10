@@ -1,3 +1,13 @@
+# [1.5.0](https://github.com/shunkakinoki/contracts/compare/v1.4.0...v1.5.0) (2022-05-10)
+
+### Features
+
+- ini src build ([7254119](https://github.com/shunkakinoki/contracts/commit/725411959149c11e12f2750901e85adca91b0115))
+
+### Performance Improvements
+
+- ini box contract ([b7a6282](https://github.com/shunkakinoki/contracts/commit/b7a6282b134a1959d6481d8444f1642bbcc8191b))
+
 # [1.4.0](https://github.com/shunkakinoki/contracts/compare/v1.3.0...v1.4.0) (2022-05-10)
 
 ### Features
