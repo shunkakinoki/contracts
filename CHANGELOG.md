@@ -1,3 +1,9 @@
+# [1.4.0](https://github.com/shunkakinoki/contracts/compare/v1.3.0...v1.4.0) (2022-05-10)
+
+### Features
+
+- ini merkle airdrop starter ([e4219a8](https://github.com/shunkakinoki/contracts/commit/e4219a876595ff9425d8ff62ec9ad1ffc0c63cc1))
+
 # [1.3.0](https://github.com/shunkakinoki/contracts/compare/v1.2.0...v1.3.0) (2022-05-09)
 
 ### Features
