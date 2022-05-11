@@ -10,6 +10,10 @@
 
 </div>
 
+### Disclaimer
+
 All rights reserved to the individual authors and licensing of the specific packages.
-I do not at all reserve the rights to the contracts that are not derived from my work (specified in the package licensing field)
-This repository is specifically for my learning purposes.
+
+I do not at all reserve the rights to the contracts that are not derived from my work. (specified in the package licensing field)
+
+This repository is specifically for my own learning purposes to get better at solidity.
