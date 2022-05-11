@@ -5,7 +5,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "../Greeter.sol";
 
-contract ContractBTest is Test {
+contract GreeterTest is Test {
   Greeter private greeter;
 
   function setUp() public {

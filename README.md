@@ -12,7 +12,7 @@
 
 ### Contracts (Complete with testing)
 
-- [ ] Box
+- [x] Box
 - [x] Greeter
 - [x] HelloWorld
 - [ ] HotChainSvg

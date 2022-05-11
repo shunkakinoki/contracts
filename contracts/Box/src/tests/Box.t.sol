@@ -3,19 +3,25 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
+import "../Box.sol";
 
 contract BoxTest is Test {
-  uint256 testNumber;
+  Box private box;
 
   function setUp() public {
-    testNumber = 42;
+    box = new Box();
   }
 
-  function testNumberIs42() public {
-    assertEq(testNumber, 42);
+  function testBoxInitialize() public {
+    box.initialize(32);
+    uint256 number = box.retrieve();
+    assertEq(number, 32);
   }
 
-  function testFailSubtract43() public {
-    testNumber -= 43;
+  function testBoxStore() public {
+    box.initialize(32);
+    box.store(33);
+    uint256 number = box.retrieve();
+    assertEq(number, 33);
   }
 }
