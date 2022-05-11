@@ -13,10 +13,12 @@ contract HelloWorldTest is Test {
   }
 
   function testGreetIsHelloWorld() public {
-    // Get the bytes32 index for uint address
-    bytes32 leet = vm.load(address(helloWorld), bytes32(uint256(0)));
-    emit log_uint(uint256(leet));
-    console2.logBytes32(leet);
-    assertEq(bytes32(leet), bytes32("Hello World"));
+    // Get the bytes32 storage for uint address
+    // Loads a storage slot from an address
+    // In this case, we get the hellow world indice in slot 0
+    bytes32 greet = vm.load(address(helloWorld), bytes32(uint256(0)));
+    emit log_uint(uint256(greet));
+    console2.logBytes32(greet);
+    assertEq(bytes32(greet), bytes32("Hello World"));
   }
 }
