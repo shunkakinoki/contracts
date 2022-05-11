@@ -1,3 +1,14 @@
+# [1.6.0](https://github.com/shunkakinoki/contracts/compare/v1.5.0...v1.6.0) (2022-05-11)
+
+### Features
+
+- ini watchfaces world ([579bd89](https://github.com/shunkakinoki/contracts/commit/579bd893a782957b7f0b62c51d92f09ee63d6225))
+
+### Performance Improvements
+
+- ini svg renderer ([b81ed91](https://github.com/shunkakinoki/contracts/commit/b81ed915b6bd694cf70167dfed826ab4a61c907a))
+- ini watchfaces pfp render ([fc65afc](https://github.com/shunkakinoki/contracts/commit/fc65afc35c46dd9520b62ed05eea841ec61ce56e))
+
 # [1.5.0](https://github.com/shunkakinoki/contracts/compare/v1.4.0...v1.5.0) (2022-05-10)
 
 ### Features
