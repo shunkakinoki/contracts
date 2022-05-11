@@ -13,14 +13,20 @@
 ### Contracts (Complete with testing)
 
 - [ ] Box
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [x] Greeter
+- [x] HelloWorld
+- [ ] HotChainSvg
+- [ ] KiyoSanBirthday
+- [ ] LilENS
+- [ ] LilFlash
+- [ ] MerkleAirdopStarter
+- [ ] NFT
+- [ ] TWiDAOs
+- [ ] Upgadeable
+- [ ] ViewAndPure
+- [ ] WatchfacesPFP
+- [ ] WatchfacesSVGRenderer
+- [ ] WatchfacesWorld
 
 ### Disclaimer
 
