@@ -12,9 +12,11 @@ contract HelloWorldTest is Test {
     helloWorld = new HelloWorld();
   }
 
-  function testNumberIs300() public {
+  function testGreetIsHelloWorld() public {
+    // Get the bytes32 index for uint address
     bytes32 leet = vm.load(address(helloWorld), bytes32(uint256(0)));
     emit log_uint(uint256(leet));
-    assertEq(uint256(leet), 300);
+    console2.logBytes32(leet);
+    assertEq(bytes32(leet), bytes32("Hello World"));
   }
 }
