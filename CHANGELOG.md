@@ -1,3 +1,13 @@
+# [1.12.0](https://github.com/shunkakinoki/contracts/compare/v1.11.0...v1.12.0) (2022-05-12)
+
+### Features
+
+- ini CODE contract ([147494b](https://github.com/shunkakinoki/contracts/commit/147494ba817357aea9e6b68b9a2fb10af7f4ad7a))
+- ini crypto coven ([67f5cd6](https://github.com/shunkakinoki/contracts/commit/67f5cd6ab53b78d81eeaf0248215c914a3af0580))
+- ini Femplate ([ec5650f](https://github.com/shunkakinoki/contracts/commit/ec5650f602cc19480c274a863333c101e463e844))
+- ini future wagumi contracts ([8d703e2](https://github.com/shunkakinoki/contracts/commit/8d703e2aa3e467a5924ee800c2cc9669a49d24b1))
+- ini wagumi cats ([756daef](https://github.com/shunkakinoki/contracts/commit/756daef7bc681a922ece0604f387542c97766d29))
+
 # [1.11.0](https://github.com/shunkakinoki/contracts/compare/v1.10.0...v1.11.0) (2022-05-12)
 
 ### Features
