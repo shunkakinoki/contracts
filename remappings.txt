@@ -1,7 +1,7 @@
 @openzeppelin/contracts=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @rari-capital/solmate/=lib/solmate/
-"@zoralabs/nft-editions-contracts/=lib/nft-editions/
+@zoralabs/nft-editions-contracts/=lib/nft-editions/
 forge-std/=lib/forge-std/src/
 hardhat/=lib/hardhat/packages/hardhat-core/
 ds-test/=lib/ds-test/src/
