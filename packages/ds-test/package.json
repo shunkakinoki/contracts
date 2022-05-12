@@ -3,15 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Unofficial NPM distribution of DS Test library",
-  "homepage": "https://github.com/dapphub/ds-test",
-  "bugs": {
-    "url": "https://github.com/dapphub/ds-test/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/foundry-rs/foundry.git"
-  },
-  "license": "Apache-2.0",
+  "license": "GPL-3.0-or-later",
   "author": "Foundry",
   "scripts": {
     "build": "cp -r ../../lib/ds-test/src/* .",
