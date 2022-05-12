@@ -1,11 +1,11 @@
 {
-  "name": "forge-std",
+  "name": "ds-test",
   "version": "1.0.0",
   "private": true,
-  "description": "Unofficial NPM distribution of Forge Standard Library",
-  "homepage": "https://github.com/foundry-rs/forge-std",
+  "description": "Unofficial NPM distribution of DS Test library",
+  "homepage": "https://github.com/dapphub/ds-test",
   "bugs": {
-    "url": "https://github.com/foundry-rs/forge-std/issues"
+    "url": "https://github.com/dapphub/ds-test/issues"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "author": "Foundry",
   "scripts": {
-    "build": "cp -r ../../lib/forge-std/src/* .",
+    "build": "cp -r ../../lib/ds-test/src/* .",
     "fix": "cd ../.. && yarn run fix",
     "postinstall": "yarn run build"
   }
