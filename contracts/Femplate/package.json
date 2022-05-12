@@ -1,0 +1,21 @@
+{
+  "name": "@shunkakinoki/femplate",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/shunkakinoki/contracts",
+  "bugs": {
+    "url": "https://github.com/shunkakinoki/contracts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunkakinoki/contracts.git"
+  },
+  "license": "MIT",
+  "author": "Shun Kakinoki",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "fix": "cd ../.. && yarn run fix"
+  }
+}
