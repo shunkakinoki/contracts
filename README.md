@@ -12,21 +12,21 @@
 
 ### Contracts (Complete with testing)
 
-- [x] Box
-- [x] Greeter
-- [x] HelloWorld
-- [ ] HotChainSvg
-- [ ] KiyoSanBirthday
-- [ ] LilENS
-- [ ] LilFlash
-- [ ] MerkleAirdopStarter
-- [ ] NFT
-- [ ] TWiDAOs
-- [ ] Upgadeable
-- [ ] ViewAndPure
-- [ ] WatchfacesPFP
-- [ ] WatchfacesSVGRenderer
-- [ ] WatchfacesWorld
+- [x] [Box](/contracts/Box)
+- [x] [Greeter](/contracts/Greeter)
+- [x] [HelloWorld](/contracts/HelloWorld)
+- [ ] [HotChainSvg](/contracts/HotChainSvg)
+- [ ] [KiyoSanBirthday](/contracts/KiyoSanBirthday)
+- [ ] [LilENS](/contracts/LilENS)
+- [ ] [LilFlash](/contracts/LilFlash)
+- [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter)
+- [ ] [NFT](/contracts/NFT)
+- [ ] [TWiDAOs](/contracts/TWiDAOs)
+- [ ] [Upgadeable](/contracts/Upgadeable)
+- [ ] [ViewAndPure](/contracts/ViewAndPure)
+- [ ] [WatchfacesPFP](/contracts/WatchfacesPFP)
+- [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer)
+- [ ] [WatchfacesWorld](/contracts/WatchfacesWorld)
 
 ### Disclaimer
 
