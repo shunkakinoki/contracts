@@ -7,9 +7,9 @@ import { DSTest } from "ds-test/test.sol";
 import { ERC20 } from "@rari-capital/solmate/src/tokens/ERC20.sol";
 
 import { Shrine } from "../Shrine.sol";
-import { MockERC20 } from "./mocks/MockERC20.sol";
+import { MockERC20 } from "./mocks/MockERC20.t.sol";
 import { ShrineFactory } from "../ShrineFactory.sol";
-import { MerkleTreeGenerator } from "./lib/MerkleTreeGenerator.sol";
+import { MerkleTreeGenerator } from "./lib/MerkleTreeGenerator.t.sol";
 
 contract ShrineTest is DSTest, MerkleTreeGenerator {
   uint256 constant EXAMPLE_TOTAL_SHARES = 1e18;
