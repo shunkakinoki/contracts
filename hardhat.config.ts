@@ -14,12 +14,21 @@ import "hardhat-spdx-license-identifier";
 import "hardhat-watcher";
 import { subtask } from "hardhat/config";
 
+const EXCLUDED_CONTRACT_PATHS = ["Shrine"];
+
 subtask(TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS).setAction(
   async (_, __, runSuper) => {
     const paths = await runSuper();
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return paths.filter((p: any) => {
+      if (
+        EXCLUDED_CONTRACT_PATHS.some(substring => {
+          return p.includes(substring);
+        })
+      ) {
+        return false;
+      }
       return !p.endsWith(".t.sol");
     });
   },
