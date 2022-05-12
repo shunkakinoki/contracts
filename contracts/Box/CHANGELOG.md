@@ -1,3 +1,9 @@
+# @shunkakinoki/box [1.2.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/box@1.1.0...@shunkakinoki/box@1.2.0) (2022-05-12)
+
+### Features
+
+- ini box store ([08e758e](https://github.com/shunkakinoki/contracts/commit/08e758e01c1fc4cb9bf8f1bc42259c03a32662c5))
+
 # @shunkakinoki/box [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/box@1.0.1...@shunkakinoki/box@1.1.0) (2022-05-10)
 
 ### Features
