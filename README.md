@@ -27,6 +27,9 @@
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
 - [ ] [Upgadeable](/contracts/Upgadeable)
 - [ ] [ViewAndPure](/contracts/ViewAndPure)
+- [ ] [WagumiCats](/contracts/WagumiCats) Source: https://github.com/wagumi/wagumi
+- [ ] [WagumiCatsV2](/contracts/WagumiCatsV2)
+- [ ] [WagumiToken](/contracts/WagumiToken)
 - [ ] [WatchfacesPFP](/contracts/WatchfacesPFP)
 - [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer)
 - [ ] [WatchfacesWorld](/contracts/WatchfacesWorld)
