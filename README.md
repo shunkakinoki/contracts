@@ -15,7 +15,7 @@
 - [x] [Box](/contracts/Box)
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts)
-- [ ] [Femplate](/contracts/Femplate)- [Source](https://github.com/abigger87/femplate/blob/master/src/Greeter.sol)
+- [x] [Femplate](/contracts/Femplate)- [Source](https://github.com/abigger87/femplate)
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HelloWorld](/contracts/HelloWorld)
 - [ ] [HotChainSvg](/contracts/HotChainSvg)- [Source](https://github.com/w1nt3r-eth/hot-chain-svg)
