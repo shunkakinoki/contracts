@@ -2,7 +2,7 @@
   "name": "ds-test",
   "version": "1.0.0",
   "private": false,
-  "description": "Unofficial NPM distribution of DS Test library",
+  "description": "Unofficial NPM distribution of DS Test",
   "license": "GPL-3.0-or-later",
   "author": "Foundry",
   "scripts": {
