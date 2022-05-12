@@ -20,9 +20,9 @@
 - [x] [HelloWorld](/contracts/HelloWorld)
 - [ ] [HotChainSvg](/contracts/HotChainSvg)
 - [ ] [KiyoSanBirthday](/contracts/KiyoSanBirthday)
-- [ ] [LilENS](/contracts/LilENS)
-- [ ] [LilFlash](/contracts/LilFlash)
-- [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter)
+- [ ] [LilENS](/contracts/LilENS) Source: https://github.com/m1guelpf/lil-web3
+- [ ] [LilFlash](/contracts/LilFlash) Source: https://github.com/m1guelpf/lil-web3
+- [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) Source: https://github.com/Anish-Agnihotri/merkle-airdrop-starter
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) Source: https://github.com/m1guelpf/nft-token-drop
 - [ ] [Shrine](/contracts/Shrine) Source: https://github.com/Astrodrop/shrine
