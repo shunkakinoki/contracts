@@ -1,3 +1,9 @@
+# [1.11.0](https://github.com/shunkakinoki/contracts/compare/v1.10.0...v1.11.0) (2022-05-12)
+
+### Features
+
+- ini shrine ([0f70ad6](https://github.com/shunkakinoki/contracts/commit/0f70ad647ccaf98cec9698a13121038bfa9feaa6))
+
 # [1.10.0](https://github.com/shunkakinoki/contracts/compare/v1.9.0...v1.10.0) (2022-05-12)
 
 ### Bug Fixes
