@@ -18,7 +18,7 @@
 - [ ] [Femplate](/contracts/Femplate) Source: https://github.com/abigger87/femplate/blob/master/src/Greeter.sol
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HelloWorld](/contracts/HelloWorld)
-- [ ] [HotChainSvg](/contracts/HotChainSvg)
+- [ ] [HotChainSvg](/contracts/HotChainSvg) Source: https://github.com/w1nt3r-eth/hot-chain-svg
 - [ ] [KiyoSanBirthday](/contracts/KiyoSanBirthday)
 - [ ] [LilENS](/contracts/LilENS) Source: https://github.com/m1guelpf/lil-web3
 - [ ] [LilFlash](/contracts/LilFlash) Source: https://github.com/m1guelpf/lil-web3
