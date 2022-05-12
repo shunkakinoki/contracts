@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/shunkakinoki/contracts.git"
   },
-  "license": "MIT",
+  "license": "AGPL-3.0",
   "author": "Shun Kakinoki",
   "files": [
     "src"
