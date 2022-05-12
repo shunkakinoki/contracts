@@ -1,3 +1,9 @@
+## [1.8.2](https://github.com/shunkakinoki/contracts/compare/v1.8.1...v1.8.2) (2022-05-12)
+
+### Performance Improvements
+
+- ini distribution ([e3bd8a1](https://github.com/shunkakinoki/contracts/commit/e3bd8a11dd7d32c6d695eda569fea9df8373e5ed))
+
 ## [1.8.1](https://github.com/shunkakinoki/contracts/compare/v1.8.0...v1.8.1) (2022-05-12)
 
 ### Performance Improvements
