@@ -2,9 +2,15 @@
   "name": "forge-std",
   "version": "1.0.0",
   "private": false,
-  "description": "Unofficial NPM distribution of Forge Standard",
+  "description": "Unofficial NPM distribution of Forge Standard Library",
   "license": "Apache-2.0",
   "author": "Foundry",
+  "files": [
+    "console.sol",
+    "console2.sol",
+    "Test.sol",
+    "Vm.sol"
+  ],
   "scripts": {
     "build": "cp -r ../../lib/forge-std/src/* .",
     "fix": "cd ../.. && yarn run fix",
