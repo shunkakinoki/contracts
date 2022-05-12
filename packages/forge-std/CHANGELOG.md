@@ -1,3 +1,9 @@
+## forge-std [1.0.1](https://github.com/shunkakinoki/contracts/compare/forge-std@1.0.0...forge-std@1.0.1) (2022-05-12)
+
+### Performance Improvements
+
+- ini distribution ([e3bd8a1](https://github.com/shunkakinoki/contracts/commit/e3bd8a11dd7d32c6d695eda569fea9df8373e5ed))
+
 # forge-std 1.0.0 (2022-05-12)
 
 ### Features
