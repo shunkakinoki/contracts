@@ -19,3 +19,6 @@
 [submodule "lib/solmate"]
 	path = lib/solmate
 	url = https://github.com/rari-capital/solmate
+[submodule "lib/nft-editions"]
+	path = lib/nft-editions
+	url = https://github.com/ourzora/nft-editions
