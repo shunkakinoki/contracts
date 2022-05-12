@@ -1,3 +1,10 @@
+# @shunkakinoki/greeter [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/greeter@1.0.1...@shunkakinoki/greeter@1.1.0) (2022-05-12)
+
+### Features
+
+- ini box store ([08e758e](https://github.com/shunkakinoki/contracts/commit/08e758e01c1fc4cb9bf8f1bc42259c03a32662c5))
+- ini hello world ([aff1c6a](https://github.com/shunkakinoki/contracts/commit/aff1c6ab9cf65b2664d135b59cd10ec0508be664))
+
 ## @shunkakinoki/greeter [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/greeter@1.0.0...@shunkakinoki/greeter@1.0.1) (2022-05-09)
 
 ### Performance Improvements
