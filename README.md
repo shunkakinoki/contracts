@@ -22,6 +22,7 @@
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) Source: https://github.com/m1guelpf/nft-token-drop
+- [ ] [Shrine](/contracts/Shrine) Source: https://github.com/Astrodrop/shrine
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
 - [ ] [Upgadeable](/contracts/Upgadeable)
 - [ ] [ViewAndPure](/contracts/ViewAndPure)
