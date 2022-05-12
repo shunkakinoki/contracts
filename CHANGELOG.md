@@ -1,3 +1,9 @@
+## [1.8.3](https://github.com/shunkakinoki/contracts/compare/v1.8.2...v1.8.3) (2022-05-12)
+
+### Performance Improvements
+
+- rename forge std description ([5213b06](https://github.com/shunkakinoki/contracts/commit/5213b062ebc99bfb269d583c67684bd5f42667ff))
+
 ## [1.8.2](https://github.com/shunkakinoki/contracts/compare/v1.8.1...v1.8.2) (2022-05-12)
 
 ### Performance Improvements
