@@ -1,2 +1,1 @@
-export {};
-// export { Box__factory } from "@shunkakinoki/typechain/factories/contracts/Box/src/Box__factory";
+export { Box__factory } from "@shunkakinoki/typechain/factories/contracts/Box/src/Box__factory";

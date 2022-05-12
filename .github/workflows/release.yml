@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-node@v2
       - run: |
           yarn install --frozen-lockfile
-      # - run: |
-      #     yarn run build
+      - run: |
+          yarn run build
       - run: |
           yarn run release
         env:
