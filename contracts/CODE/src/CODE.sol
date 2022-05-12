@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// Code from: https://github.com/Developer-DAO/code-claim-site/blob/main/packages/hardhat/src/CODE.sol
 
 pragma solidity ^0.8.13;
 

@@ -13,6 +13,7 @@
 ### Contracts (Complete with testing)
 
 - [x] [Box](/contracts/Box)
+- [ ] [CODE](/contracts/CODE) Source: https://github.com/Developer-DAO/code-claim-site
 - [ ] [CryptoCoven](/contracts/CryptoCoven) Source: https://github.com/crypto-coven/contracts
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HelloWorld](/contracts/HelloWorld)
