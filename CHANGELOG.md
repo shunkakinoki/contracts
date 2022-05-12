@@ -1,3 +1,14 @@
+# [1.10.0](https://github.com/shunkakinoki/contracts/compare/v1.9.0...v1.10.0) (2022-05-12)
+
+### Bug Fixes
+
+- ini zorb nft test ([adc41cf](https://github.com/shunkakinoki/contracts/commit/adc41cf208971530c6cbb15821a251291fa76a8e))
+
+### Features
+
+- ini Shrine from astrodrop ([e728fb2](https://github.com/shunkakinoki/contracts/commit/e728fb2f61171c0ae569ea5d9257f133f5239fed))
+- ini zora nft ([de8bcb5](https://github.com/shunkakinoki/contracts/commit/de8bcb59513b2d8144e13f93ce54cdd20981c58d))
+
 # [1.9.0](https://github.com/shunkakinoki/contracts/compare/v1.8.3...v1.9.0) (2022-05-12)
 
 ### Features
