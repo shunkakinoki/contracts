@@ -28,6 +28,7 @@
 - [ ] [WatchfacesPFP](/contracts/WatchfacesPFP)
 - [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer)
 - [ ] [WatchfacesWorld](/contracts/WatchfacesWorld)
+- [ ] [ZorbNFT](/contracts/ZorbNFT) Source: https://github.com/ourzora/zorb/tree/main/packages/zorb-contracts
 
 ### Disclaimer
 
