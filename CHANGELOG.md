@@ -1,3 +1,9 @@
+# [1.9.0](https://github.com/shunkakinoki/contracts/compare/v1.8.3...v1.9.0) (2022-05-12)
+
+### Features
+
+- ini nft token drop code ([86e5497](https://github.com/shunkakinoki/contracts/commit/86e54977f3ed8c32148cd20db6904dc93d7307bf))
+
 ## [1.8.3](https://github.com/shunkakinoki/contracts/compare/v1.8.2...v1.8.3) (2022-05-12)
 
 ### Performance Improvements
