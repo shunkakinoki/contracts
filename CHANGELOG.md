@@ -1,3 +1,9 @@
+## [1.8.1](https://github.com/shunkakinoki/contracts/compare/v1.8.0...v1.8.1) (2022-05-12)
+
+### Performance Improvements
+
+- ini upgrade ds ([59f17bd](https://github.com/shunkakinoki/contracts/commit/59f17bd623fc4380c9db7d86f1d49ce5af798702))
+
 # [1.8.0](https://github.com/shunkakinoki/contracts/compare/v1.7.0...v1.8.0) (2022-05-12)
 
 ### Features
