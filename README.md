@@ -32,9 +32,9 @@
 - [ ] [WagumiCats](/contracts/WagumiCats) Source: https://github.com/wagumi/wagumi
 - [ ] [WagumiCatsV2](/contracts/WagumiCatsV2)
 - [ ] [WagumiToken](/contracts/WagumiToken)
-- [ ] [WatchfacesPFP](/contracts/WatchfacesPFP)
-- [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer)
-- [ ] [WatchfacesWorld](/contracts/WatchfacesWorld)
+- [ ] [WatchfacesPFP](/contracts/WatchfacesPFP) Source: https://etherscan.io/address/0x1b57e04c02f9328bdd417fde6698b236b543c47f#code
+- [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer) Source: https://etherscan.io/address/0x3aee59ca9cea21389d167112091ceace86747124#code
+- [ ] [WatchfacesWorld](/contracts/WatchfacesWorld) Source: https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1#code
 - [ ] [ZorbNFT](/contracts/ZorbNFT) Source: https://github.com/ourzora/zorb/tree/main/packages/zorb-contracts
 
 ### Disclaimer
