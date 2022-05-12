@@ -13,6 +13,9 @@
 ### Contracts (Complete with testing)
 
 - [x] [Box](/contracts/Box)
+- [ ] [CODE](/contracts/CODE) Source: https://github.com/Developer-DAO/code-claim-site
+- [ ] [CryptoCoven](/contracts/CryptoCoven) Source: https://github.com/crypto-coven/contracts
+- [ ] [Femplate](/contracts/Femplate) Source: https://github.com/abigger87/femplate/blob/master/src/Greeter.sol
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HelloWorld](/contracts/HelloWorld)
 - [ ] [HotChainSvg](/contracts/HotChainSvg)
@@ -22,9 +25,13 @@
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) Source: https://github.com/m1guelpf/nft-token-drop
+- [ ] [Shrine](/contracts/Shrine) Source: https://github.com/Astrodrop/shrine
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
 - [ ] [Upgadeable](/contracts/Upgadeable)
 - [ ] [ViewAndPure](/contracts/ViewAndPure)
+- [ ] [WagumiCats](/contracts/WagumiCats) Source: https://github.com/wagumi/wagumi
+- [ ] [WagumiCatsV2](/contracts/WagumiCatsV2)
+- [ ] [WagumiToken](/contracts/WagumiToken)
 - [ ] [WatchfacesPFP](/contracts/WatchfacesPFP)
 - [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer)
 - [ ] [WatchfacesWorld](/contracts/WatchfacesWorld)
