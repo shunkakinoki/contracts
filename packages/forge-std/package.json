@@ -1,7 +1,7 @@
 {
   "name": "forge-std",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "description": "Unofficial NPM distribution of Forge Standard Library",
   "license": "Apache-2.0",
   "author": "Foundry",
