@@ -19,8 +19,7 @@
   ],
   "workspaces": {
     "packages": [
-      "contracts/*",
-      "packages/*"
+      "contracts/*"
     ]
   },
   "scripts": {
@@ -61,7 +60,6 @@
     "fix:eslint": "scripty",
     "fix:prettier": "scripty",
     "fix:sort-package-json": "echo",
-    "postinstall": "yarn workspace forge-std build",
     "lint": "scripty",
     "lint:eslint": "scripty",
     "lint:npm-package-json": "scripty",
