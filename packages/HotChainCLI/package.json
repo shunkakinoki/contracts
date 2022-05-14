@@ -1,7 +1,7 @@
 {
   "name": "@shunkakinoki/hotchaincli",
   "version": "1.2.0",
-  "private": true,
+  "private": false,
   "homepage": "https://github.com/shunkakinoki/contracts",
   "bugs": {
     "url": "https://github.com/shunkakinoki/contracts/issues"
