@@ -1,6 +1,6 @@
 {
   "name": "@shunkakinoki/hotchainsvg",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "homepage": "https://github.com/shunkakinoki/contracts",
   "bugs": {
@@ -20,6 +20,6 @@
     "fix": "cd ../.. && yarn run fix"
   },
   "dependencies": {
-    "@shunkakinoki/hotchaincli": "1.2.0"
+    "@shunkakinoki/hotchaincli": "1.2.1"
   }
 }
