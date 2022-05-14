@@ -1,3 +1,9 @@
+# [1.17.0](https://github.com/shunkakinoki/contracts/compare/v1.16.0...v1.17.0) (2022-05-14)
+
+### Features
+
+- ini serve path for int ([0c9d570](https://github.com/shunkakinoki/contracts/commit/0c9d570d9d65c178dd98a716ac572b18a4e2bd93))
+
 # [1.16.0](https://github.com/shunkakinoki/contracts/compare/v1.15.0...v1.16.0) (2022-05-14)
 
 ### Features
