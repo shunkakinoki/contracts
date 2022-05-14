@@ -1,3 +1,9 @@
+## @shunkakinoki/greeter [1.1.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/greeter@1.1.0...@shunkakinoki/greeter@1.1.1) (2022-05-14)
+
+### Performance Improvements
+
+- update new world greeter testing ([0a819d8](https://github.com/shunkakinoki/contracts/commit/0a819d8bb28cbea3721b58a348af802c90afac26))
+
 # @shunkakinoki/greeter [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/greeter@1.0.1...@shunkakinoki/greeter@1.1.0) (2022-05-12)
 
 ### Features
