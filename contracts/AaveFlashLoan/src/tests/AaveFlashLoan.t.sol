@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 
-contract LilFlashTest is Test {
+contract AaveFlashLoanTest is Test {
   uint256 testNumber;
 
   function setUp() public {

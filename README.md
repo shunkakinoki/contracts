@@ -12,6 +12,8 @@
 
 ### Contracts
 
+- [ ] [Aave](/contracts/Aave) - [Source](https://github.com/t4sk/defi-by-example)
+- [ ] [AaveFlashloan](/contracts/AaveFlashLoan) - [Source](https://github.com/t4sk/defi-by-example)
 - [x] [Box](/contracts/Box)
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts)
@@ -21,8 +23,8 @@
 - [x] [HelloWorld](/contracts/HelloWorld)
 - [ ] [HotChainSvg](/contracts/HotChainSvg)- [Source](https://github.com/w1nt3r-eth/hot-chain-svg)
 - [ ] [KiyoSanBirthday](/contracts/KiyoSanBirthday)
-- [ ] [LilENS](/contracts/LilENS) - [Source](https://github.com/m1guelpf/lil-web3)
-- [ ] [LilFlash](/contracts/LilFlash) - [Source](https://github.com/m1guelpf/lil-web3)
+- [x] [LilENS](/contracts/LilENS) - [Source](https://github.com/m1guelpf/lil-web3)
+- [x] [LilFlashloan](/contracts/LilFlashloan) - [Source](https://github.com/m1guelpf/lil-web3)
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop)

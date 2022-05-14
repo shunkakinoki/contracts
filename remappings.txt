@@ -5,3 +5,5 @@
 forge-std/=lib/forge-std/src/
 hardhat/=lib/hardhat/packages/hardhat-core/
 ds-test/=lib/ds-test/src/
+
+@shunkakinoki/aave/=contracts/Aave/src/
