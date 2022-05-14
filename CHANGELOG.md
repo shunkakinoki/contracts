@@ -1,3 +1,9 @@
+# [1.13.0](https://github.com/shunkakinoki/contracts/compare/v1.12.0...v1.13.0) (2022-05-14)
+
+### Features
+
+- ini light orb ([cdfe73e](https://github.com/shunkakinoki/contracts/commit/cdfe73efbc4e261b7ce28549a0ebfd26b61e99a0))
+
 # [1.12.0](https://github.com/shunkakinoki/contracts/compare/v1.11.0...v1.12.0) (2022-05-12)
 
 ### Features
