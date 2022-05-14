@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "strict": false,
+    "target": "ES2017",
+    "types": ["node"]
+  },
+  "exclude": ["node_modules"],
+  "extends": "@shunkakinoki/tsconfig",
+  "include": ["src"]
+}
