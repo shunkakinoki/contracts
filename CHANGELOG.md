@@ -1,3 +1,11 @@
+## [1.14.1](https://github.com/shunkakinoki/contracts/compare/v1.14.0...v1.14.1) (2022-05-14)
+
+### Performance Improvements
+
+- ini solmate nft ([7ca4973](https://github.com/shunkakinoki/contracts/commit/7ca4973a7d9307c85972feedbf59732cb39ee8e4))
+- rename oz nft ([94260c8](https://github.com/shunkakinoki/contracts/commit/94260c8d9e0e1592d227c90edaa367234c4b229f))
+- update new world greeter testing ([0a819d8](https://github.com/shunkakinoki/contracts/commit/0a819d8bb28cbea3721b58a348af802c90afac26))
+
 # [1.14.0](https://github.com/shunkakinoki/contracts/compare/v1.13.0...v1.14.0) (2022-05-14)
 
 ### Features
