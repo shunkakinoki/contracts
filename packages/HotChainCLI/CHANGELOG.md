@@ -1,3 +1,9 @@
+# @shunkakinoki/hotchaincli [1.2.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.1.0...@shunkakinoki/hotchaincli@1.2.0) (2022-05-14)
+
+### Features
+
+- ini serve path for int ([0c9d570](https://github.com/shunkakinoki/contracts/commit/0c9d570d9d65c178dd98a716ac572b18a4e2bd93))
+
 # @shunkakinoki/hotchaincli [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.0.0...@shunkakinoki/hotchaincli@1.1.0) (2022-05-14)
 
 ### Features
