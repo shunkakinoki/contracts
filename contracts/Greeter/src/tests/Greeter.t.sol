@@ -16,4 +16,10 @@ contract GreeterTest is Test {
     string memory greet = greeter.greet();
     assertEq(bytes32(bytes(greet)), bytes32(bytes("Hello World")));
   }
+
+  function testSetGreetingIsNewWorld() public {
+    greeter.setGreeting("New World");
+    string memory greet = greeter.greet();
+    assertEq(bytes32(bytes(greet)), bytes32(bytes("New World")));
+  }
 }
