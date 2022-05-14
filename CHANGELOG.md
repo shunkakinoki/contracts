@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/shunkakinoki/contracts/compare/v1.14.1...v1.15.0) (2022-05-14)
+
+### Features
+
+- ini cryptotestersnft testing ([cf09bf7](https://github.com/shunkakinoki/contracts/commit/cf09bf73cbe5ed8bf950d114f22ad27fd395ecf6))
+- ini merkletree cli ([bbe987b](https://github.com/shunkakinoki/contracts/commit/bbe987bab9e7fa6a0e42fa1aba6ab40eaf08f903))
+
 ## [1.14.1](https://github.com/shunkakinoki/contracts/compare/v1.14.0...v1.14.1) (2022-05-14)
 
 ### Performance Improvements
