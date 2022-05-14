@@ -103,7 +103,7 @@
     "@openzeppelin/contracts": "^4.6.0",
     "@openzeppelin/contracts-upgradeable": "^4.6.0",
     "@openzeppelin/hardhat-upgrades": "^1.17.0",
-    "@rari-capital/solmate": "^6.2.0",
+    "@rari-capital/solmate": "^6.3.0",
     "@typechain/ethers-v5": "^10.0.0",
     "@typechain/hardhat": "^6.0.0",
     "@types/chai": "^4.3.1",

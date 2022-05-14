@@ -25,7 +25,7 @@
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop)
-- [ ] [OpenZeppelinNFT](/contracts/OpenZeppelinNFT) - [Source](https://github.com/FredCoen/nft-tutorial)
+- [x] [OpenZeppelinNFT](/contracts/OpenZeppelinNFT) - [Source](https://github.com/FredCoen/nft-tutorial)
 - [ ] [Shrine](/contracts/Shrine) - [Source](https://github.com/Astrodrop/shrine)
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
 - [ ] [Upgadeable](/contracts/Upgadeable)
