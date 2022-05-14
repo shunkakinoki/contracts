@@ -5,17 +5,11 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 
 contract LightOrbRendererTest is Test {
-  uint256 testNumber;
-
-  function setUp() public {
-    testNumber = 42;
-  }
+  address blackHole = address(0);
 
   function testNumberIs42() public {
-    assertEq(testNumber, 42);
-  }
-
-  function testFailSubtract43() public {
-    testNumber -= 43;
+    bytes32 addrBytes = bytes32(uint256(uint160(blackHole)));
+    console2.logBytes32(addrBytes);
+    // assertEq(testNumber, 42);
   }
 }
