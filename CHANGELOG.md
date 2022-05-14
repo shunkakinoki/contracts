@@ -1,3 +1,9 @@
+# [1.14.0](https://github.com/shunkakinoki/contracts/compare/v1.13.0...v1.14.0) (2022-05-14)
+
+### Features
+
+- ini openzepplin nft ([c664ad8](https://github.com/shunkakinoki/contracts/commit/c664ad86c01a0f8518d4f3b9cab2ad9d2b82140c))
+
 # [1.13.0](https://github.com/shunkakinoki/contracts/compare/v1.12.0...v1.13.0) (2022-05-14)
 
 ### Features
