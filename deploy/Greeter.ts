@@ -9,7 +9,7 @@ const deploy = async ({
   ethers,
   network,
 }: HardhatRuntimeEnvironment) => {
-  if (network.name === "hardhat") {
+  if (network.name !== "hardhat") {
     return;
   }
 
