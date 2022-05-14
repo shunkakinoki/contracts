@@ -32,9 +32,9 @@ export const serve = async handler => {
         },
       );
       return;
-    } else if (parseInt(req.url.replace("/", ""))) {
+    } else {
       res.writeHead(200);
-      handler(parseInt(req.url.replace("/", ""))).then(
+      handler(req.url.replace("/", "")).then(
         content => {
           return res.end(webpage(content));
         },
@@ -44,9 +44,6 @@ export const serve = async handler => {
       );
       return;
     }
-
-    res.writeHead(404);
-    res.end("Not found: " + req.url);
   }
   const server = http.createServer(requestListener);
   await new Promise(resolve => {
