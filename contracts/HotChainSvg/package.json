@@ -17,15 +17,9 @@
     "src"
   ],
   "scripts": {
-    "fix": "cd ../.. && yarn run fix",
-    "qa": "node src/qa.js",
-    "start": "node ."
+    "fix": "cd ../.. && yarn run fix"
   },
   "dependencies": {
-    "@ethereumjs/vm": "^5.9.0",
-    "@ethersproject/abi": "^5.6.1",
-    "@openzeppelin/contracts": "^4.6.0",
-    "solc": "^0.8.13",
-    "xmldom": "^0.6.0"
+    "@shunkakinoki/hotchaincli": "*"
   }
 }

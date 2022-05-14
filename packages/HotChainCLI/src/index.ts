@@ -7,7 +7,7 @@ import { compile } from "./compile";
 import { deploy } from "./deploy";
 import { serve } from "./serve";
 
-const SOURCE = path.join(__dirname, "..", "contracts", "Renderer.sol");
+const SOURCE = path.join(process.cwd(), "src", "Renderer.sol");
 
 async function main() {
   const { vm, pk } = await boot();

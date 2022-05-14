@@ -18,7 +18,7 @@ contract Renderer {
             svg.prop("font-size", "22"),
             svg.prop("fill", "white")
           ),
-          string.concat(svg.cdata("Hello, token #"), utils.uint2str(_tokenId))
+          string.concat(svg.cdata("Hello, tokens #"), utils.uint2str(_tokenId))
         ),
         svg.rect(
           string.concat(
