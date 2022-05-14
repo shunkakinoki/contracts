@@ -45,7 +45,7 @@ contract Renderer {
   }
 
   function getAddressId(address _owner) public pure returns (uint256) {
-    return uint256(uint160(_owner)) % 10;
+    return uint256(uint160(_owner)) % 13;
   }
 
   function render(uint256 _tokenId) public view returns (string memory) {

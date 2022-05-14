@@ -75,17 +75,35 @@ contract LightOrbRendererTest is Test {
   function testAddressIdTen() public {
     uint256 id = renderer.getAddressId(address(10));
     console2.logBytes32(bytes32(id));
-    assertEq(bytes32(id), bytes32(uint256(0)));
+    assertEq(bytes32(id), bytes32(uint256(10)));
   }
 
   function testAddressIdEleven() public {
     uint256 id = renderer.getAddressId(address(11));
     console2.logBytes32(bytes32(id));
-    assertEq(bytes32(id), bytes32(uint256(1)));
+    assertEq(bytes32(id), bytes32(uint256(11)));
   }
 
   function testAddressIdTwelve() public {
     uint256 id = renderer.getAddressId(address(12));
+    console2.logBytes32(bytes32(id));
+    assertEq(bytes32(id), bytes32(uint256(12)));
+  }
+
+  function testAddressIdThirteen() public {
+    uint256 id = renderer.getAddressId(address(13));
+    console2.logBytes32(bytes32(id));
+    assertEq(bytes32(id), bytes32(uint256(0)));
+  }
+
+  function testAddressIdFourteen() public {
+    uint256 id = renderer.getAddressId(address(14));
+    console2.logBytes32(bytes32(id));
+    assertEq(bytes32(id), bytes32(uint256(1)));
+  }
+
+  function testAddressIdFifthteen() public {
+    uint256 id = renderer.getAddressId(address(15));
     console2.logBytes32(bytes32(id));
     assertEq(bytes32(id), bytes32(uint256(2)));
   }
