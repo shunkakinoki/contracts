@@ -1,3 +1,20 @@
+# [1.18.0](https://github.com/shunkakinoki/contracts/compare/v1.17.0...v1.18.0) (2022-05-14)
+
+### Features
+
+- ini aave ([39c16b7](https://github.com/shunkakinoki/contracts/commit/39c16b7cca1c696859401ce339cfdfac22eeff5e))
+- ini address renderer ([7baf0e8](https://github.com/shunkakinoki/contracts/commit/7baf0e8951bcbe263db59f201c3b8ee83e613df6))
+- ini get address id ([2230532](https://github.com/shunkakinoki/contracts/commit/2230532b4db40af7e15752e9e944498602ad5cab))
+- ini light orb renderer ([7751dc5](https://github.com/shunkakinoki/contracts/commit/7751dc543a74ffaefbb4fb565934d76396bc0502))
+- ini renderer ([bb1f133](https://github.com/shunkakinoki/contracts/commit/bb1f1339fd4aa091c819515b66e99c6c9d330590))
+
+### Performance Improvements
+
+- ini lil fractional from lil-web3 ([a39e5d6](https://github.com/shunkakinoki/contracts/commit/a39e5d6df7847780f2628b6f8b0b846e251b4d7d))
+- ini render id ([daa29fa](https://github.com/shunkakinoki/contracts/commit/daa29fa20e7490c9cf7c82c55b2edce604176e96))
+- refactor color var ([2f2fb0f](https://github.com/shunkakinoki/contracts/commit/2f2fb0f8292072ffbc0e251be51198d2c168219c))
+- release to npm ([c4cf09f](https://github.com/shunkakinoki/contracts/commit/c4cf09f2b303c8051128ea3751b4590f16123a33))
+
 # [1.17.0](https://github.com/shunkakinoki/contracts/compare/v1.16.0...v1.17.0) (2022-05-14)
 
 ### Features
