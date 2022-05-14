@@ -12,11 +12,14 @@ const SOURCE = path.join(process.cwd(), "src", "Renderer.sol");
 async function main() {
   const { vm, pk } = await boot();
 
-  async function handler() {
+  async function handler(tokenId?: number) {
     const { abi, bytecode } = compile(SOURCE);
     const address = await deploy(vm, pk, bytecode);
-    const result = await call(vm, address, abi, "example");
-    return result;
+    if (!tokenId) {
+      return await call(vm, address, abi, "example");
+    } else {
+      return await call(vm, address, abi, "render", [tokenId]);
+    }
   }
 
   const { notify } = await serve(handler);

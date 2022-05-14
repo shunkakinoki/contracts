@@ -32,6 +32,17 @@ export const serve = async handler => {
         },
       );
       return;
+    } else if (parseInt(req.url.replace("/", ""))) {
+      res.writeHead(200);
+      handler(parseInt(req.url.replace("/", ""))).then(
+        content => {
+          return res.end(webpage(content));
+        },
+        error => {
+          return res.end(webpage(`<pre>${error.message}</pre>`));
+        },
+      );
+      return;
     }
 
     res.writeHead(404);

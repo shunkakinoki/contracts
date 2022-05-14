@@ -11,7 +11,7 @@ import { call } from "./call";
 import { compile } from "./compile";
 import { deploy } from "./deploy";
 
-const SOURCE = path.join(__dirname, "..", "contracts", "Renderer.sol");
+const SOURCE = path.join(process.cwd(), "src", "Renderer.sol");
 const DESTINATION = path.join(os.tmpdir(), "hot-chain-svg-");
 
 const main = async () => {
