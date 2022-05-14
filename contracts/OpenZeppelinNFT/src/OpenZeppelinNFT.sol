@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/security/PullPayment.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract OpenZeppelinNft is ERC721, PullPayment, Ownable {
+contract OpenZeppelinNFT is ERC721, PullPayment, Ownable {
   using Strings for uint256;
   string public baseURI;
   uint256 public currentTokenId;

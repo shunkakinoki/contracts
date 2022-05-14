@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: UNLICENSED
-// Code from: https://github.com/FredCoen/nft-tutorial/blob/master/src/OpenZeppelinNft.sol
+// Code from: https://github.com/FredCoen/nft-tutorial/blob/master/src/OpenZeppelinNFT.sol
 
 pragma solidity 0.8.13;
 
 import "ds-test/test.sol";
 import "forge-std/test/StdStorage.t.sol";
 import "forge-std/Vm.sol";
-import "../OpenZeppelinNft.sol";
+import "../OpenZeppelinNFT.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 
-contract OpenZeppelinNftTests is DSTest {
+contract OpenZeppelinNFTTests is DSTest {
   using stdStorage for StdStorage;
 
   Vm private vm = Vm(HEVM_ADDRESS);
-  OpenZeppelinNft private nft;
+  OpenZeppelinNFT private nft;
   StdStorage private stdstore;
 
   function setUp() public {
     // Deploy NFT contract
-    nft = new OpenZeppelinNft("NFT_tutorial", "TUT", "baseUri");
+    nft = new OpenZeppelinNFT("NFT_tutorial", "TUT", "baseUri");
   }
 
   function testFailNoMintPricePaid() public {
