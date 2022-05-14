@@ -22,3 +22,6 @@
 [submodule "lib/nft-editions"]
 	path = lib/nft-editions
 	url = https://github.com/ourzora/nft-editions
+[submodule "lib/base64"]
+	path = lib/base64
+	url = https://github.com/Brechtpd/base64
