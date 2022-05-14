@@ -1,3 +1,9 @@
+## @shunkakinoki/hotchaincli [1.2.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.2.0...@shunkakinoki/hotchaincli@1.2.1) (2022-05-14)
+
+### Performance Improvements
+
+- release to npm ([c4cf09f](https://github.com/shunkakinoki/contracts/commit/c4cf09f2b303c8051128ea3751b4590f16123a33))
+
 # @shunkakinoki/hotchaincli [1.2.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.1.0...@shunkakinoki/hotchaincli@1.2.0) (2022-05-14)
 
 ### Features
