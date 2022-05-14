@@ -25,6 +25,7 @@
 - [ ] [KiyoSanBirthday](/contracts/KiyoSanBirthday)
 - [x] [LilENS](/contracts/LilENS) - [Source](https://github.com/m1guelpf/lil-web3)
 - [x] [LilFlashloan](/contracts/LilFlashloan) - [Source](https://github.com/m1guelpf/lil-web3)
+- [x] [LilFractional](/contracts/LilFractional) - [Source](https://github.com/m1guelpf/lil-web3)
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop)
