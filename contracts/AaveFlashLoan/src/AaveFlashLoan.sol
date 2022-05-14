@@ -3,7 +3,7 @@
 pragma solidity ^0.8.13;
 
 import "hardhat/console.sol";
-import "@shunkakinoki/aave/FlashLoanReceiverBase.sol";
+import "../../aave/src/FlashLoanReceiverBase.sol";
 
 contract AaveFlashLoan is FlashLoanReceiverBase {
   using SafeMath for uint256;
