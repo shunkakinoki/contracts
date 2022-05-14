@@ -36,11 +36,12 @@ contract Renderer {
     colors[12] = ["f43f5e", "fecdd3"];
   }
 
-  function getColor(uint256 _tokenId, uint256 _index)
+  function getColor(address _owner, uint256 _index)
     public
     view
     returns (string memory)
   {
+    uint256 _tokenId = getAddressId(_owner);
     return colors[_tokenId][_index];
   }
 
@@ -48,18 +49,18 @@ contract Renderer {
     return uint256(uint160(_owner)) % 13;
   }
 
-  function render(uint256 _tokenId) public view returns (string memory) {
+  function render(address _owner) public view returns (string memory) {
     return
       string.concat(
         '<svg width="300" height="300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="url(#r)"/><defs><radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38 24) rotate(180) scale(38 39.1805)"><stop stop-color="#3d505c"/><stop offset="0.670535" stop-color="#101417"/><stop offset="0.950763" stop-color="#',
-        getColor(_tokenId, 0),
+        getColor(_owner, 0),
         '"/><stop offset="1" stop-color="#',
-        getColor(_tokenId, 1),
+        getColor(_owner, 1),
         '"/></radialGradient></defs></svg>'
       );
   }
 
   function example() external view returns (string memory) {
-    return render(0);
+    return render(address(0));
   }
 }
