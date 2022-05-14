@@ -1,3 +1,9 @@
+# @shunkakinoki/hotchaincli [1.3.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.2.1...@shunkakinoki/hotchaincli@1.3.0) (2022-05-14)
+
+### Features
+
+- ini address renderer ([7baf0e8](https://github.com/shunkakinoki/contracts/commit/7baf0e8951bcbe263db59f201c3b8ee83e613df6))
+
 ## @shunkakinoki/hotchaincli [1.2.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.2.0...@shunkakinoki/hotchaincli@1.2.1) (2022-05-14)
 
 ### Performance Improvements
