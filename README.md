@@ -10,12 +10,12 @@
 
 </div>
 
-### Contracts (Complete with testing)
+### Contracts
 
 - [x] [Box](/contracts/Box)
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts)
-- [ ] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft)
+- [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft)
 - [x] [Femplate](/contracts/Femplate)- [Source](https://github.com/abigger87/femplate)
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HelloWorld](/contracts/HelloWorld)
