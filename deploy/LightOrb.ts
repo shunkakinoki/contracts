@@ -21,7 +21,8 @@ const deploy: DeployFunction = async ({
   const LightOrbContract = await deploy("LightOrb", {
     from: deployer,
     log: true,
-    gasPrice: BigNumber.from(3000000000),
+    gasPrice: BigNumber.from(30000000000),
+    skipIfAlreadyDeployed: false,
   });
 
   const LightOrbFactory = (await ethers.getContractFactory(
@@ -31,7 +32,7 @@ const deploy: DeployFunction = async ({
 
   console.log("LightOrb mint open");
   const txMintIsOpen = await LightOrb.setMintIsOpen(true, {
-    gasPrice: 3000000000,
+    gasPrice: BigNumber.from(30000000000),
   });
   const receiptTxMintIsOpen = await txMintIsOpen.wait();
   console.log(JSON.stringify(receiptTxMintIsOpen, null, 4));
@@ -39,7 +40,7 @@ const deploy: DeployFunction = async ({
   console.log("LightOrb mint");
   const txMint = await LightOrb.safeMint(
     "0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed",
-    { gasPrice: BigNumber.from(3000000000) },
+    { gasPrice: BigNumber.from(30000000000) },
   );
   const receiptTxMint = await txMint.wait();
   console.log(JSON.stringify(receiptTxMint, null, 4));
@@ -47,7 +48,7 @@ const deploy: DeployFunction = async ({
   console.log("LightOrb airdrop");
   const txAirdrop = await LightOrb.airdrop(
     ["0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed"],
-    { gasPrice: BigNumber.from(3000000000) },
+    { gasPrice: BigNumber.from(30000000000) },
   );
   const receiptTxAirdrop = await txAirdrop.wait();
   console.log(JSON.stringify(receiptTxAirdrop, null, 4));

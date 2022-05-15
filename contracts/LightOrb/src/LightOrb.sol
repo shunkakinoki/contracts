@@ -56,7 +56,7 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
         abi.encodePacked(
           '{"name": "Light Orb #',
           idString,
-          '", "description": "Light Orb", "image": "',
+          '", "description": "Light Orb Description", "image": "',
           string(
             abi.encodePacked(
               "data:image/svg+xml;base64,",
