@@ -1,3 +1,17 @@
+# [1.19.0](https://github.com/shunkakinoki/contracts/compare/v1.18.0...v1.19.0) (2022-05-15)
+
+### Features
+
+- ini encode metadata ([0ab336e](https://github.com/shunkakinoki/contracts/commit/0ab336e4fc3a02ac90e7816939317a20aad20717))
+- ini light orb deployment ([2c8be49](https://github.com/shunkakinoki/contracts/commit/2c8be4999c5a54564db668949604c3dd252a2bd4))
+- ini lightorb deploy ([f569f08](https://github.com/shunkakinoki/contracts/commit/f569f0842e0634ab359b948e82a184c0eef21d7d))
+
+### Performance Improvements
+
+- ini kovan deploy ([b083fb1](https://github.com/shunkakinoki/contracts/commit/b083fb14c9b6bff25ae8c3f797344490f29eaf10))
+- ini rinkeby deployment ([508237a](https://github.com/shunkakinoki/contracts/commit/508237ada364d814a0dd1cb1f46f2057cc6a66ef))
+- ini ropsten deployments ([f903b2d](https://github.com/shunkakinoki/contracts/commit/f903b2d0c388819774d63e10c07879fff8e7ef39))
+
 # [1.18.0](https://github.com/shunkakinoki/contracts/compare/v1.17.0...v1.18.0) (2022-05-14)
 
 ### Features
