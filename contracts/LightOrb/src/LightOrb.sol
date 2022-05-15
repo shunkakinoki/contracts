@@ -28,8 +28,8 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
 
   function airdrop(address[] memory to) external onlyOwner {
     for (uint256 i = 0; i < to.length; i++) {
-      supplyCounter.increment();
       _mint(to[i], supplyCounter.current());
+      supplyCounter.increment();
     }
   }
 
@@ -57,7 +57,12 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
           '{"name": "Light Orb #',
           idString,
           '", "description": "Light Orb", "image": "',
-          renderer.render(ownerOf(tokenId)),
+          string(
+            abi.encodePacked(
+              "data:image/svg+xml;base64,",
+              base64Encode(abi.encodePacked(renderer.render(ownerOf(tokenId))))
+            )
+          ),
           '"}'
         )
       );
