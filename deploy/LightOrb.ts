@@ -15,11 +15,13 @@ const deploy: DeployFunction = async ({
   }
 
   const { deploy } = deployments;
+  const { BigNumber } = ethers;
 
   const { deployer } = await getNamedAccounts();
   const LightOrbContract = await deploy("LightOrb", {
     from: deployer,
     log: true,
+    gasPrice: BigNumber.from(3000000000),
   });
 
   const LightOrbFactory = (await ethers.getContractFactory(

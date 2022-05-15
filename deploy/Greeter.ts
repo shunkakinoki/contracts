@@ -20,6 +20,7 @@ const deploy = async ({
     args: ["Hello World"],
     from: deployer,
     log: true,
+    skipIfAlreadyDeployed: false,
   });
 
   const greeterFactory = (await ethers.getContractFactory(

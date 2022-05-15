@@ -73,14 +73,12 @@ const config: HardhatUserConfig = {
       accounts: accounts,
       saveDeployments: true,
       tags: ["staging"],
-      gasMultiplier: 2,
     },
     ropsten: {
       url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: accounts,
       saveDeployments: true,
       tags: ["staging"],
-      gasMultiplier: 2,
     },
     polygon: {
       url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
