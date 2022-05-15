@@ -72,6 +72,7 @@ const config: HardhatUserConfig = {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: accounts,
       saveDeployments: true,
+      gasPrice: 50000000000,
       tags: ["staging"],
     },
     ropsten: {
