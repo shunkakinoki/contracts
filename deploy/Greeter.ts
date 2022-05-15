@@ -9,7 +9,7 @@ const deploy = async ({
   ethers,
   network,
 }: HardhatRuntimeEnvironment) => {
-  if (network.name === "hardhat") {
+  if (network.name !== "hardhat") {
     return;
   }
 
@@ -20,6 +20,7 @@ const deploy = async ({
     args: ["Hello World"],
     from: deployer,
     log: true,
+    skipIfAlreadyDeployed: false,
   });
 
   const greeterFactory = (await ethers.getContractFactory(

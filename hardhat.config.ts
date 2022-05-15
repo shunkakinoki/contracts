@@ -72,15 +72,20 @@ const config: HardhatUserConfig = {
       url: `https://rinkeby.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: accounts,
       saveDeployments: true,
+      gasPrice: 50000000000,
       tags: ["staging"],
-      gasMultiplier: 2,
     },
     ropsten: {
       url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: accounts,
       saveDeployments: true,
       tags: ["staging"],
-      gasMultiplier: 2,
+    },
+    kovan: {
+      url: `https://kovan.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: accounts,
+      saveDeployments: true,
+      tags: ["staging"],
     },
     polygon: {
       url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,

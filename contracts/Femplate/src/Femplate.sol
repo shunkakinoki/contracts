@@ -5,7 +5,7 @@ pragma solidity 0.8.13;
 
 /// @title Greeter
 /// @author andreas@nascent.xyz
-contract Greeter {
+contract Femplate {
   string public _gm;
   address public owner;
 
