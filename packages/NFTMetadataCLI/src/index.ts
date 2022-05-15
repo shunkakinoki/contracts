@@ -1,5 +1,3 @@
-// Code from: https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft/blob/master/index.js
-
 import * as dotenv from "dotenv";
 import { ethers } from "ethers";
 
@@ -13,20 +11,22 @@ const handleError = () => {
 
 const getTokenMetadata = async (address: string) => {
   const abi = [
-    "function name() view returns (string name)",
+    "function tokenURI() view returns (string name)",
     "function symbol() view returns (string symbol)",
-    "function decimals() view returns (uint8 decimals)",
+    "function totalSupply() view returns (uint256 totalSupply)",
   ];
   const { JsonRpcProvider } = ethers.providers;
+  const { BigNumber } = ethers;
   const provider = new JsonRpcProvider(WEB3_ENDPOINT);
 
   const contract = new ethers.Contract(address, abi, provider);
-  const [name, symbol, decimals] = await Promise.all([
-    contract.name().catch(handleError),
+  const [tokenURI, symbol, totalSupplyBigNumber] = await Promise.all([
+    contract.tokenURI(1).catch(handleError),
     contract.symbol().catch(handleError),
-    contract.decimals().catch(handleError),
+    contract.totalSupply().catch(handleError),
   ]);
-  return { decimals, name, symbol };
+  const totalSupply = BigNumber.from(totalSupplyBigNumber).toNumber();
+  return { tokenURI, symbol, totalSupply };
 };
 
 void (async () => {
