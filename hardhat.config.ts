@@ -80,6 +80,12 @@ const config: HardhatUserConfig = {
       saveDeployments: true,
       tags: ["staging"],
     },
+    kovan: {
+      url: `https://kovan.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
+      accounts: accounts,
+      saveDeployments: true,
+      tags: ["staging"],
+    },
     polygon: {
       url: `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_PROJECT_ID}`,
       accounts: accounts,
