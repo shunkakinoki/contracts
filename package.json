@@ -97,7 +97,6 @@
     "extends": "@shunkakinoki/npm-package-json-lint-config"
   },
   "dependencies": {
-    "@0xsequence/create2": "0xsequence/sstore2",
     "@divergencetech/ethier": "^0.27.0",
     "@ethersproject/providers": "^5.6.5",
     "@nomiclabs/eslint-plugin-hardhat-internal-rules": "^1.0.0",
