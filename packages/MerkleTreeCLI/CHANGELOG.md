@@ -1,3 +1,9 @@
+# @shunkakinoki/merkletreecli [1.2.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/merkletreecli@1.1.0...@shunkakinoki/merkletreecli@1.2.0) (2022-05-16)
+
+### Features
+
+- ini nft metadata cli ([8897387](https://github.com/shunkakinoki/contracts/commit/8897387c6d1fd6357797b0c04f18379f150d7e25))
+
 # @shunkakinoki/merkletreecli [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/merkletreecli@1.0.0...@shunkakinoki/merkletreecli@1.1.0) (2022-05-14)
 
 ### Features
