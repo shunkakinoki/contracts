@@ -1,8 +1,11 @@
+@0xsequence/sstore2/=lib/sstore2/
+@divergencetech/ethier/=lib/ethier/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @rari-capital/solmate/=lib/solmate/
 @zoralabs/nft-editions-contracts/=lib/nft-editions/
 base64-sol/=lib/base64/
+erc721a/=lib/ERC721A/
 forge-std/=lib/forge-std/src/
 hardhat/=lib/hardhat/packages/hardhat-core/
 ds-test/=lib/ds-test/src/

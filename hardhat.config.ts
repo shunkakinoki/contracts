@@ -14,7 +14,7 @@ import "hardhat-spdx-license-identifier";
 import "hardhat-watcher";
 import { subtask } from "hardhat/config";
 
-const EXCLUDED_CONTRACT_PATHS = ["Shrine"];
+const EXCLUDED_CONTRACT_PATHS = ["OKPC", "Shrine"];
 
 subtask(TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS).setAction(
   async (_, __, runSuper) => {
