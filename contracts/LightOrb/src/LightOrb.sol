@@ -17,7 +17,9 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
   Renderer public renderer;
   bool public mintIsOpen = false;
 
-  constructor() ERC721("Light Orbs", "LORB") {}
+  constructor() ERC721("Light Orbs", "LORB") {
+    renderer = new Renderer();
+  }
 
   function safeMint(address to) public onlyOwner {
     require(mintIsOpen, "Mint not open");

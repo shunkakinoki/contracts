@@ -33,6 +33,6 @@ const getTokenMetadata = async (address: string) => {
 
 void (async () => {
   void console.log(
-    await getTokenMetadata("0x15477F1885723bAF05ab2De5717cE287A56f5B5f"),
+    await getTokenMetadata("0x8ED6EaD5238154a99a3f9A9822c6d9D0Bf96D298"),
   );
 })();
