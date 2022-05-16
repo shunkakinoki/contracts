@@ -163,4 +163,31 @@ contract LightOrbRendererTest is Test {
     console2.logUint(id);
     assertEq(id, 1);
   }
+
+  function testRenderAddressZero() public {
+    string memory svg = renderer.render(address(0));
+    console2.logString(svg);
+    assertEq(
+      svg,
+      '<svg width="300" height="300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="url(#r)"/><defs><radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38 24) rotate(180) scale(38 39.1805)"><stop stop-color="#3d505c"/><stop offset="0.670535" stop-color="#101417"/><stop offset="0.950763" stop-color="#6b7280"/><stop offset="1" stop-color="#e5e7eb"/></radialGradient></defs></svg>'
+    );
+  }
+
+  function testRenderAddressOne() public {
+    string memory svg = renderer.render(address(1));
+    console2.logString(svg);
+    assertEq(
+      svg,
+      '<svg width="300" height="300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="url(#r)"/><defs><radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38 24) rotate(180) scale(38 39.1805)"><stop stop-color="#3d505c"/><stop offset="0.670535" stop-color="#101417"/><stop offset="0.950763" stop-color="#ef4444"/><stop offset="1" stop-color="#ef4444"/></radialGradient></defs></svg>'
+    );
+  }
+
+  function testRenderAddressTwo() public {
+    string memory svg = renderer.render(address(2));
+    console2.logString(svg);
+    assertEq(
+      svg,
+      '<svg width="300" height="300" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="url(#r)"/><defs><radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(38 24) rotate(180) scale(38 39.1805)"><stop stop-color="#3d505c"/><stop offset="0.670535" stop-color="#101417"/><stop offset="0.950763" stop-color="#f97316"/><stop offset="1" stop-color="#fed7aa"/></radialGradient></defs></svg>'
+    );
+  }
 }
