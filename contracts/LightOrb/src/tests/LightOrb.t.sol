@@ -11,3 +11,4 @@ contract LightOrbTest is Test {
   function setUp() public {
     orb = new LightOrb();
   }
+}
