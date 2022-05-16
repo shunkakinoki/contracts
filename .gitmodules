@@ -31,3 +31,6 @@
 [submodule "lib/sstore2"]
 	path = lib/sstore2
 	url = https://github.com/0xsequence/sstore2
+[submodule "lib/ethier"]
+	path = lib/ethier
+	url = https://github.com/divergencetech/ethier
