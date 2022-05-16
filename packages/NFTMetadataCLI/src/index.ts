@@ -11,7 +11,8 @@ const handleError = () => {
 
 const getTokenMetadata = async (address: string) => {
   const abi = [
-    "function tokenURI() view returns (string name)",
+    "function tokenURI(uint256 _tokenId) external view returns (string)",
+    "function ownerOf(uint256 _tokenId) external view returns (address)",
     "function symbol() view returns (string symbol)",
     "function totalSupply() view returns (uint256 totalSupply)",
   ];
@@ -20,17 +21,18 @@ const getTokenMetadata = async (address: string) => {
   const provider = new JsonRpcProvider(WEB3_ENDPOINT);
 
   const contract = new ethers.Contract(address, abi, provider);
-  const [tokenURI, symbol, totalSupplyBigNumber] = await Promise.all([
-    contract.tokenURI(1).catch(handleError),
+  const [tokenURI, ownerOf, symbol, totalSupplyBigNumber] = await Promise.all([
+    contract.tokenURI(0).catch(handleError),
+    contract.ownerOf(0).catch(handleError),
     contract.symbol().catch(handleError),
     contract.totalSupply().catch(handleError),
   ]);
   const totalSupply = BigNumber.from(totalSupplyBigNumber).toNumber();
-  return { tokenURI, symbol, totalSupply };
+  return { tokenURI, ownerOf, symbol, totalSupply };
 };
 
 void (async () => {
   void console.log(
-    await getTokenMetadata("0x9c7eafd6b1ac93040b8a08336af601d80e64c9ca"),
+    await getTokenMetadata("0x647151Fa4f547CB5CEe6188bB13fc1C32F639fBe"),
   );
 })();
