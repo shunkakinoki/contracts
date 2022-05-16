@@ -97,6 +97,7 @@
     "extends": "@shunkakinoki/npm-package-json-lint-config"
   },
   "dependencies": {
+    "@divergencetech/ethier": "^0.27.0",
     "@ethersproject/providers": "^5.6.5",
     "@nomiclabs/eslint-plugin-hardhat-internal-rules": "^1.0.0",
     "@nomiclabs/hardhat-ethers": "^2.0.5",

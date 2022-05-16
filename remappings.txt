@@ -1,4 +1,5 @@
 @0xsequence/sstore2/=lib/sstore2/
+@divergencetech/ethier/=lib/ethier/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @rari-capital/solmate/=lib/solmate/

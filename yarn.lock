@@ -114,6 +114,11 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
+"@chainlink/contracts@^0.3.0":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@chainlink/contracts/-/contracts-0.3.1.tgz#a1a2e1b179a6ce6a9b5b16992f6202918110ef5c"
+  integrity sha512-A8DRvmfNCwLS1iduPPj7wNAZJMe9/ZimMhoHhbbBiq+7Vq/HFjiNcdoQ5NinFdXD5aTsoNUGG5pAYKj7YMpm9A==
+
 "@changesets/types@^4.0.1":
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/@changesets/types/-/types-4.0.1.tgz#85cf3cc32baff0691112d9d15fc21fbe022c9f0a"
@@ -319,6 +324,16 @@
   integrity sha512-X4xqRHqN8ACt2aHVe51OxeA2HjbcL4MqFqXkrmQszJ1NOUuUu5u6Vqx/0lZSVNku7velL5FC/s5uEAj1lsBMhA==
   dependencies:
     "@cspotcode/source-map-consumer" "0.8.0"
+
+"@divergencetech/ethier@^0.27.0":
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/@divergencetech/ethier/-/ethier-0.27.0.tgz#0a8fae4a98277bb3a4db54e8abbdc1a002180b67"
+  integrity sha512-nyguoQ0PHuj4veMS3Pj5uDt7T6Hxcn5MXlQFX3KhMY9RI2ZLn3Q7xSuauwv7QkK954yQE5doLqFPKMR2dDFoWA==
+  dependencies:
+    "@chainlink/contracts" "^0.3.0"
+    "@openzeppelin/contracts" "^4.4.1"
+    "@openzeppelin/contracts-upgradeable" "^4.4.1"
+    erc721a "^3.1.0"
 
 "@endemolshinegroup/cosmiconfig-typescript-loader@^3.0.2":
   version "3.0.2"
@@ -1618,12 +1633,12 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@openzeppelin/contracts-upgradeable@^4.3.2", "@openzeppelin/contracts-upgradeable@^4.6.0":
+"@openzeppelin/contracts-upgradeable@^4.3.2", "@openzeppelin/contracts-upgradeable@^4.4.1", "@openzeppelin/contracts-upgradeable@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts-upgradeable/-/contracts-upgradeable-4.6.0.tgz#1bf55f230f008554d4c6fe25eb165b85112108b0"
   integrity sha512-5OnVuO4HlkjSCJO165a4i2Pu1zQGzMs//o54LPrwUgxvEO2P3ax1QuaSI0cEHHTveA77guS0PnNugpR2JMsPfA==
 
-"@openzeppelin/contracts@^4.6.0":
+"@openzeppelin/contracts@^4.4.1", "@openzeppelin/contracts@^4.4.2", "@openzeppelin/contracts@^4.6.0":
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.6.0.tgz#c91cf64bc27f573836dba4122758b4743418c1b3"
   integrity sha512-8vi4d50NNya/bQqCmaVzvHNmwHvS0OBKb7HNtuNwEE3scXWrP31fKQoGxNMT+KbzmrNZzatE3QK5p2gFONI/hg==
@@ -4896,6 +4911,13 @@ env-paths@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.1.tgz#420399d416ce1fbe9bc0a07c62fa68d67fd0f8f2"
   integrity sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==
+
+erc721a@^3.1.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/erc721a/-/erc721a-3.3.0.tgz#ff0fa7880759766ae44916fb7f53eb178e14b044"
+  integrity sha512-LqwmMcDPS3H9y7ZO+9B7R9sEoWApra17d4PwodXuP1072jP653jdo0TYkJbK4G5pBUFDdB5TCZwmJ6EQbmrysQ==
+  dependencies:
+    "@openzeppelin/contracts" "^4.4.2"
 
 err-code@^2.0.2:
   version "2.0.3"
