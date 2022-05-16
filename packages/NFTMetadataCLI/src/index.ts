@@ -5,8 +5,8 @@ dotenv.config();
 
 const WEB3_ENDPOINT = `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_ID}`;
 
-const handleError = () => {
-  return undefined;
+const handleError = (err: Error) => {
+  return console.error(err);
 };
 
 const getTokenMetadata = async (address: string) => {
@@ -33,6 +33,6 @@ const getTokenMetadata = async (address: string) => {
 
 void (async () => {
   void console.log(
-    await getTokenMetadata("0x647151Fa4f547CB5CEe6188bB13fc1C32F639fBe"),
+    await getTokenMetadata("0x15477F1885723bAF05ab2De5717cE287A56f5B5f"),
   );
 })();

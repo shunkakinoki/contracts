@@ -41,6 +41,10 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
     return supplyCounter.current();
   }
 
+  function renderSVG(uint256 tokenId) internal view returns (string memory) {
+    return renderer.render(ownerOf(tokenId));
+  }
+
   function tokenURI(uint256 tokenId)
     public
     view
@@ -50,7 +54,7 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
     require(_exists(tokenId), "No token exists");
 
     string memory idString = Strings.toString(tokenId);
-    // string memory raw = renderer.render(ownerOf(tokenId));
+    string memory svg = renderSVG(tokenId);
 
     return
       encodeMetadataJSON(
@@ -60,7 +64,7 @@ contract LightOrb is ERC721, ReentrancyGuard, Ownable {
           '", "description": "Light Orb Description #',
           idString,
           '", "image": "data:image/svg+xml;base64,',
-          // base64Encode(bytes(raw)),
+          base64Encode(bytes(svg)),
           '"}'
         )
       );
