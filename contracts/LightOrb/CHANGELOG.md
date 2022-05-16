@@ -1,3 +1,10 @@
+# @shunkakinoki/lightorb [1.2.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/lightorb@1.1.0...@shunkakinoki/lightorb@1.2.0) (2022-05-16)
+
+### Features
+
+- ini renderer ([d176542](https://github.com/shunkakinoki/contracts/commit/d176542d7a26676e3036c72f86e9b01966d9a643))
+- ini wagumi cats v2 ([0369f73](https://github.com/shunkakinoki/contracts/commit/0369f731c0b9904d6f68a50654b5b7e6ee4d0a98))
+
 # @shunkakinoki/lightorb [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/lightorb@1.0.0...@shunkakinoki/lightorb@1.1.0) (2022-05-15)
 
 ### Features
