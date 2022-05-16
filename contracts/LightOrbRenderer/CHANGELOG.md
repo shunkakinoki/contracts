@@ -1,3 +1,9 @@
+## @shunkakinoki/lightorbrenderer [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/lightorbrenderer@1.0.0...@shunkakinoki/lightorbrenderer@1.0.1) (2022-05-16)
+
+### Performance Improvements
+
+- ini render svg testing ([b719ec4](https://github.com/shunkakinoki/contracts/commit/b719ec42d3f88aa64c5c230fc8acd423e4d4c2c5))
+
 # @shunkakinoki/lightorbrenderer 1.0.0 (2022-05-14)
 
 ### Features
