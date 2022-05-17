@@ -1,3 +1,9 @@
+## [1.20.1](https://github.com/shunkakinoki/contracts/compare/v1.20.0...v1.20.1) (2022-05-17)
+
+### Performance Improvements
+
+- ini hack reentrancy prevention ([2bda2b6](https://github.com/shunkakinoki/contracts/commit/2bda2b6e37e89b75ad886808fe5aa3257025a434))
+
 # [1.20.0](https://github.com/shunkakinoki/contracts/compare/v1.19.0...v1.20.0) (2022-05-17)
 
 ### Features
