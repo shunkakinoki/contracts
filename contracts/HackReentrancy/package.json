@@ -1,5 +1,5 @@
 {
-  "name": "@shunkakinoki/okpcmetadata",
+  "name": "@shunkakinoki/hackreentrancy",
   "version": "1.0.0",
   "private": true,
   "homepage": "https://github.com/shunkakinoki/contracts",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/shunkakinoki/contracts.git"
   },
-  "license": "Unlicence",
+  "license": "MIT",
   "author": "Shun Kakinoki",
   "files": [
     "src"
