@@ -1,3 +1,9 @@
+# [1.21.0](https://github.com/shunkakinoki/contracts/compare/v1.20.1...v1.21.0) (2022-05-17)
+
+### Features
+
+- ini hack phishing ([7566bf6](https://github.com/shunkakinoki/contracts/commit/7566bf65b818192137375f7dc58c1cada3109a38))
+
 ## [1.20.1](https://github.com/shunkakinoki/contracts/compare/v1.20.0...v1.20.1) (2022-05-17)
 
 ### Performance Improvements
