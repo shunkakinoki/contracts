@@ -1,3 +1,20 @@
+# [1.20.0](https://github.com/shunkakinoki/contracts/compare/v1.19.0...v1.20.0) (2022-05-17)
+
+### Features
+
+- ini nft metadata cli ([8897387](https://github.com/shunkakinoki/contracts/commit/8897387c6d1fd6357797b0c04f18379f150d7e25))
+- ini okpc contract ([efbc792](https://github.com/shunkakinoki/contracts/commit/efbc79216e2f4290db349517049c35a1ce75e252))
+- ini okpc metadata ([80fca7a](https://github.com/shunkakinoki/contracts/commit/80fca7a74ed94f37321dde18130bad7fca5a6e86))
+- ini okpc parts ([ad947d9](https://github.com/shunkakinoki/contracts/commit/ad947d9f8746f5a70cd86e07c5de0e2e454a09e0))
+- ini renderer ([d176542](https://github.com/shunkakinoki/contracts/commit/d176542d7a26676e3036c72f86e9b01966d9a643))
+- ini wagumi cats v2 ([0369f73](https://github.com/shunkakinoki/contracts/commit/0369f731c0b9904d6f68a50654b5b7e6ee4d0a98))
+
+### Performance Improvements
+
+- ini big numebr total supply ([218f0bb](https://github.com/shunkakinoki/contracts/commit/218f0bb21b3b2a3a3489d375f8f9e08d3ebe0a94))
+- ini render svg testing ([b719ec4](https://github.com/shunkakinoki/contracts/commit/b719ec42d3f88aa64c5c230fc8acd423e4d4c2c5))
+- ini v2 claim ([bb0160d](https://github.com/shunkakinoki/contracts/commit/bb0160d1b541b111d96e7e2c99ddd94e671948c3))
+
 # [1.19.0](https://github.com/shunkakinoki/contracts/compare/v1.18.0...v1.19.0) (2022-05-15)
 
 ### Features
