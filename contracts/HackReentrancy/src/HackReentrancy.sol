@@ -10,7 +10,7 @@ contract EtherStore {
     balances[msg.sender] += msg.value;
   }
 
-  function withdraw() public {
+  function withdraw() public virtual {
     uint256 bal = balances[msg.sender];
     require(bal > 0);
 
@@ -23,6 +23,18 @@ contract EtherStore {
   // Helper function to check the balance of this contract
   function getBalance() public view returns (uint256) {
     return address(this).balance;
+  }
+}
+
+contract EtherStorePrevention is EtherStore {
+  function withdraw() public override {
+    uint256 bal = balances[msg.sender];
+    require(bal > 0);
+
+    balances[msg.sender] = 0;
+
+    (bool sent, ) = msg.sender.call{ value: bal }("");
+    require(sent, "Failed to send Ether");
   }
 }
 

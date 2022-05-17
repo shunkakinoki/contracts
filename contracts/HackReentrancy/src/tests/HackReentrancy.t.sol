@@ -10,6 +10,7 @@ import "forge-std/Test.sol";
 
 contract HackReentrancyTest is DSTest {
   EtherStore etherStore;
+  EtherStorePrevention etherStorePrevention;
   Attack etherStoreAttack;
   Vm private vm = Vm(HEVM_ADDRESS);
 
@@ -18,6 +19,7 @@ contract HackReentrancyTest is DSTest {
 
   function setUp() public {
     etherStore = new EtherStore();
+    etherStorePrevention = new EtherStorePrevention();
     etherStoreAttack = new Attack(address(etherStore));
 
     emit log_address(address(etherStore));
@@ -27,24 +29,23 @@ contract HackReentrancyTest is DSTest {
 
   function testAttack() public {
     etherStore.deposit{ value: 2 ether }();
-    emit log_named_uint(
-      "Ether in Store contract after deposit",
-      etherStore.getBalance()
-    );
+    assertEq(etherStore.getBalance(), 2 ether);
 
-    emit log_named_uint(
-      "Ether in Attack contract after before attack",
-      etherStoreAttack.getBalance()
-    );
+    etherStoreAttack.getBalance();
+    assertEq(etherStoreAttack.getBalance(), 0 ether);
     etherStoreAttack.attack{ value: 1 ether }();
-    emit log_named_uint(
-      "Ether in Attack contract after after attack",
-      etherStoreAttack.getBalance()
-    );
+    assertEq(etherStoreAttack.getBalance(), 3 ether);
+    assertEq(etherStore.getBalance(), 0 ether);
+  }
 
-    emit log_named_uint(
-      "Ether in Store contract after attack",
-      etherStore.getBalance()
-    );
+  function testAttackPrevention() public {
+    etherStorePrevention.deposit{ value: 2 ether }();
+    assertEq(etherStorePrevention.getBalance(), 2 ether);
+
+    etherStoreAttack.getBalance();
+    assertEq(etherStoreAttack.getBalance(), 0 ether);
+    etherStoreAttack.attack{ value: 1 ether }();
+    assertEq(etherStoreAttack.getBalance(), 1 ether);
+    assertEq(etherStorePrevention.getBalance(), 2 ether);
   }
 }
