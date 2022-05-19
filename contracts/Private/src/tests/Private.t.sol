@@ -14,8 +14,8 @@ contract PrivateTest is Test {
   function setUp() public {
     vm.prank(address(receiver), address(receiver));
     privateContract = new Private(bytes32("password"));
-    privateContract.addUser(bytes32("first user"));
-    privateContract.addUser(bytes32("second user"));
+    privateContract.addUser(bytes32("AAABBBCCC"));
+    privateContract.addUser(bytes32("DDDEEEFFF"));
   }
 
   function testStoargeSlot0() public {
@@ -82,7 +82,7 @@ contract PrivateTest is Test {
     }
     bytes32 six = vm.load(address(privateContract), result);
     // bytes32 password of the first user is "first user"
-    assertEq(six, bytes32("first user"));
+    assertEq(six, bytes32("AAABBBCCC"));
   }
 
   function testStoargeSlot7() public {
@@ -106,6 +106,6 @@ contract PrivateTest is Test {
     }
     bytes32 six = vm.load(address(privateContract), result);
     // bytes32 password of the first user is "first user"
-    assertEq(six, bytes32("second user"));
+    assertEq(six, bytes32("DDDEEEFFF"));
   }
 }
