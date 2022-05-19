@@ -1,3 +1,9 @@
+## [1.21.1](https://github.com/shunkakinoki/contracts/compare/v1.21.0...v1.21.1) (2022-05-19)
+
+### Performance Improvements
+
+- ini private contract ([fd14e4c](https://github.com/shunkakinoki/contracts/commit/fd14e4c0aec6c865ab27b7f7ef48366275a05e22))
+
 # [1.21.0](https://github.com/shunkakinoki/contracts/compare/v1.20.1...v1.21.0) (2022-05-17)
 
 ### Features
