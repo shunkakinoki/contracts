@@ -36,6 +36,7 @@
 - [ ] [OKPCFont](/contracts/OKPCFont) - [Source](https://etherscan.io/token/0xB1917264F00EC7dc0A058B51651EAd14759F0C09#code)
 - [ ] [OKPCMetadata](/contracts/OKPCMetadata) - [Source](https://etherscan.io/token/0x38894d185689b8d83609f5b72fd379a753fd46be#code)
 - [ ] [OKPCParts](/contracts/OKPC) - [Source](https://etherscan.io/token/0xd407890eD592d94390e6493f94DC784C5111f6Ee#code)
+- [x] [Private](/contracts/Private)
 - [ ] [Shrine](/contracts/Shrine) - [Source](https://github.com/Astrodrop/shrine)
 - [x] [SolmateNFT](/contracts/SolmateNFT) - [Source](https://github.com/FredCoen/nft-tutorial)
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
