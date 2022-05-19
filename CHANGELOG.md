@@ -1,3 +1,9 @@
+## [1.21.2](https://github.com/shunkakinoki/contracts/compare/v1.21.1...v1.21.2) (2022-05-19)
+
+### Performance Improvements
+
+- ini loot contract ([19ab515](https://github.com/shunkakinoki/contracts/commit/19ab5153a7a148b629cdc1cf8c9aba5deca6fb47))
+
 ## [1.21.1](https://github.com/shunkakinoki/contracts/compare/v1.21.0...v1.21.1) (2022-05-19)
 
 ### Performance Improvements
