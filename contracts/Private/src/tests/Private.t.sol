@@ -45,35 +45,25 @@ contract PrivateTest is Test {
 
   function testStoargeSlot3() public {
     bytes32 four = vm.load(address(privateContract), bytes32(uint256(3)));
-    assertEq(
-      four,
-      bytes32(
-        0x0000000000000000000000000000000000000000000000000000000000000000
-      )
-    );
+    assertEq(four, bytes32(uint256(0)));
   }
 
   function testStoargeSlot4() public {
     bytes32 four = vm.load(address(privateContract), bytes32(uint256(4)));
-    assertEq(
-      four,
-      bytes32(
-        0x0000000000000000000000000000000000000000000000000000000000000000
-      )
-    );
+    assertEq(four, bytes32(uint256(0)));
   }
 
   function testStoargeSlot5() public {
     bytes32 five = vm.load(address(privateContract), bytes32(uint256(5)));
-    assertEq(
-      five,
-      bytes32(
-        0x0000000000000000000000000000000000000000000000000000000000000000
-      )
-    );
+    assertEq(five, bytes32(uint256(0)));
   }
 
   function testStoargeSlot6() public {
+    bytes32 six = vm.load(address(privateContract), bytes32(uint256(6)));
+    assertEq(six, bytes32(uint256(2)));
+  }
+
+  function testStoargeSlot6Hash1() public {
     bytes32 result;
     bytes32 encoded = keccak256(abi.encode(6));
     assembly {
@@ -85,7 +75,7 @@ contract PrivateTest is Test {
     assertEq(six, bytes32("AAABBBCCC"));
   }
 
-  function testStoargeSlot7() public {
+  function testStoargeSlot6Hash2() public {
     bytes32 result;
     bytes32 encoded = keccak256(abi.encode(6));
     assembly {
@@ -97,7 +87,7 @@ contract PrivateTest is Test {
     assertEq(six, bytes32(uint256(1)));
   }
 
-  function testStoargeSlot8() public {
+  function testStoargeSlot6Hash3() public {
     bytes32 result;
     bytes32 encoded = keccak256(abi.encode(6));
     assembly {
@@ -107,5 +97,60 @@ contract PrivateTest is Test {
     bytes32 six = vm.load(address(privateContract), result);
     // bytes32 password of the first user is "first user"
     assertEq(six, bytes32("DDDEEEFFF"));
+  }
+
+  function testStoargeSlot7() public {
+    bytes32 seven = vm.load(address(privateContract), bytes32(uint256(7)));
+    assertEq(seven, bytes32(uint256(0)));
+  }
+
+  function testStoargeSlot7Hash0() public {
+    bytes32 encoded = keccak256(abi.encode(1, 7));
+    bytes32 seven = vm.load(address(privateContract), encoded);
+    assertEq(seven, bytes32(uint256(1)));
+  }
+
+  function testStoargeSlot7Key0Hash1() public {
+    bytes32 result;
+    bytes32 encoded = keccak256(abi.encode(0, 7));
+    assembly {
+      //increment slot by 1
+      result := add(encoded, 1)
+    }
+    bytes32 seven = vm.load(address(privateContract), result);
+    assertEq(seven, bytes32("AAABBBCCC"));
+  }
+
+  function testStoargeSlot7Key0Hash2() public {
+    bytes32 result;
+    bytes32 encoded = keccak256(abi.encode(0, 7));
+    assembly {
+      //increment slot by 2
+      result := add(encoded, 2)
+    }
+    bytes32 seven = vm.load(address(privateContract), encoded);
+    assertEq(seven, bytes32(uint256(0)));
+  }
+
+  function testStoargeSlot7Key1Hash1() public {
+    bytes32 result;
+    bytes32 encoded = keccak256(abi.encode(1, 7));
+    assembly {
+      //increment slot by 1
+      result := add(encoded, 1)
+    }
+    bytes32 seven = vm.load(address(privateContract), result);
+    assertEq(seven, bytes32("DDDEEEFFF"));
+  }
+
+  function testStoargeSlot7Key1Hash2() public {
+    bytes32 result;
+    bytes32 encoded = keccak256(abi.encode(1, 7));
+    assembly {
+      //increment slot by 2
+      result := add(encoded, 2)
+    }
+    bytes32 seven = vm.load(address(privateContract), encoded);
+    assertEq(seven, bytes32(uint256(1)));
   }
 }
