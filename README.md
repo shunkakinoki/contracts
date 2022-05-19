@@ -28,6 +28,7 @@
 - [x] [LilENS](/contracts/LilENS) - [Source](https://github.com/m1guelpf/lil-web3)
 - [x] [LilFlashloan](/contracts/LilFlashloan) - [Source](https://github.com/m1guelpf/lil-web3)
 - [x] [LilFractional](/contracts/LilFractional) - [Source](https://github.com/m1guelpf/lil-web3)
+- [ ] [Loot](/contracts/Loot) - [Source](https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7#code)
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop)
