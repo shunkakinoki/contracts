@@ -32,6 +32,7 @@
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop)
+- [ ] [Nouns](/contracts/Nouns) - [Source](https://github.com/nounsDAO/nouns-monorepo/tree/master/packages/nouns-contracts/contracts)
 - [x] [OpenZeppelinNFT](/contracts/OpenZeppelinNFT) - [Source](https://github.com/FredCoen/nft-tutorial)
 - [ ] [OKPC](/contracts/OKPC) - [Source](https://etherscan.io/token/0x7183209867489e1047f3a7c23ea1aed9c4e236e8#code)
 - [ ] [OKPCFont](/contracts/OKPCFont) - [Source](https://etherscan.io/token/0xB1917264F00EC7dc0A058B51651EAd14759F0C09#code)
