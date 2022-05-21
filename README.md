@@ -15,6 +15,7 @@
 - [ ] [Aave](/contracts/Aave) - [Source](https://github.com/t4sk/defi-by-example)
 - [ ] [AaveFlashloan](/contracts/AaveFlashLoan) - [Source](https://github.com/t4sk/defi-by-example)
 - [x] [Box](/contracts/Box)
+- [x] [Create2](/contracts/Create2)
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts)
 - [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft)
