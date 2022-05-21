@@ -1,3 +1,9 @@
+# [1.23.0](https://github.com/shunkakinoki/contracts/compare/v1.22.0...v1.23.0) (2022-05-21)
+
+### Features
+
+- ini create2 contract ([241fa9d](https://github.com/shunkakinoki/contracts/commit/241fa9d9b93dae7068017531a5fee4e7723f7cab))
+
 # [1.22.0](https://github.com/shunkakinoki/contracts/compare/v1.21.2...v1.22.0) (2022-05-20)
 
 ### Features
