@@ -45,10 +45,23 @@ contract WagumiTokenTest is Test {
     vm.stopPrank();
   }
 
+  function testOwnerCanMintMaximumGeneric() public {
+    uint256 minting = (token.getPercentage() * token.totalSupply()) / 100;
+    vm.prank(deployer);
+    token.mint(address(2), minting);
+  }
+
   function testOwnerCannotMintMoreThanMaximum() public {
     vm.prank(deployer);
     vm.expectRevert(abi.encodeWithSignature("MaxMintableExceeded()"));
     token.mint(address(2), 10_000_000_000_000 * 1e18);
+  }
+
+  function testOwnerCannotMintMoreThanMaximumGeneric() public {
+    uint256 minting = ((token.getPercentage() * token.totalSupply()) / 100) + 1;
+    vm.prank(deployer);
+    vm.expectRevert(abi.encodeWithSignature("MaxMintableExceeded()"));
+    token.mint(address(2), minting);
   }
 
   function testOwnerCanSetPercentage() public {
