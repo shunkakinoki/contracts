@@ -1,3 +1,10 @@
+# [1.24.0](https://github.com/shunkakinoki/contracts/compare/v1.23.1...v1.24.0) (2022-05-22)
+
+### Features
+
+- ini mosh dao ([d1df51e](https://github.com/shunkakinoki/contracts/commit/d1df51e12a5ec89a71c4739022b703f55285327e))
+- ini mosh dao ([d689477](https://github.com/shunkakinoki/contracts/commit/d68947791df63df7219190c86396a4eb103c8417))
+
 ## [1.23.1](https://github.com/shunkakinoki/contracts/compare/v1.23.0...v1.23.1) (2022-05-22)
 
 ### Performance Improvements
