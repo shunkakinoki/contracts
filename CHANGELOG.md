@@ -1,3 +1,9 @@
+## [1.23.1](https://github.com/shunkakinoki/contracts/compare/v1.23.0...v1.23.1) (2022-05-22)
+
+### Performance Improvements
+
+- ini mint max ([797bf89](https://github.com/shunkakinoki/contracts/commit/797bf89756f6964748e3cf64e51ea5e4d7f0dc4e))
+
 # [1.23.0](https://github.com/shunkakinoki/contracts/compare/v1.22.0...v1.23.0) (2022-05-21)
 
 ### Features
