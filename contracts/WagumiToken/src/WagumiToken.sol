@@ -36,7 +36,7 @@ contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   /// @notice Allows owner to mint a number of tokens to a given address
   /// @param _to The address to send the minted tokens to
   function mint(address _to, uint256 _amount) external onlyOwner {
-    if (_amount >= ((MAX_MINTABLE_PERCENTAGE * totalSupply()) / 100)) {
+    if (_amount > ((MAX_MINTABLE_PERCENTAGE * totalSupply()) / 100)) {
       revert MaxMintableExceeded();
     }
     _mint(_to, _amount);

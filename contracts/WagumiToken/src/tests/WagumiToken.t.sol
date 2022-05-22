@@ -33,6 +33,18 @@ contract WagumiTokenTest is Test {
     vm.stopPrank();
   }
 
+  function testOwnerCanMintALot() public {
+    vm.prank(deployer);
+    token.mint(address(2), 300_000_000);
+    vm.stopPrank();
+  }
+
+  function testOwnerCanMintMaximum() public {
+    vm.prank(deployer);
+    token.mint(address(2), 1_000_000 * 1e18);
+    vm.stopPrank();
+  }
+
   function testOwnerCannotMintMoreThanMaximum() public {
     vm.prank(deployer);
     vm.expectRevert(abi.encodeWithSignature("MaxMintableExceeded()"));
