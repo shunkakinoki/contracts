@@ -38,6 +38,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
+// solhint-disable-next-line max-states-count
 contract CryptoCoven is ERC721, IERC2981, Ownable, ReentrancyGuard {
   using Counters for Counters.Counter;
   using Strings for uint256;
@@ -90,6 +91,7 @@ contract CryptoCoven is ERC721, IERC2981, Ownable, ReentrancyGuard {
   // this function is corrected per https://cryptocoven.mirror.xyz/0eZ0tjudMU0ByeXLlRtPzDqxGzMMZw6ldzf-HfYETW0
   // it is not implemented this way in the mainnet contract we have deployed!
   modifier canMintWitches(uint256 numberOfTokens) {
+    // solhint-disable-next-line reason-string
     require(
       tokenCounter.current() + numberOfTokens <=
         maxWitches - maxGiftedWitches + numGiftedWitches,
@@ -99,10 +101,12 @@ contract CryptoCoven is ERC721, IERC2981, Ownable, ReentrancyGuard {
   }
 
   modifier canGiftWitches(uint256 num) {
+    // solhint-disable-next-line reason-string
     require(
       numGiftedWitches + num <= maxGiftedWitches,
       "Not enough witches remaining to gift"
     );
+    // solhint-disable-next-line reason-string
     require(
       tokenCounter.current() + num <= maxWitches,
       "Not enough witches remaining to mint"
@@ -169,11 +173,13 @@ contract CryptoCoven is ERC721, IERC2981, Ownable, ReentrancyGuard {
   {
     uint256 numAlreadyMinted = communityMintCounts[msg.sender];
 
+    // solhint-disable-next-line reason-string
     require(
       numAlreadyMinted + numberOfTokens <= MAX_WITCHES_PER_WALLET,
       "Max witches to mint in community sale is three"
     );
 
+    // solhint-disable-next-line reason-string
     require(
       tokenCounter.current() + numberOfTokens <= maxCommunitySaleWitches,
       "Not enough witches remaining to mint"
@@ -191,6 +197,7 @@ contract CryptoCoven is ERC721, IERC2981, Ownable, ReentrancyGuard {
     isValidMerkleProof(merkleProof, claimListMerkleRoot)
     canGiftWitches(1)
   {
+    // solhint-disable-next-line reason-string
     require(!claimed[msg.sender], "Witch already claimed by this wallet");
 
     claimed[msg.sender] = true;
@@ -292,6 +299,7 @@ contract CryptoCoven is ERC721, IERC2981, Ownable, ReentrancyGuard {
     nonReentrant
     onlyOwner
   {
+    // solhint-disable-next-line reason-string
     require(
       tokenCounter.current() + addresses.length <= 128,
       "All witches are already rolled over"

@@ -49,6 +49,7 @@ import { MerkleProof } from "@openzeppelin/contracts/utils/cryptography/MerklePr
 import { IERC2981 } from "@openzeppelin/contracts/interfaces/IERC2981.sol";
 import { IOKPCMetadata } from "./interfaces/IOKPCMetadata.sol";
 
+// solhint-disable-next-line max-states-count
 contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
   /* --------------------------------- ****** --------------------------------- */
 
@@ -117,6 +118,7 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
   /* -------------------------------------------------------------------------- */
   /*                                   EVENTS                                   */
   /* -------------------------------------------------------------------------- */
+  // solhint-disable-next-line event-name-camelcase
   event hello();
   /* --------------------------------- MINTING -------------------------------- */
   event MintingPhaseStarted(Phase phase);
@@ -498,6 +500,7 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
     nonReentrant
   {
     if (amount > 8) revert MintTooManyOKPCs();
+    // solhint-disable-next-line avoid-tx-origin
     if (tx.origin != msg.sender) revert MintNotAuthorized();
 
     addToOwnerBalance(amount * (MINT_COST - ART_COLLECT_COST));

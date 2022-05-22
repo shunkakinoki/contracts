@@ -30,6 +30,7 @@ contract Wallet {
   }
 
   function transfer(address payable _to, uint256 _amount) public virtual {
+    // solhint-disable-next-line avoid-tx-origin
     require(tx.origin == owner, "Not owner");
 
     (bool sent, ) = _to.call{ value: _amount }("");

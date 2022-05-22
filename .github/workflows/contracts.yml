@@ -20,7 +20,17 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
-      - run: |
-          yarn run build
-      - run: |
+      - if: github.event_name == 'push'
+        run: |
           forge test -vvv --gas-report
+      - if: github.event_name == 'pull_request'
+        id: changed-files
+        uses: tj-actions/changed-files@main
+        with:
+          files: |
+            **/*.t.sol
+      - if: github.event_name == 'pull_request'
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            forge test -vvv --gas-report -c $file
+          done
