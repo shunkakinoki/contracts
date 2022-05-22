@@ -1,3 +1,9 @@
+## [1.24.1](https://github.com/shunkakinoki/contracts/compare/v1.24.0...v1.24.1) (2022-05-22)
+
+### Performance Improvements
+
+- ini pr contracts test ([3967bc8](https://github.com/shunkakinoki/contracts/commit/3967bc8c6ede5f0fd46d76d7c22d7baae391e874))
+
 # [1.24.0](https://github.com/shunkakinoki/contracts/compare/v1.23.1...v1.24.0) (2022-05-22)
 
 ### Features
