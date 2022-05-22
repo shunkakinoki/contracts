@@ -23,6 +23,7 @@ contract WagumiTokenTest is Test {
   function testOwnerCanMint() public {
     vm.prank(deployer);
     token.mint(address(2), 3);
+    vm.stopPrank();
   }
 
   function testOwnerCannnotMint() public {
@@ -30,5 +31,11 @@ contract WagumiTokenTest is Test {
     vm.expectRevert("Ownable: caller is not the owner");
     token.mint(address(2), 3);
     vm.stopPrank();
+  }
+
+  function testOwnerCannotMintMoreThanMaximum() public {
+    vm.prank(deployer);
+    vm.expectRevert(abi.encodeWithSignature("MaxMintableExceeded()"));
+    token.mint(address(2), 10_000_000_000_000 * 1e18);
   }
 }
