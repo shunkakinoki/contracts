@@ -20,8 +20,6 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
-      - run: |
-          yarn run build
       - if: github.event_name == 'push'
         run: |
           forge test -vvv --gas-report
@@ -36,3 +34,5 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             forge test -vvv --gas-report -c $file
           done
+      - run: |
+          yarn run build
