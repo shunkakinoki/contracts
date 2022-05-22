@@ -22,7 +22,6 @@ const deploy: DeployFunction = async ({
     from: deployer,
     log: true,
     gasPrice: BigNumber.from(30000000000),
-    skipIfAlreadyDeployed: false,
   });
 
   const LightOrbFactory = (await ethers.getContractFactory(
