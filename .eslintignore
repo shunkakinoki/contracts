@@ -6,3 +6,5 @@ lib
 out
 node_modules
 typechain
+
+*.sol

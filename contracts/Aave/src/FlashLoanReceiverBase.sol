@@ -14,7 +14,9 @@ abstract contract FlashLoanReceiverBase is IFlashLoanReceiver {
   using SafeERC20 for IERC20;
   using SafeMath for uint256;
 
+  // solhint-disable-next-line var-name-mixedcase
   ILendingPoolAddressesProvider public immutable ADDRESSES_PROVIDER;
+  // solhint-disable-next-line var-name-mixedcase
   ILendingPool public immutable LENDING_POOL;
 
   constructor(ILendingPoolAddressesProvider provider) {
