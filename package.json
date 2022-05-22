@@ -62,6 +62,7 @@
     "fix:eslint": "scripty",
     "fix:prettier": "scripty",
     "fix:sort-package-json": "echo",
+    "foundry:nightly": "foundryup -v nightly",
     "postinstall": "yarn workspace ds-test build && yarn workspace forge-std build",
     "lint": "scripty",
     "lint:eslint": "scripty",

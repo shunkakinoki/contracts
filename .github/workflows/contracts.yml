@@ -34,5 +34,3 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             forge test -vvv --gas-report -c $file
           done
-      - run: |
-          yarn run build

@@ -4,3 +4,5 @@ out = 'out'
 libs = ['lib']
 gas_reports = ["*"]
 solc_version = "0.8.13"
+cache = true
+cache_path = 'cache-forge'
