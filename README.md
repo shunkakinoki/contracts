@@ -19,6 +19,8 @@
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts)
 - [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft)
+- [x] [Ethernaut](/contracts/Ethernaut) - [Source](https://github.com/abdulsamijay/ethernaut)
+- [x] [EthernautBounty](/contracts/EthernautBounty) - [Source](https://github.com/tahos81/ethernaut-bounty)
 - [x] [Femplate](/contracts/Femplate) - [Source](https://github.com/abigger87/femplate)
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HackReentrancy](/contracts/HackReentrancy) - [Source](https://solidity-by-example.org/hacks/re-entrancy)
