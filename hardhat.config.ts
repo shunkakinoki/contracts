@@ -1,3 +1,5 @@
+import fs from "fs";
+
 import * as dotenv from "dotenv";
 
 import { removeConsoleLog } from "hardhat-preprocessor";
@@ -33,6 +35,16 @@ subtask(TASK_COMPILE_SOLIDITY_GET_SOURCE_PATHS).setAction(
     });
   },
 );
+
+const getRemappings = () => {
+  return fs
+    .readFileSync("remappings.txt", "utf8")
+    .split("\n")
+    .filter(Boolean)
+    .map(line => {
+      return line.trim().split("=");
+    });
+};
 
 dotenv.config();
 
@@ -224,9 +236,26 @@ const config: HardhatUserConfig = {
     alwaysGenerateOverloads: true,
   },
   preprocess: {
-    eachLine: removeConsoleLog(bre => {
-      return bre.network.name !== "hardhat" && bre.network.name !== "localhost";
-    }),
+    eachLine: hre => {
+      return {
+        transform: (line: string) => {
+          if (
+            hre.network.name !== "hardhat" &&
+            hre.network.name !== "localhost"
+          ) {
+            removeConsoleLog();
+          }
+          if (line.match(/^\s*import /i)) {
+            getRemappings().forEach(([find, replace]) => {
+              if (line.match('"' + find)) {
+                line = line.replace('"' + find, '"' + replace);
+              }
+            });
+          }
+          return line;
+        },
+      };
+    },
   },
   spdxLicenseIdentifier: {
     overwrite: false,
