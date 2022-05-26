@@ -1,3 +1,9 @@
+## [1.25.1](https://github.com/shunkakinoki/contracts/compare/v1.25.0...v1.25.1) (2022-05-26)
+
+### Performance Improvements
+
+- ini remapping contracts ([d4320b2](https://github.com/shunkakinoki/contracts/commit/d4320b267ce14cae43206586adfba76f2002b30d))
+
 # [1.25.0](https://github.com/shunkakinoki/contracts/compare/v1.24.1...v1.25.0) (2022-05-24)
 
 ### Features
