@@ -34,3 +34,6 @@
 [submodule "lib/ethier"]
 	path = lib/ethier
 	url = https://github.com/divergencetech/ethier
+[submodule "lib/clones-with-immutable-args"]
+	path = lib/clones-with-immutable-args
+	url = https://github.com/wighawag/clones-with-immutable-args
