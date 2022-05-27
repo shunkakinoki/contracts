@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @title Wagumi Token <https://wagumi.xyz>
 /// @author Shun Kakinoki <https://shunkakinoki.com>
-/// @notice A RFC proposal for a token that can be used to govern Wagumi DAO.
+/// @notice A RFC proposal for a token to be airdropped to govern Wagumi DAO.
 contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   /* -------------------------------------------------------------------------- */
   /*                                   CONFIG                                   */

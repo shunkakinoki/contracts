@@ -11,7 +11,7 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 /// @title Wagumi Token <https://wagumi.xyz>
 /// @author Shun Kakinoki <https://shunkakinoki.com>
 /// @notice A RFC proposal for a token that can be used to govern Wagumi DAO.
-contract WagumiClaim is Ownable, Pausable {
+contract WagumiAirdrop is Ownable, Pausable {
   /* -------------------------------------------------------------------------- */
   /*                                   CONFIG                                   */
   /* -------------------------------------------------------------------------- */
