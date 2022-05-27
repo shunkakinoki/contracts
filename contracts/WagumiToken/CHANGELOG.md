@@ -1,3 +1,14 @@
+# @shunkakinoki/wagumitoken [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/wagumitoken@1.0.1...@shunkakinoki/wagumitoken@1.1.0) (2022-05-27)
+
+### Features
+
+- ini wagumi claim ([83d6414](https://github.com/shunkakinoki/contracts/commit/83d64140d711beff70e30105563616d185d3ad0d))
+
+### Performance Improvements
+
+- ini wagumi claim ([098c481](https://github.com/shunkakinoki/contracts/commit/098c481e08fff1b456cb99dbf29bd7312c55b1ba))
+- ini wagumi claim ([7ee8db4](https://github.com/shunkakinoki/contracts/commit/7ee8db46fa353fc4744e8920b9fa0572e7602ea4))
+
 ## @shunkakinoki/wagumitoken [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/wagumitoken@1.0.0...@shunkakinoki/wagumitoken@1.0.1) (2022-05-22)
 
 ### Performance Improvements
