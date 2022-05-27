@@ -6,11 +6,9 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-import "forge-std/console2.sol";
-
 /// @title Wagumi Token <https://wagumi.xyz>
 /// @author Shun Kakinoki <https://shunkakinoki.com>
-/// @notice A RFC proposal for a token that can be used to mint for Wagumi DAO.
+/// @notice A RFC proposal for a token that can be used to govern Wagumi DAO.
 contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   /* -------------------------------------------------------------------------- */
   /*                                   CONFIG                                   */
@@ -52,8 +50,8 @@ contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   /*                                   PUBLIC                                   */
   /* -------------------------------------------------------------------------- */
 
-  /// @notice Allows
-  function getPercentage() external view returns (uint8) {
+  /// @notice Get the current set percentage of maximum mintable tokens
+  function getMaxPercentage() external view returns (uint8) {
     return MAX_MINTABLE_PERCENTAGE;
   }
 }
