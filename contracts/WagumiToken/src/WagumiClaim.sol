@@ -65,8 +65,7 @@ contract WagumiClaim is Ownable {
     bytes32[] calldata _proof
   ) external {
     /// Verify Merkle proof, or revert if not in tree
-    bytes32 leaf = keccak256(abi.encodePacked(msg.sender, _amount));
-    (bool valid, uint256[] memory index) = verify(_proof, leaf);
+    (bool valid, uint256[] memory index) = verify(_proof, _amount);
     if (!valid) {
       revert InvalidProof();
     }
@@ -82,8 +81,8 @@ contract WagumiClaim is Ownable {
 
   /// @notice Verify a merkle proof of a claim
   /// @param _proof The merkle proof to verify
-  /// @param _leaf The leaf to verify
-  function verify(bytes32[] calldata _proof, bytes32 _leaf)
+  /// @param _amount The list of amount to verify
+  function verify(bytes32[] calldata _proof, uint256[] calldata _amount)
     public
     view
     returns (bool, uint256[] memory)
@@ -91,6 +90,7 @@ contract WagumiClaim is Ownable {
     bool isVerified = false;
     uint256[] memory verifiedList;
     for (uint256 i = 0; i < merkleRootList.length - 1; i++) {
+      bytes32 _leaf = keccak256(abi.encodePacked(msg.sender, _amount[i]));
       isVerified = MerkleProof.verify(_proof, merkleRootList[i], _leaf);
       verifiedList[i] = i;
     }
