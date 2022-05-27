@@ -1,3 +1,9 @@
+# [1.26.0](https://github.com/shunkakinoki/contracts/compare/v1.25.1...v1.26.0) (2022-05-27)
+
+### Features
+
+- ini four bytes ([0041e21](https://github.com/shunkakinoki/contracts/commit/0041e213527e94c85329176100940bc6d06dd1c8))
+
 ## [1.25.1](https://github.com/shunkakinoki/contracts/compare/v1.25.0...v1.25.1) (2022-05-26)
 
 ### Performance Improvements
