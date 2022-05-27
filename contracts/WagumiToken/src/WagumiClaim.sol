@@ -5,25 +5,24 @@ pragma solidity ^0.8.13;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import { MerkleProof } from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
-import "@openzeppelin/contracts/security/Pausable.sol";
 
 /// @title Wagumi Token <https://wagumi.xyz>
 /// @author Shun Kakinoki <https://shunkakinoki.com>
-/// @notice A RFC proposal for a token that can be used to govern Wagumi DAO.
-contract WagumiAirdrop is Ownable, Pausable {
+/// @notice A RFC proposal for a continuous claiming contract for Wagumi DAO.
+contract WagumiClaim is Ownable {
   /* -------------------------------------------------------------------------- */
   /*                                   CONFIG                                   */
   /* -------------------------------------------------------------------------- */
   IERC20 public immutable wagumiToken;
-  bytes32 public merkleRoot;
-  mapping(address => bool) public hasClaimed;
+  bytes32[] public merkleRootList;
+  mapping(address => mapping(uint256 => bool)) public hasClaimed;
   uint256 public claimPeriodEnds;
 
   /* -------------------------------------------------------------------------- */
   /*                                   EVENTS                                   */
   /* -------------------------------------------------------------------------- */
   /// @notice A claim has been made to the address of a specified amount
-  event Claim(address indexed to, uint256 amount);
+  event Claim(address indexed to, uint256[] index, uint256 totalAmount);
 
   /* -------------------------------------------------------------------------- */
   /*                                   ERROR                                    */
@@ -36,24 +35,20 @@ contract WagumiAirdrop is Ownable, Pausable {
   error ClaimEnded();
 
   /* -------------------------------------------------------------------------- */
+  /*                                   ADMIN                                    */
+  /* -------------------------------------------------------------------------- */
+
+  /// @notice Add a new merkle root to the list of merkle roots
+  /// @param _root The merkle root to add
+  function setMerkleRoot(bytes32 _root) external onlyOwner {
+    merkleRootList.push(_root);
+  }
+
+  /* -------------------------------------------------------------------------- */
   /*                                 CONSTRUCTOR                                */
   /* -------------------------------------------------------------------------- */
   constructor(address _wagumiToken) {
     wagumiToken = IERC20(_wagumiToken);
-  }
-
-  /* -------------------------------------------------------------------------- */
-  /*                                   ADMIN                                    */
-  /* -------------------------------------------------------------------------- */
-
-  /// @notice Allows owner to pause state
-  function pause() external onlyOwner {
-    _pause();
-  }
-
-  /// @notice Allows owner to unpause state
-  function unpause() external onlyOwner {
-    _unpause();
   }
 
   /* -------------------------------------------------------------------------- */
@@ -66,36 +61,23 @@ contract WagumiAirdrop is Ownable, Pausable {
   /// @param _proof The merkle proof of the claim
   function claim(
     address _to,
-    uint256 _amount,
+    uint256[] calldata _amount,
     bytes32[] calldata _proof
-  ) external whenNotPaused {
-    /// Revert if already claimed
-    if (!isClaimed(_to)) {
-      revert AlreadyClaimed();
-    }
-
-    /// Revert if claim period has ended
-    if (block.timestamp > claimPeriodEnds) {
-      revert ClaimEnded();
-    }
-
+  ) external {
     /// Verify Merkle proof, or revert if not in tree
     bytes32 leaf = keccak256(abi.encodePacked(msg.sender, _amount));
-    bool valid = verify(_proof, leaf);
+    (bool valid, uint256[] memory index) = verify(_proof, leaf);
     if (!valid) {
       revert InvalidProof();
     }
 
-    /// Send tokens to address with specified amount
-    hasClaimed[_to] = true;
-    wagumiToken.transfer(_to, _amount);
-    emit Claim(_to, _amount);
-  }
-
-  /// @notice Get whether a given address has already claimed tokens
-  /// @param _to The address to check
-  function isClaimed(address _to) public view returns (bool) {
-    return hasClaimed[_to];
+    uint256 totalAmount;
+    for (uint256 i = 0; i < index.length - 1; i++) {
+      hasClaimed[_to][i] = true;
+      totalAmount += _amount[i];
+    }
+    wagumiToken.transfer(_to, totalAmount);
+    emit Claim(_to, index, totalAmount);
   }
 
   /// @notice Verify a merkle proof of a claim
@@ -104,8 +86,24 @@ contract WagumiAirdrop is Ownable, Pausable {
   function verify(bytes32[] calldata _proof, bytes32 _leaf)
     public
     view
-    returns (bool)
+    returns (bool, uint256[] memory)
   {
-    return MerkleProof.verify(_proof, merkleRoot, _leaf);
+    bool isVerified = false;
+    uint256[] memory verifiedList;
+    for (uint256 i = 0; i < merkleRootList.length - 1; i++) {
+      isVerified = MerkleProof.verify(_proof, merkleRootList[i], _leaf);
+      verifiedList[i] = i;
+    }
+    return (isVerified, verifiedList);
+  }
+
+  function removeMerkleRootList(uint256 index) external onlyOwner {
+    if (index >= merkleRootList.length) return;
+
+    for (uint256 i = index; i < merkleRootList.length - 1; i++) {
+      merkleRootList[i] = merkleRootList[i + 1];
+    }
+
+    merkleRootList.pop();
   }
 }
