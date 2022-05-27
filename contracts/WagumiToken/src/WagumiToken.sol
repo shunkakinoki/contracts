@@ -16,7 +16,6 @@ contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   uint8 MAX_MINTABLE_PERCENTAGE = 10;
   uint256 public immutable MIN_MINTABLE_PERIOD = 60 * 60 * 24 * 30;
   uint256 public lastMinted;
-  /* --------------------------------- ****** --------------------------------- */
 
   /* -------------------------------------------------------------------------- */
   /*                                   EVENTS                                   */
@@ -26,7 +25,6 @@ contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   /// @notice Thrown if maximum mintable percentage is exceeded
   error MaxMintableExceeded();
 
-  /* --------------------------------- ****** --------------------------------- */
   /* -------------------------------------------------------------------------- */
   /*                                CONSTRUCTOR                                 */
   /* -------------------------------------------------------------------------- */
