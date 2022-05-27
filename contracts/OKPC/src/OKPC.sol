@@ -210,7 +210,7 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
   /// @notice Requires the current total OKPC supply to be less than the max supply for the current phase.
   modifier onlyIfSupplyMintable() {
     if (
-      _currentIndex >
+      _nextTokenId() - 1 >
       ARTISTS_RESERVED + TEAM_RESERVED + (uint256(mintingPhase) * MAX_PER_PHASE)
     ) revert MintMaxReached();
     _;
@@ -380,9 +380,9 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
     onlyAfterMinimumGalleryArtUploaded
     nonReentrant
   {
-    if (_currentIndex > ARTISTS_RESERVED) revert MintMaxReached();
+    if (_nextTokenId() - 1 > ARTISTS_RESERVED) revert MintMaxReached();
     for (uint16 i; i < 64; i++) {
-      _collectIncludedGalleryArt(_currentIndex);
+      _collectIncludedGalleryArt(_nextTokenId() - 1);
       _safeMint(addr[i], 1);
     }
   }
@@ -395,11 +395,11 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
     onlyAfterMinimumGalleryArtUploaded
     nonReentrant
   {
-    if (_currentIndex < ARTISTS_RESERVED) revert MintPhaseNotOpen();
-    if (_currentIndex > ARTISTS_RESERVED + TEAM_RESERVED)
+    if (_nextTokenId() - 1 < ARTISTS_RESERVED) revert MintPhaseNotOpen();
+    if (_nextTokenId() - 1 > ARTISTS_RESERVED + TEAM_RESERVED)
       revert MintMaxReached();
     for (uint16 i; i < 64; i++) {
-      _collectIncludedGalleryArt(_currentIndex);
+      _collectIncludedGalleryArt(_nextTokenId() - 1);
       _safeMint(addr[i % 4], 1);
     }
   }
@@ -412,7 +412,7 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
     onlyAfterMinimumGalleryArtUploaded
     onlyIfMintingPhaseIsSetTo(Phase.INIT)
   {
-    if (_currentIndex <= 512) revert MintPhaseNotOpen();
+    if (_nextTokenId() - 1 <= 512) revert MintPhaseNotOpen();
     mintingPhase = Phase.EARLY_BIRDS;
     emit MintingPhaseStarted(mintingPhase);
   }
@@ -431,11 +431,11 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
   {
     earlyBirdsMintClaimed[msg.sender] = true;
 
-    _collectIncludedGalleryArt(_currentIndex);
+    _collectIncludedGalleryArt(_nextTokenId() - 1);
 
     addToOwnerBalance(MINT_COST - ART_COLLECT_COST);
     addToArtistBalance(
-      getGalleryArt(_includedGalleryArtForOKPC(_currentIndex)).artist,
+      getGalleryArt(_includedGalleryArtForOKPC(_nextTokenId() - 1)).artist,
       ART_COLLECT_COST
     );
 
@@ -467,11 +467,11 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
   {
     friendsMintClaimed[msg.sender] = true;
 
-    _collectIncludedGalleryArt(_currentIndex);
+    _collectIncludedGalleryArt(_nextTokenId() - 1);
 
     addToOwnerBalance(MINT_COST - ART_COLLECT_COST);
     addToArtistBalance(
-      getGalleryArt(_includedGalleryArtForOKPC(_currentIndex)).artist,
+      getGalleryArt(_includedGalleryArtForOKPC(_nextTokenId() - 1)).artist,
       ART_COLLECT_COST
     );
 
@@ -506,9 +506,10 @@ contract OKPC is IOKPC, ERC721A, IERC2981, Ownable, ReentrancyGuard {
     addToOwnerBalance(amount * (MINT_COST - ART_COLLECT_COST));
 
     for (uint256 i; i < amount; i++) {
-      _collectIncludedGalleryArt(_currentIndex + i);
+      _collectIncludedGalleryArt(_nextTokenId() - 1 + i);
       addToArtistBalance(
-        getGalleryArt(_includedGalleryArtForOKPC(_currentIndex + i)).artist,
+        getGalleryArt(_includedGalleryArtForOKPC(_nextTokenId() - 1 + i))
+          .artist,
         ART_COLLECT_COST
       );
     }

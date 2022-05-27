@@ -24,6 +24,7 @@ contract Create2Test is Test {
     console.log(deployedAddress);
     console.log(address(deployedAddress).balance);
     console.logBytes(deployedBytecode);
+
     assertEq(
       deployedAddress,
       address(0x4cBC64D399F793221529607d2Ca4e562CCf0594f)
