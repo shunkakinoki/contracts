@@ -27,7 +27,7 @@ contract Create2Test is Test {
 
     assertEq(
       deployedAddress,
-      address(0x4cBC64D399F793221529607d2Ca4e562CCf0594f)
+      address(0x59bb48Da172A82a9bc4950Cb2C4ec6E38F97A370)
     );
   }
 }
