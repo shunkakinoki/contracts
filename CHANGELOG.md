@@ -1,3 +1,9 @@
+## [1.27.1](https://github.com/shunkakinoki/contracts/compare/v1.27.0...v1.27.1) (2022-05-28)
+
+### Performance Improvements
+
+- ini initial percentage ([643b9a6](https://github.com/shunkakinoki/contracts/commit/643b9a67020bdccbf9e30f4c52c1f89b2d11c506))
+
 # [1.27.0](https://github.com/shunkakinoki/contracts/compare/v1.26.0...v1.27.0) (2022-05-27)
 
 ### Features
