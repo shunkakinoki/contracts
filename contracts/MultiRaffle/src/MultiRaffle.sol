@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: AGPL-3.0-only
+// Code from: https://github.com/Anish-Agnihotri/MultiRaffle/blob/master/src/MultiRaffle.sol
 
 pragma solidity ^0.8.13;
 
