@@ -3,6 +3,7 @@
 pragma solidity ^0.8.13;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import { MerkleProof } from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
@@ -18,6 +19,9 @@ contract WagumiAirdrop is Ownable, Pausable {
   bytes32 public merkleRoot;
   mapping(address => bool) public hasClaimed;
   uint256 public claimPeriodEnds;
+  address public constant wagumiCatsNFT =
+    0x6144D927EE371de7e7f8221b596F3432E7A8e6D9;
+  uint256 public constant wagumiCatsHolderBonus = 1000e18;
 
   /* -------------------------------------------------------------------------- */
   /*                                   EVENTS                                   */
@@ -64,10 +68,12 @@ contract WagumiAirdrop is Ownable, Pausable {
   /// @param _to The address to send the minted tokens to
   /// @param _amount The amount of tokens to claim
   /// @param _proof The merkle proof of the claim
+  /// @param _tokenId The tokenId of wagumi cats
   function claim(
     address _to,
     uint256 _amount,
-    bytes32[] calldata _proof
+    bytes32[] calldata _proof,
+    uint256 _tokenId
   ) external whenNotPaused {
     /// Revert if already claimed
     if (!isClaimed(_to)) {
@@ -88,6 +94,13 @@ contract WagumiAirdrop is Ownable, Pausable {
 
     /// Send tokens to address with specified amount
     hasClaimed[_to] = true;
+
+    /// Send additional tokens if owner has wagumi cats
+    if (IERC721(wagumiCatsNFT).ownerOf(_tokenId) == msg.sender) {
+      wagumiToken.transfer(_to, _amount + wagumiCatsHolderBonus);
+      return;
+    }
+
     wagumiToken.transfer(_to, _amount);
     emit Claim(_to, _amount);
   }

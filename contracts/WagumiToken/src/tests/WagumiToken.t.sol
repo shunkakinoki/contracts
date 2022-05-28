@@ -3,6 +3,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import { WagumiToken } from "../WagumiToken.sol";
 
 contract WagumiTokenTest is Test {
