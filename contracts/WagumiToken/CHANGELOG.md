@@ -1,3 +1,9 @@
+## @shunkakinoki/wagumitoken [1.1.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/wagumitoken@1.1.0...@shunkakinoki/wagumitoken@1.1.1) (2022-05-28)
+
+### Performance Improvements
+
+- ini initial percentage ([643b9a6](https://github.com/shunkakinoki/contracts/commit/643b9a67020bdccbf9e30f4c52c1f89b2d11c506))
+
 # @shunkakinoki/wagumitoken [1.1.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/wagumitoken@1.0.1...@shunkakinoki/wagumitoken@1.1.0) (2022-05-27)
 
 ### Features
