@@ -29,6 +29,7 @@ contract WagumiToken is ERC20, ERC20Burnable, Ownable {
   /*                                CONSTRUCTOR                                 */
   /* -------------------------------------------------------------------------- */
   constructor() ERC20("Wagumi DAO", "WAGUMI") {
+    lastMinted = block.timestamp;
     _mint(_msgSender(), 10_000_000 * 1e18);
   }
 
