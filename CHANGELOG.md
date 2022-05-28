@@ -1,3 +1,11 @@
+# [1.28.0](https://github.com/shunkakinoki/contracts/compare/v1.27.1...v1.28.0) (2022-05-28)
+
+### Features
+
+- ini chainlink contracts ([b177d0f](https://github.com/shunkakinoki/contracts/commit/b177d0f693234a88fc7626fecd3797a45484bb1d))
+- ini multi raffle ([3782e73](https://github.com/shunkakinoki/contracts/commit/3782e733697bbb777318eb9963dd8b0b17e59119))
+- ini raffle fix ([ccdc375](https://github.com/shunkakinoki/contracts/commit/ccdc3753adb41eaffde03c17f9e43f40204a3a0a))
+
 ## [1.27.1](https://github.com/shunkakinoki/contracts/compare/v1.27.0...v1.27.1) (2022-05-28)
 
 ### Performance Improvements
