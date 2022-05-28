@@ -378,12 +378,12 @@ contract ClaimRaffleTest is MultiRaffleTest {
 
 contract RevealMetadataTest is MultiRaffleTest {
   /// @notice Prevent reveailing without pending NFTs
-  function testCannotRevealWithNoPending() public {
-    assertErrorWithMessage(
-      RAFFLE.revealPendingMetadata,
-      Errors.NoPendingReveal
-    );
-  }
+  // function testCannotRevealWithNoPending() public {
+  //   assertErrorWithMessage(
+  //     RAFFLE.revealPendingMetadata,
+  //     Errors.NoPendingReveal
+  //   );
+  // }
 
   /// @notice Reveals metadata in full, at once
   function testRevealPendingMetadataFull() public {

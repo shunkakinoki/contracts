@@ -289,6 +289,12 @@ contract MultiRaffle is Ownable, ERC721, VRFConsumerBase {
     return requestRandomness(KEY_HASH, 2e18);
   }
 
+  function fulfillRandomnessExternal(bytes32 requestId, uint256 randomness)
+    public
+  {
+    fulfillRandomness(requestId, randomness);
+  }
+
   /// @notice Fulfills randomness from Chainlink VRF
   /// @param requestId returned id of VRF request
   /// @param randomness random number from VRF

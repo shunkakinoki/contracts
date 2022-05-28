@@ -86,7 +86,7 @@ contract MultiRaffleUser is ERC721Holder {
   /// @notice Allows overriding Chainlink VRF callback to set randomness
   /// @param randomness to update
   function devSetRandomness(uint256 randomness) public {
-    RAFFLE.fulfillRandomness(bytes32("override"), randomness);
+    RAFFLE.fulfillRandomnessExternal(bytes32("a"), randomness);
   }
 
   /// @notice Allows receiving ETH
