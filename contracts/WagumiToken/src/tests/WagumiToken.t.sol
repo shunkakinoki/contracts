@@ -21,6 +21,7 @@ contract WagumiTokenTest is Test {
   }
 
   function testOwnerCanMint() public {
+    vm.warp(1641070800);
     vm.prank(deployer);
     token.mint(address(2), 3);
     vm.stopPrank();
@@ -34,30 +35,35 @@ contract WagumiTokenTest is Test {
   }
 
   function testOwnerCanMintALot() public {
+    vm.warp(1641070800);
     vm.prank(deployer);
     token.mint(address(2), 300_000_000);
     vm.stopPrank();
   }
 
   function testOwnerCanMintMaximum() public {
+    vm.warp(1641070800);
     vm.prank(deployer);
     token.mint(address(2), 1_000_000 * 1e18);
     vm.stopPrank();
   }
 
   function testOwnerCanMintMaximumGeneric() public {
+    vm.warp(1641070800);
     uint256 minting = (token.getMaxPercentage() * token.totalSupply()) / 100;
     vm.prank(deployer);
     token.mint(address(2), minting);
   }
 
   function testOwnerCannotMintMoreThanMaximum() public {
+    vm.warp(1641070800);
     vm.prank(deployer);
     vm.expectRevert(abi.encodeWithSignature("MaxMintableExceeded()"));
     token.mint(address(2), 10_000_000_000_000 * 1e18);
   }
 
   function testOwnerCannotMintMoreThanMaximumGeneric() public {
+    vm.warp(1641070800);
     uint256 minting = ((token.getMaxPercentage() * token.totalSupply()) / 100) +
       1;
     vm.prank(deployer);
@@ -73,6 +79,7 @@ contract WagumiTokenTest is Test {
   }
 
   function testOwnerCanMintOverInitialPercentage() public {
+    vm.warp(1641070800);
     vm.prank(deployer);
     token.setPercentage(90);
     vm.prank(deployer);
