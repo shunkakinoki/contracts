@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// Code from: https://github.com/johncpalmer/LevelNFT
 
 pragma solidity ^0.8.13;
 
