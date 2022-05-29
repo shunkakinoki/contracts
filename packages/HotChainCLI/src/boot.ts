@@ -14,8 +14,6 @@ export const boot = async () => {
   });
 
   const vm = new VM();
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-expect-error
   await vm.stateManager.putAccount(accountAddress, account);
 
   return { vm, pk };

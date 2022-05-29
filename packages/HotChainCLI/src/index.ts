@@ -17,8 +17,12 @@ async function main() {
     const address = await deploy(vm, pk, bytecode);
     if (!input) {
       return await call(vm, address, abi, "example");
+    } else if (input === "favicon.ico") {
+      return;
     } else {
-      return await call(vm, address, abi, "render", [input]);
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      //@ts-ignore
+      return await call(vm, address, abi, "render", input.split("/"));
     }
   }
 
