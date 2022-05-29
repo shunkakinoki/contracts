@@ -35,19 +35,19 @@ contract TsujiPoker is Renderer {
 
   constructor() payable {
     // shugo.eth
-    rankOf[shugo] = 0;
+    rankOf[shugo] = 1;
     // tomona.eth
-    rankOf[address(0x2aF8DDAb77A7c90a38CF26F29763365D0028cfEf)] = 0;
+    rankOf[address(0x2aF8DDAb77A7c90a38CF26F29763365D0028cfEf)] = 2;
     // kaki.eth
-    rankOf[address(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)] = 0;
+    rankOf[address(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)] = 3;
     // kohei.eth
-    rankOf[address(0x5D025814b6a21Cd6fcb4112F40f88bC823e6A9ab)] = 0;
+    rankOf[address(0x5D025814b6a21Cd6fcb4112F40f88bC823e6A9ab)] = 4;
     // datz.eth
-    rankOf[address(0x1F80593194F5E71087cAfF5309e85Fe68292CB63)] = 0;
+    rankOf[address(0x1F80593194F5E71087cAfF5309e85Fe68292CB63)] = 5;
     // eisuke.eth
-    rankOf[address(0x7E989e785d0836b509B814a7898356FdeAAAE889)] = 0;
+    rankOf[address(0x7E989e785d0836b509B814a7898356FdeAAAE889)] = 6;
     // thomaskobayashi.eth
-    rankOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = 0;
+    rankOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = 7;
   }
 
   modifier onlyIfTsujiBack() {
