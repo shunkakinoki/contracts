@@ -13,7 +13,6 @@ contract TsujiPoker {
   string public constant name = "Tsuji Poker NFT";
   address public immutable owner = msg.sender;
 
-  mapping(uint256 => string) public tokenURI;
   mapping(uint256 => address) public ownerOf;
   mapping(address => uint256) public balanceOf;
 
@@ -69,17 +68,16 @@ contract TsujiPoker {
 
   function supportsInterface(bytes4 interfaceId) public pure returns (bool) {
     return
-      interfaceId == 0x01ffc9a7 || // ERC165 Interface ID for ERC165
-      interfaceId == 0x80ac58cd || // ERC165 Interface ID for ERC721
-      interfaceId == 0x5b5e139f; // ERC165 Interface ID for ERC721Metadata
+      interfaceId == 0x01ffc9a7 ||
+      interfaceId == 0x80ac58cd ||
+      interfaceId == 0x5b5e139f;
   }
 
-  function mint(address to, string calldata metaURI) public payable {
+  function mint(address to) public payable {
     unchecked {
       balanceOf[to]++;
     }
 
     ownerOf[nextTokenId] = to;
-    tokenURI[nextTokenId] = metaURI;
   }
 }
