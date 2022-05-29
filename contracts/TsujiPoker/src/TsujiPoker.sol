@@ -8,7 +8,6 @@ pragma solidity ^0.8.13;
 /// @notice Soulbount nft code is heavily taken from Miguel's awesome Souminter contracts: https://github.com/m1guelpf/soulminter-contracts
 contract TsujiPoker {
   error PokerBound();
-  error Soulbound();
 
   string public constant symbol = "TSUJI";
   string public constant name = "Tsuji Poker NFT";
@@ -28,19 +27,19 @@ contract TsujiPoker {
   }
 
   function approve(address, uint256) public virtual {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function isApprovedForAll(address, address) public pure {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function getApproved(uint256) public pure {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function setApprovalForAll(address, bool) public virtual {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function transferFrom(
@@ -48,7 +47,7 @@ contract TsujiPoker {
     address,
     uint256
   ) public virtual {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function safeTransferFrom(
@@ -56,7 +55,7 @@ contract TsujiPoker {
     address,
     uint256
   ) public virtual {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function safeTransferFrom(
@@ -65,7 +64,7 @@ contract TsujiPoker {
     uint256,
     bytes calldata
   ) public virtual {
-    revert Soulbound();
+    revert PokerBound();
   }
 
   function supportsInterface(bytes4 interfaceId) public pure returns (bool) {
