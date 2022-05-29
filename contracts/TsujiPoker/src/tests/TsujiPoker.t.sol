@@ -15,6 +15,6 @@ contract TsujiPokerTest is Test {
   function testOwnerIsOne() public {
     vm.prank(address(1));
     poker = new TsujiPoker();
-    // assertEq(poker.owner, address(0));
+    assertEq(poker.owner(), address(1));
   }
 }
