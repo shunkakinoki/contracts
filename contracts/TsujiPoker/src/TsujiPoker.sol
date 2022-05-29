@@ -18,8 +18,6 @@ contract TsujiPoker is Renderer {
 
   string public constant symbol = "TSUJI";
   string public constant name = "Tsuji Poker NFT";
-  address public immutable owner = msg.sender;
-  bool public constant isTsujiBack = false;
   uint256 public immutable quorum = 5;
 
   mapping(uint256 => address) public ownerOf;
@@ -27,9 +25,8 @@ contract TsujiPoker is Renderer {
   mapping(address => uint256) public rankOf;
 
   // shugo.eth
-  address payable public immutable shugo =
+  address payable internal immutable shugo =
     payable(address(0xE95330D7CDcd37bf0Ad875C29e2a2871FeFa3De8));
-
   uint256 internal nextTokenId = 1;
   uint256 internal tsujiBackVote = 0;
 
@@ -48,10 +45,12 @@ contract TsujiPoker is Renderer {
     rankOf[address(0x7E989e785d0836b509B814a7898356FdeAAAE889)] = 6;
     // thomaskobayashi.eth
     rankOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = 7;
+    // inakazu
+    rankOf[address(0x5dC79C9fB20B6A81588a32589cb8Ae8f4983DfBc)] = 8;
   }
 
   modifier onlyIfTsujiBack() {
-    if (owner != msg.sender) revert TsujiNotBack();
+    if (tsujiBackVote >= quorum) revert TsujiNotBack();
     _;
   }
 
@@ -108,17 +107,17 @@ contract TsujiPoker is Renderer {
       interfaceId == 0x5b5e139f;
   }
 
-  function mint(address to, uint256 rank) public payable onlyIfPlayer {
-    if (msg.value <= 0.01 ether) revert NotEnoughEth();
-    if (voterOf[to] == false) revert PokerBound();
+  function mint() public payable onlyIfPlayer {
+    if (msg.value < 0.01 ether) revert NotEnoughEth();
+    // Revert if the token ID is already in use
+    if (voterOf[msg.sender] == true) revert PokerBound();
 
     unchecked {
-      voterOf[to] = false;
+      voterOf[msg.sender] = false;
     }
 
-    ownerOf[nextTokenId] = to;
-    rankOf[to] = rank;
-    emit Transfer(address(0), to, nextTokenId++);
+    ownerOf[nextTokenId] = msg.sender;
+    emit Transfer(address(0), msg.sender, nextTokenId++);
   }
 
   function tokenURI(uint256 tokenId) public view returns (string memory) {
@@ -154,8 +153,6 @@ contract TsujiPoker is Renderer {
   }
 
   function withdraw() public onlyIfTsujiBack {
-    if (tsujiBackVote >= quorum) revert TsujiNotBack();
-
     shugo.transfer(address(this).balance);
   }
 }
