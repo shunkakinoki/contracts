@@ -3,19 +3,18 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
+import { TsujiPoker } from "../TsujiPoker.sol";
 
 contract TsujiPokerTest is Test {
-  uint256 testNumber;
+  TsujiPoker poker;
 
   function setUp() public {
-    testNumber = 42;
+    poker = new TsujiPoker();
   }
 
-  function testNumberIs42() public {
-    assertEq(testNumber, 42);
-  }
-
-  function testFailSubtract43() public {
-    testNumber -= 43;
+  function testOwnerIsOne() public {
+    vm.prank(address(1));
+    poker = new TsujiPoker();
+    // assertEq(poker.owner, address(0));
   }
 }
