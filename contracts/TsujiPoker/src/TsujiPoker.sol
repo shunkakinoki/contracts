@@ -20,6 +20,7 @@ contract TsujiPoker is Renderer {
   string public constant name = "Tsuji Poker NFT";
   address public immutable owner = msg.sender;
   bool public constant isTsujiBack = false;
+  uint256 public immutable quorum = 5;
 
   mapping(uint256 => address) public ownerOf;
   mapping(address => bool) public voterOf;
@@ -153,7 +154,7 @@ contract TsujiPoker is Renderer {
   }
 
   function withdraw() public onlyIfTsujiBack {
-    if (tsujiBackVote >= 5) revert TsujiNotBack();
+    if (tsujiBackVote >= quorum) revert TsujiNotBack();
 
     shugo.transfer(address(this).balance);
   }
