@@ -1,3 +1,9 @@
+## @shunkakinoki/lightorbrenderer [1.0.2](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/lightorbrenderer@1.0.1...@shunkakinoki/lightorbrenderer@1.0.2) (2022-05-30)
+
+### Dependencies
+
+- **@shunkakinoki/hotchaincli:** upgraded to 1.4.0
+
 ## @shunkakinoki/lightorbrenderer [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/lightorbrenderer@1.0.0...@shunkakinoki/lightorbrenderer@1.0.1) (2022-05-16)
 
 ### Performance Improvements
