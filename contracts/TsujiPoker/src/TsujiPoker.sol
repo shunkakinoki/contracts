@@ -20,11 +20,15 @@ contract TsujiPoker is Renderer {
   string public constant name = "Tsuji Poker NFT";
   uint256 public immutable quorum = 5;
 
-  mapping(address => uint256) public rankOf;
+  struct player {
+    uint256 rank;
+    string name;
+    bool voted;
+  }
 
+  mapping(address => player) public playerOf;
   mapping(uint256 => address) public ownerOf;
   mapping(address => uint256) public balanceOf;
-  mapping(address => bool) public voterClaimOf;
 
   // shugo.eth
   address payable internal immutable shugo =
@@ -34,25 +38,61 @@ contract TsujiPoker is Renderer {
 
   constructor() payable {
     // shugo.eth
-    rankOf[shugo] = 1;
+    playerOf[shugo] = player(1, "shugo", false);
     // tomona.eth
-    rankOf[address(0x2aF8DDAb77A7c90a38CF26F29763365D0028cfEf)] = 2;
+    playerOf[address(0x2aF8DDAb77A7c90a38CF26F29763365D0028cfEf)] = player(
+      2,
+      "mona",
+      false
+    );
     // kaki.eth
-    rankOf[address(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)] = 3;
+    playerOf[address(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)] = player(
+      3,
+      "kaki",
+      false
+    );
     // kohei.eth
-    rankOf[address(0x5D025814b6a21Cd6fcb4112F40f88bC823e6A9ab)] = 4;
+    playerOf[address(0x5D025814b6a21Cd6fcb4112F40f88bC823e6A9ab)] = player(
+      4,
+      "kohei",
+      false
+    );
     // datz.eth
-    rankOf[address(0x1F80593194F5E71087cAfF5309e85Fe68292CB63)] = 5;
+    playerOf[address(0x1F80593194F5E71087cAfF5309e85Fe68292CB63)] = player(
+      5,
+      "datz",
+      false
+    );
     // eisuke.eth
-    rankOf[address(0x7E989e785d0836b509B814a7898356FdeAAAE889)] = 6;
+    playerOf[address(0x7E989e785d0836b509B814a7898356FdeAAAE889)] = player(
+      6,
+      "eisuke",
+      false
+    );
     // thomaskobayashi.eth
-    rankOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = 7;
+    playerOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = player(
+      7,
+      "thomaskobayashi",
+      false
+    );
     // inakazu
-    rankOf[address(0x5dC79C9fB20B6A81588a32589cb8Ae8f4983DfBc)] = 8;
+    playerOf[address(0x5dC79C9fB20B6A81588a32589cb8Ae8f4983DfBc)] = player(
+      8,
+      "inakazu",
+      false
+    );
     // futa
-    rankOf[address(0xe7236c912945C8B915c7C60b55e330b959801B45)] = 9;
+    playerOf[address(0xe7236c912945C8B915c7C60b55e330b959801B45)] = player(
+      9,
+      "futa",
+      false
+    );
     // oliver
-    rankOf[address(0x70B122116b50178D881e74Ec97b89c67E90b4A7c)] = 10;
+    playerOf[address(0x70B122116b50178D881e74Ec97b89c67E90b4A7c)] = player(
+      10,
+      "oliver",
+      false
+    );
   }
 
   modifier onlyIfTsujiBack() {
@@ -61,7 +101,7 @@ contract TsujiPoker is Renderer {
   }
 
   modifier onlyIfPlayer() {
-    if (rankOf[msg.sender] == 0) revert PokerBound();
+    if (playerOf[msg.sender].rank == 0) revert PokerBound();
     _;
   }
 
@@ -119,7 +159,6 @@ contract TsujiPoker is Renderer {
 
     unchecked {
       balanceOf[msg.sender]++;
-      voterClaimOf[msg.sender] = true;
     }
 
     ownerOf[nextTokenId] = msg.sender;
@@ -137,7 +176,9 @@ contract TsujiPoker is Renderer {
                 '{"name":"Tsuji Poker",',
                 '"image":"data:image/svg+xml;base64,',
                 Base64.encode(
-                  bytes(render(ownerOf[tokenId], rankOf[ownerOf[tokenId]]))
+                  bytes(
+                    render(ownerOf[tokenId], playerOf[ownerOf[tokenId]].rank)
+                  )
                 ),
                 '", "description": "Tsuji Poker Night in San Francisco on 2022/05/29"}'
               )
@@ -147,12 +188,20 @@ contract TsujiPoker is Renderer {
       );
   }
 
+  function rankOf(address _to) public view returns (uint256) {
+    return playerOf[_to].rank;
+  }
+
+  function voterClaimOf(address _to) public view returns (bool) {
+    return playerOf[_to].voted;
+  }
+
   function vote() public onlyIfPlayer {
     if (balanceOf[msg.sender] == 0) revert PokerBound();
-    if (voterClaimOf[msg.sender] == false) revert PokerBound();
+    if (playerOf[msg.sender].voted == true) revert PokerBound();
 
     unchecked {
-      voterClaimOf[msg.sender] = false;
+      playerOf[msg.sender].voted = true;
       tsujiBackVote++;
     }
   }
