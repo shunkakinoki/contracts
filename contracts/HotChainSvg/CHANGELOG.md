@@ -1,3 +1,9 @@
+## @shunkakinoki/hotchainsvg [1.1.4](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchainsvg@1.1.3...@shunkakinoki/hotchainsvg@1.1.4) (2022-05-30)
+
+### Dependencies
+
+- **@shunkakinoki/hotchaincli:** upgraded to 1.4.0
+
 ## @shunkakinoki/hotchainsvg [1.1.3](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchainsvg@1.1.2...@shunkakinoki/hotchainsvg@1.1.3) (2022-05-14)
 
 ### Dependencies
