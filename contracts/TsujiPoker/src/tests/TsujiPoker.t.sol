@@ -344,4 +344,26 @@ contract TsujiPokerTest is Test {
     poker.withdraw();
     assertEq(shugo.balance, 1.07 ether);
   }
+
+  function testShugoTokenMetadata() public {
+    vm.deal(shugo, 1 ether);
+    vm.prank(shugo);
+    poker.mint{ value: 0.01 ether }();
+    assertEq(poker.ownerOf(1), shugo);
+    assertEq(
+      poker.tokenURI(1),
+      "data:application/json;base64,eyJuYW1lIjoiVHN1amkgUG9rZXIiLCJpbWFnZSI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIQnlaWE5sY25abFFYTndaV04wVW1GMGFXODlJbmhOYVc1WlRXbHVJRzFsWlhRaUlIWnBaWGRDYjNnOUlqQWdNQ0F6TlRBZ016VXdJajQ4YzNSNWJHVStMbUpoYzJVZ2V5Qm1hV3hzT2lCM2FHbDBaVHNnWm05dWRDMW1ZVzFwYkhrNklITmxjbWxtT3lCbWIyNTBMWE5wZW1VNklERTBjSGc3SUgwOEwzTjBlV3hsUGp4eVpXTjBJSGRwWkhSb1BTSXhNREFsSWlCb1pXbG5hSFE5SWpFd01DVWlJR1pwYkd3OUltSnNZV05ySWlBdlBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeU1DSWdZMnhoYzNNOUltSmhjMlVpUGxSemRXcHBJRkJ2YTJWeUlFNXBaMmgwUEM5MFpYaDBQangwWlhoMElIZzlJakV3SWlCNVBTSTBNQ0lnWTJ4aGMzTTlJbUpoYzJVaVBsQnNZWGxsY2pvOEwzUmxlSFErUEhSbGVIUWdlRDBpTVRBaUlIazlJall3SWlCamJHRnpjejBpWW1GelpTSStjMmgxWjI4dVpYUm9QQzkwWlhoMFBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJNE1DSWdZMnhoYzNNOUltSmhjMlVpUGxKaGJtczZQQzkwWlhoMFBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeE1EQWlJR05zWVhOelBTSmlZWE5sSWo0eFBDOTBaWGgwUGp3dmMzWm5QZz09IiwgImRlc2NyaXB0aW9uIjogIlRzdWppIFBva2VyIE5pZ2h0IGluIFNhbiBGcmFuY2lzY28gb24gMjAyMi8wNS8yOSJ9"
+    );
+  }
+
+  function testKoheiTokenMetadata() public {
+    vm.deal(kohei, 1 ether);
+    vm.prank(kohei);
+    poker.mint{ value: 0.01 ether }();
+    assertEq(poker.ownerOf(1), kohei);
+    assertEq(
+      poker.tokenURI(1),
+      "data:application/json;base64,eyJuYW1lIjoiVHN1amkgUG9rZXIiLCJpbWFnZSI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIQnlaWE5sY25abFFYTndaV04wVW1GMGFXODlJbmhOYVc1WlRXbHVJRzFsWlhRaUlIWnBaWGRDYjNnOUlqQWdNQ0F6TlRBZ016VXdJajQ4YzNSNWJHVStMbUpoYzJVZ2V5Qm1hV3hzT2lCM2FHbDBaVHNnWm05dWRDMW1ZVzFwYkhrNklITmxjbWxtT3lCbWIyNTBMWE5wZW1VNklERTBjSGc3SUgwOEwzTjBlV3hsUGp4eVpXTjBJSGRwWkhSb1BTSXhNREFsSWlCb1pXbG5hSFE5SWpFd01DVWlJR1pwYkd3OUltSnNZV05ySWlBdlBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeU1DSWdZMnhoYzNNOUltSmhjMlVpUGxSemRXcHBJRkJ2YTJWeUlFNXBaMmgwUEM5MFpYaDBQangwWlhoMElIZzlJakV3SWlCNVBTSTBNQ0lnWTJ4aGMzTTlJbUpoYzJVaVBsQnNZWGxsY2pvOEwzUmxlSFErUEhSbGVIUWdlRDBpTVRBaUlIazlJall3SWlCamJHRnpjejBpWW1GelpTSSthMjlvWldrdVpYUm9QQzkwWlhoMFBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJNE1DSWdZMnhoYzNNOUltSmhjMlVpUGxKaGJtczZQQzkwWlhoMFBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeE1EQWlJR05zWVhOelBTSmlZWE5sSWo0MFBDOTBaWGgwUGp3dmMzWm5QZz09IiwgImRlc2NyaXB0aW9uIjogIlRzdWppIFBva2VyIE5pZ2h0IGluIFNhbiBGcmFuY2lzY28gb24gMjAyMi8wNS8yOSJ9"
+    );
+  }
 }
