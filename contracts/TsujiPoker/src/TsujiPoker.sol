@@ -147,9 +147,8 @@ contract TsujiPoker is Renderer {
     if (balanceOf[msg.sender] == 0) revert PokerBound();
     if (voterClaimOf[msg.sender] == false) revert PokerBound();
 
-    voterClaimOf[msg.sender] = false;
-
     unchecked {
+      voterClaimOf[msg.sender] = false;
       tsujiBackVote++;
     }
   }
