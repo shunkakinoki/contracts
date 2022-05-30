@@ -1,3 +1,9 @@
+# @shunkakinoki/hotchaincli [1.4.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.3.0...@shunkakinoki/hotchaincli@1.4.0) (2022-05-30)
+
+### Features
+
+- ini level nft ([bce53bb](https://github.com/shunkakinoki/contracts/commit/bce53bba1bb6a69a2c33fbbf1fdecc2fa29c78be))
+
 # @shunkakinoki/hotchaincli [1.3.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/hotchaincli@1.2.1...@shunkakinoki/hotchaincli@1.3.0) (2022-05-14)
 
 ### Features
