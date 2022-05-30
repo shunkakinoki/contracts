@@ -165,4 +165,32 @@ contract TsujiPokerTest is Test {
     vm.expectRevert(TsujiPoker.PokerBound.selector);
     poker.mint{ value: 0.01 ether }();
   }
+
+  function testOtherCannotWithdraw() public {
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+
+    vm.prank(address(2));
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    poker.withdraw();
+  }
+
+  function testKakiCannoutWithdraw() public {
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+
+    vm.prank(kaki);
+    vm.expectRevert(TsujiPoker.TsujiNotBack.selector);
+    poker.withdraw();
+  }
+
+  function testKakiCannotMintMultiple() public {
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+  }
 }

@@ -50,7 +50,7 @@ contract TsujiPoker is Renderer {
   }
 
   modifier onlyIfTsujiBack() {
-    if (tsujiBackVote >= quorum) revert TsujiNotBack();
+    if (tsujiBackVote < quorum) revert TsujiNotBack();
     _;
   }
 
@@ -152,7 +152,7 @@ contract TsujiPoker is Renderer {
     }
   }
 
-  function withdraw() public onlyIfTsujiBack {
+  function withdraw() public onlyIfPlayer onlyIfTsujiBack {
     shugo.transfer(address(this).balance);
   }
 }
