@@ -23,6 +23,7 @@ contract TsujiPoker is Renderer {
   mapping(uint256 => address) public ownerOf;
   mapping(address => bool) public voterOf;
   mapping(address => uint256) public rankOf;
+  mapping(address => uint256) public balanceOf;
 
   // shugo.eth
   address payable internal immutable shugo =
@@ -113,6 +114,7 @@ contract TsujiPoker is Renderer {
     if (voterOf[msg.sender] == true) revert PokerBound();
 
     unchecked {
+      balanceOf[msg.sender]++;
       voterOf[msg.sender] = false;
     }
 
@@ -133,10 +135,7 @@ contract TsujiPoker is Renderer {
                 Base64.encode(
                   bytes(render(ownerOf[tokenId], rankOf[ownerOf[tokenId]]))
                 ),
-                '", "description": "Tsuji Poker Night in San Francisco on 2022/05/29",',
-                '"rank": "',
-                rankOf[ownerOf[tokenId]],
-                '"}'
+                '", "description": "Tsuji Poker Night in San Francisco on 2022/05/29"}'
               )
             )
           )

@@ -58,8 +58,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(shugo);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(shugo.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(shugo), 1);
     assertEq(poker.ownerOf(1), shugo);
     assertEq(poker.voterOf(shugo), false);
   }
@@ -70,8 +71,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(tomona);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(tomona.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(tomona), 1);
     assertEq(poker.ownerOf(1), tomona);
     assertEq(poker.voterOf(tomona), false);
   }
@@ -82,8 +84,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(kaki);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(kaki.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(kaki), 1);
     assertEq(poker.ownerOf(1), kaki);
     assertEq(poker.voterOf(kaki), false);
   }
@@ -94,8 +97,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(kohei);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(kohei.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(kohei), 1);
     assertEq(poker.ownerOf(1), kohei);
     assertEq(poker.voterOf(kohei), false);
   }
@@ -106,8 +110,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(datz);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(datz.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(datz), 1);
     assertEq(poker.ownerOf(1), datz);
     assertEq(poker.voterOf(datz), false);
   }
@@ -118,8 +123,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(eisuke);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(eisuke.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(eisuke), 1);
     assertEq(poker.ownerOf(1), eisuke);
     assertEq(poker.voterOf(eisuke), false);
   }
@@ -130,8 +136,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(thomas);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(thomas.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(thomas), 1);
     assertEq(poker.ownerOf(1), thomas);
     assertEq(poker.voterOf(thomas), false);
   }
@@ -142,8 +149,9 @@ contract TsujiPokerTest is Test {
 
     vm.prank(inakazu);
     poker.mint{ value: 0.01 ether }();
-
     assertEq(inakazu.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(inakazu), 1);
     assertEq(poker.ownerOf(1), inakazu);
     assertEq(poker.voterOf(inakazu), false);
   }
@@ -186,11 +194,41 @@ contract TsujiPokerTest is Test {
     poker.withdraw();
   }
 
-  function testKakiCannotMintMultiple() public {
+  function testKakiCanMintMultiple() public {
     vm.deal(kaki, 1 ether);
     vm.prank(kaki);
     poker.mint{ value: 0.01 ether }();
     vm.prank(kaki);
     poker.mint{ value: 0.01 ether }();
+  }
+
+  function testKakiTokenMetadata() public {
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+    assertEq(poker.ownerOf(1), kaki);
+    assertEq(
+      poker.tokenURI(1),
+      "data:application/json;base64,eyJuYW1lIjoiVHN1amkgUG9rZXIiLCJpbWFnZSI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIQnlaWE5sY25abFFYTndaV04wVW1GMGFXODlJbmhOYVc1WlRXbHVJRzFsWlhRaUlIWnBaWGRDYjNnOUlqQWdNQ0F6TlRBZ016VXdJajQ4YzNSNWJHVStMbUpoYzJVZ2V5Qm1hV3hzT2lCM2FHbDBaVHNnWm05dWRDMW1ZVzFwYkhrNklITmxjbWxtT3lCbWIyNTBMWE5wZW1VNklERTBjSGc3SUgwOEwzTjBlV3hsUGp4eVpXTjBJSGRwWkhSb1BTSXhNREFsSWlCb1pXbG5hSFE5SWpFd01DVWlJR1pwYkd3OUltSnNZV05ySWlBdlBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeU1DSWdZMnhoYzNNOUltSmhjMlVpUGxSemRXcHBJRkJ2YTJWeUlFNXBaMmgwUEM5MFpYaDBQangwWlhoMElIZzlJakV3SWlCNVBTSTBNQ0lnWTJ4aGMzTTlJbUpoYzJVaVBsQnNZWGxsY2pvOEwzUmxlSFErUEhSbGVIUWdlRDBpTVRBaUlIazlJall3SWlCamJHRnpjejBpWW1GelpTSStNSGcwWm1RNVpEQmxaVFprTmpVMk5HVTRNR0U1WldVd01HTXdNVFl6Wm1NNU5USmtNR0UwTldWa1BDOTBaWGgwUGp4MFpYaDBJSGc5SWpFd0lpQjVQU0k0TUNJZ1kyeGhjM005SW1KaGMyVWlQbEpoYm1zNlBDOTBaWGgwUGp4MFpYaDBJSGc5SWpFd0lpQjVQU0l4TURBaUlHTnNZWE56UFNKaVlYTmxJajR6UEM5MFpYaDBQand2YzNablBnPT0iLCAiZGVzY3JpcHRpb24iOiAiVHN1amkgUG9rZXIgTmlnaHQgaW4gU2FuIEZyYW5jaXNjbyBvbiAyMDIyLzA1LzI5In0="
+    );
+  }
+
+  function testCannotTransfer() public {
+    vm.deal(shugo, 1 ether);
+    vm.prank(shugo);
+    poker.mint{ value: 0.01 ether }();
+
+    assertEq(poker.ownerOf(1), address(shugo));
+
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    poker.transferFrom(address(shugo), address(this), 1);
+
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    poker.safeTransferFrom(address(shugo), address(this), 1);
+
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    poker.approve(address(this), type(uint256).max);
+
+    assertEq(poker.ownerOf(1), address(shugo));
   }
 }
