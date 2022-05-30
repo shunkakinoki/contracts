@@ -19,6 +19,6 @@
     "fix": "cd ../.. && yarn run fix"
   },
   "dependencies": {
-    "@shunkakinoki/hotchaincli": "1.3.0"
+    "@shunkakinoki/hotchaincli": "1.4.0"
   }
 }
