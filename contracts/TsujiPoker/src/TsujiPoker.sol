@@ -38,41 +38,41 @@ contract TsujiPoker is Renderer {
 
   constructor() payable {
     // shugo.eth
-    playerOf[shugo] = player(1, "shugo", false);
+    playerOf[shugo] = player(1, "shugo.eth", false);
     // tomona.eth
     playerOf[address(0x2aF8DDAb77A7c90a38CF26F29763365D0028cfEf)] = player(
       2,
-      "mona",
+      "mona.eth",
       false
     );
     // kaki.eth
     playerOf[address(0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed)] = player(
       3,
-      "kaki",
+      "kaki.eth",
       false
     );
     // kohei.eth
     playerOf[address(0x5D025814b6a21Cd6fcb4112F40f88bC823e6A9ab)] = player(
       4,
-      "kohei",
+      "kohei.eth",
       false
     );
     // datz.eth
     playerOf[address(0x1F80593194F5E71087cAfF5309e85Fe68292CB63)] = player(
       5,
-      "datz",
+      "datz.eth",
       false
     );
     // eisuke.eth
     playerOf[address(0x7E989e785d0836b509B814a7898356FdeAAAE889)] = player(
       6,
-      "eisuke",
+      "eisuke.eth",
       false
     );
     // thomaskobayashi.eth
     playerOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = player(
       7,
-      "thomaskobayashi",
+      "thomaskobayashi.eth",
       false
     );
     // inakazu
@@ -90,7 +90,7 @@ contract TsujiPoker is Renderer {
     // oliver
     playerOf[address(0x70B122116b50178D881e74Ec97b89c67E90b4A7c)] = player(
       10,
-      "oliver",
+      "oliver-diary.eth",
       false
     );
   }

@@ -20,8 +20,6 @@ contract Renderer is ENSNameResolver {
         _owner,
         '</text><text x="10" y="80" class="base">Rank:</text><text x="10" y="100" class="base">',
         rankString,
-        // '</text><text x="10" y="100" class="base">',
-        // ownerString,
         "</text></svg>"
       );
   }
