@@ -20,10 +20,11 @@ contract TsujiPoker is Renderer {
   string public constant name = "Tsuji Poker NFT";
   uint256 public immutable quorum = 5;
 
-  mapping(uint256 => address) public ownerOf;
-  mapping(address => bool) public voterOf;
   mapping(address => uint256) public rankOf;
+
+  mapping(uint256 => address) public ownerOf;
   mapping(address => uint256) public balanceOf;
+  mapping(address => bool) public voterOf;
 
   // shugo.eth
   address payable internal immutable shugo =
@@ -144,9 +145,11 @@ contract TsujiPoker is Renderer {
   }
 
   function vote() public onlyIfPlayer {
-    voterOf[msg.sender] = true;
+    if (balanceOf[msg.sender] == 0) revert PokerBound();
+    if (voterOf[msg.sender] == true) revert PokerBound();
 
     unchecked {
+      voterOf[msg.sender] == true;
       tsujiBackVote++;
     }
   }

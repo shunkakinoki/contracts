@@ -231,4 +231,31 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.ownerOf(1), address(shugo));
   }
+
+  function testKakiCannoutVoteWithoutNft() public {
+    vm.prank(kaki);
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    poker.vote();
+  }
+
+  function testKakiCannVoteWithNft() public {
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+
+    vm.prank(kaki);
+    poker.vote();
+  }
+
+  function testKakiCanVoteMultiple() public {
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(kaki);
+    poker.vote();
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(kaki);
+    poker.vote();
+  }
 }
