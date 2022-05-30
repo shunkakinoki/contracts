@@ -16,6 +16,8 @@ contract TsujiPokerTest is Test {
   address eisuke = address(0x7E989e785d0836b509B814a7898356FdeAAAE889);
   address thomas = address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71);
   address inakazu = address(0x5dC79C9fB20B6A81588a32589cb8Ae8f4983DfBc);
+  address futa = address(0xe7236c912945C8B915c7C60b55e330b959801B45);
+  address oliver = address(0x70B122116b50178D881e74Ec97b89c67E90b4A7c);
 
   function setUp() public {
     vm.label(shugo, "shugo.eth");
@@ -26,6 +28,8 @@ contract TsujiPokerTest is Test {
     vm.label(eisuke, "eisuke.eth");
     vm.label(thomas, "thomas.eth");
     vm.label(inakazu, "inakazu");
+    vm.label(futa, "futa");
+    vm.label(oliver, "oliver-diary.eth");
     poker = new TsujiPoker();
   }
 
@@ -38,6 +42,8 @@ contract TsujiPokerTest is Test {
     assertEq(poker.rankOf(eisuke), 6);
     assertEq(poker.rankOf(thomas), 7);
     assertEq(poker.rankOf(inakazu), 8);
+    assertEq(poker.rankOf(futa), 9);
+    assertEq(poker.rankOf(oliver), 10);
   }
 
   function testERC721Constants() public {
@@ -154,6 +160,32 @@ contract TsujiPokerTest is Test {
     assertEq(poker.balanceOf(inakazu), 1);
     assertEq(poker.ownerOf(1), inakazu);
     assertEq(poker.voterClaimOf(inakazu), true);
+  }
+
+  function testFutaCanMint() public {
+    vm.deal(futa, 1 ether);
+    assertEq(futa.balance, 1 ether);
+
+    vm.prank(futa);
+    poker.mint{ value: 0.01 ether }();
+    assertEq(futa.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(futa), 1);
+    assertEq(poker.ownerOf(1), futa);
+    assertEq(poker.voterClaimOf(futa), true);
+  }
+
+  function testOliverCanMint() public {
+    vm.deal(oliver, 1 ether);
+    assertEq(oliver.balance, 1 ether);
+
+    vm.prank(oliver);
+    poker.mint{ value: 0.01 ether }();
+    assertEq(oliver.balance, 0.99 ether);
+
+    assertEq(poker.balanceOf(oliver), 1);
+    assertEq(poker.ownerOf(1), oliver);
+    assertEq(poker.voterClaimOf(oliver), true);
   }
 
   function testOtherCannotMint() public {

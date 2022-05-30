@@ -49,6 +49,10 @@ contract TsujiPoker is Renderer {
     rankOf[address(0xD30Fb00c2796cBAD72f6B9C410830Dc4FF05bA71)] = 7;
     // inakazu
     rankOf[address(0x5dC79C9fB20B6A81588a32589cb8Ae8f4983DfBc)] = 8;
+    // futa
+    rankOf[address(0xe7236c912945C8B915c7C60b55e330b959801B45)] = 9;
+    // oliver
+    rankOf[address(0x70B122116b50178D881e74Ec97b89c67E90b4A7c)] = 10;
   }
 
   modifier onlyIfTsujiBack() {
