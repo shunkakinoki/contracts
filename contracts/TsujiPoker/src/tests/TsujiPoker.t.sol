@@ -263,4 +263,53 @@ contract TsujiPokerTest is Test {
     poker.vote();
     assertEq(poker.tsujiBackVote(), 1);
   }
+
+  function testOptimalFlow() public {
+    vm.deal(shugo, 1 ether);
+    vm.prank(shugo);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(shugo);
+    poker.vote();
+
+    vm.deal(tomona, 1 ether);
+    vm.prank(tomona);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(tomona);
+    poker.vote();
+
+    vm.deal(kaki, 1 ether);
+    vm.prank(kaki);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(kaki);
+    poker.vote();
+
+    vm.deal(kohei, 1 ether);
+    vm.prank(kohei);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(kohei);
+    poker.vote();
+
+    vm.deal(datz, 1 ether);
+    vm.prank(datz);
+    poker.mint{ value: 0.01 ether }();
+    vm.prank(datz);
+    poker.vote();
+
+    vm.deal(eisuke, 1 ether);
+    vm.prank(eisuke);
+    poker.mint{ value: 0.01 ether }();
+
+    vm.deal(thomas, 1 ether);
+    vm.prank(thomas);
+    poker.mint{ value: 0.01 ether }();
+
+    vm.deal(inakazu, 1 ether);
+    vm.prank(inakazu);
+    poker.mint{ value: 0.01 ether }();
+
+    assertEq(poker.tsujiBackVote(), 5);
+    vm.prank(kaki);
+    poker.withdraw();
+    assertEq(shugo.balance, 1.07 ether);
+  }
 }
