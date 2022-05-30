@@ -177,7 +177,10 @@ contract TsujiPoker is Renderer {
                 '"image":"data:image/svg+xml;base64,',
                 Base64.encode(
                   bytes(
-                    render(ownerOf[tokenId], playerOf[ownerOf[tokenId]].rank)
+                    render(
+                      playerOf[ownerOf[tokenId]].name,
+                      playerOf[ownerOf[tokenId]].rank
+                    )
                   )
                 ),
                 '", "description": "Tsuji Poker Night in San Francisco on 2022/05/29"}'
