@@ -24,13 +24,13 @@ contract TsujiPoker is Renderer {
 
   mapping(uint256 => address) public ownerOf;
   mapping(address => uint256) public balanceOf;
-  mapping(address => bool) public voterOf;
+  mapping(address => bool) public voterClaimOf;
 
   // shugo.eth
   address payable internal immutable shugo =
     payable(address(0xE95330D7CDcd37bf0Ad875C29e2a2871FeFa3De8));
   uint256 internal nextTokenId = 1;
-  uint256 internal tsujiBackVote = 0;
+  uint256 public tsujiBackVote = 0;
 
   constructor() payable {
     // shugo.eth
@@ -111,12 +111,11 @@ contract TsujiPoker is Renderer {
 
   function mint() public payable onlyIfPlayer {
     if (msg.value < 0.01 ether) revert NotEnoughEth();
-    // Revert if the token ID is already in use
-    if (voterOf[msg.sender] == true) revert PokerBound();
+    if (balanceOf[msg.sender] > 0) revert PokerBound();
 
     unchecked {
       balanceOf[msg.sender]++;
-      voterOf[msg.sender] = false;
+      voterClaimOf[msg.sender] = true;
     }
 
     ownerOf[nextTokenId] = msg.sender;
@@ -146,10 +145,11 @@ contract TsujiPoker is Renderer {
 
   function vote() public onlyIfPlayer {
     if (balanceOf[msg.sender] == 0) revert PokerBound();
-    if (voterOf[msg.sender] == true) revert PokerBound();
+    if (voterClaimOf[msg.sender] == false) revert PokerBound();
+
+    voterClaimOf[msg.sender] = false;
 
     unchecked {
-      voterOf[msg.sender] == true;
       tsujiBackVote++;
     }
   }

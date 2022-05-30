@@ -62,7 +62,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(shugo), 1);
     assertEq(poker.ownerOf(1), shugo);
-    assertEq(poker.voterOf(shugo), false);
+    assertEq(poker.voterClaimOf(shugo), true);
   }
 
   function testTomonaCanMint() public {
@@ -75,7 +75,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(tomona), 1);
     assertEq(poker.ownerOf(1), tomona);
-    assertEq(poker.voterOf(tomona), false);
+    assertEq(poker.voterClaimOf(tomona), true);
   }
 
   function testKakiCanMint() public {
@@ -88,7 +88,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(kaki), 1);
     assertEq(poker.ownerOf(1), kaki);
-    assertEq(poker.voterOf(kaki), false);
+    assertEq(poker.voterClaimOf(kaki), true);
   }
 
   function testKoheiCanMint() public {
@@ -101,7 +101,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(kohei), 1);
     assertEq(poker.ownerOf(1), kohei);
-    assertEq(poker.voterOf(kohei), false);
+    assertEq(poker.voterClaimOf(kohei), true);
   }
 
   function testDatzCanMint() public {
@@ -114,7 +114,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(datz), 1);
     assertEq(poker.ownerOf(1), datz);
-    assertEq(poker.voterOf(datz), false);
+    assertEq(poker.voterClaimOf(datz), true);
   }
 
   function testEisukeCanMint() public {
@@ -127,7 +127,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(eisuke), 1);
     assertEq(poker.ownerOf(1), eisuke);
-    assertEq(poker.voterOf(eisuke), false);
+    assertEq(poker.voterClaimOf(eisuke), true);
   }
 
   function testThomasCanMint() public {
@@ -140,7 +140,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(thomas), 1);
     assertEq(poker.ownerOf(1), thomas);
-    assertEq(poker.voterOf(thomas), false);
+    assertEq(poker.voterClaimOf(thomas), true);
   }
 
   function testInakazuCanMint() public {
@@ -153,7 +153,7 @@ contract TsujiPokerTest is Test {
 
     assertEq(poker.balanceOf(inakazu), 1);
     assertEq(poker.ownerOf(1), inakazu);
-    assertEq(poker.voterOf(inakazu), false);
+    assertEq(poker.voterClaimOf(inakazu), true);
   }
 
   function testOtherCannotMint() public {
@@ -199,6 +199,7 @@ contract TsujiPokerTest is Test {
     vm.prank(kaki);
     poker.mint{ value: 0.01 ether }();
     vm.prank(kaki);
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
     poker.mint{ value: 0.01 ether }();
   }
 
@@ -238,7 +239,7 @@ contract TsujiPokerTest is Test {
     poker.vote();
   }
 
-  function testKakiCannVoteWithNft() public {
+  function testKakiCanVoteWithNft() public {
     vm.deal(kaki, 1 ether);
     vm.prank(kaki);
     poker.mint{ value: 0.01 ether }();
@@ -247,15 +248,19 @@ contract TsujiPokerTest is Test {
     poker.vote();
   }
 
-  function testKakiCanVoteMultiple() public {
+  function testKakiCanNotMintAndVoteMultipleAfterVote() public {
     vm.deal(kaki, 1 ether);
     vm.prank(kaki);
     poker.mint{ value: 0.01 ether }();
     vm.prank(kaki);
     poker.vote();
+    assertEq(poker.tsujiBackVote(), 1);
     vm.prank(kaki);
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
     poker.mint{ value: 0.01 ether }();
     vm.prank(kaki);
+    vm.expectRevert(TsujiPoker.PokerBound.selector);
     poker.vote();
+    assertEq(poker.tsujiBackVote(), 1);
   }
 }
