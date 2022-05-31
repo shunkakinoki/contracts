@@ -1,3 +1,9 @@
+## [1.31.1](https://github.com/shunkakinoki/contracts/compare/v1.31.0...v1.31.1) (2022-05-31)
+
+### Performance Improvements
+
+- remove shields tmp ([f2c9e8e](https://github.com/shunkakinoki/contracts/commit/f2c9e8e2710ea00892bbfd4610408a56fde1818e))
+
 # [1.31.0](https://github.com/shunkakinoki/contracts/compare/v1.30.2...v1.31.0) (2022-05-31)
 
 ### Features
