@@ -1,8 +1,7 @@
 name: Docker
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  release:
+    types: created
   workflow_call:
   workflow_dispatch:
 jobs:
@@ -21,7 +20,7 @@ jobs:
             ghcr.io/shunkakinoki/contracts
           labels: |
             org.opencontainers.image.title=Contracts
-            org.opencontainers.image.description=Shun Kagino's contracts
+            org.opencontainers.image.description=Shun Kakinoki's contracts
             org.opencontainers.image.source=https://github.com/shunkakinoki/contracts
           tags: |
             type=semver,pattern={{version}}
