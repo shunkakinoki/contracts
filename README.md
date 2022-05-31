@@ -10,6 +10,14 @@
 
 </div>
 
+### Abstract
+
+A repository containing of various contracts (from my personal [inspirations](https://github.com/m1guelpf) to [Fundamental Solidity](https://solidity-by-example.org) to [Huff](https://github.com/huff-language/huffc)) with [Forge](https://github.com/foundry-rs/foundry) testing and [Natspec](https://docs.soliditylang.org/en/latest/natspec-format.html) comments.
+
+This repository is specifically for my own learning purposes to understand EVM.
+
+All rights reserved to the individual authors and licensing of the specific packages. I do not at all reserve the rights to the contracts that are not derived from my own work. (specified in the package licensing field and their sources)
+
 ### Contracts
 
 - [ ] [Aave](/contracts/Aave) - [Source](https://github.com/t4sk/defi-by-example) from [ts4k](https://github.com/t4sk)
@@ -55,11 +63,3 @@
 - [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer) - [Source](https://etherscan.io/address/0x3aee59ca9cea21389d167112091ceace86747124#code) from [Watchfaces World](https://www.watchfaces.world/)
 - [ ] [WatchfacesWorld](/contracts/WatchfacesWorld) - [Source](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1#code) from [FredCoen](https://github.com/abdulsamijay)
 - [ ] [ZorbNFT](/contracts/ZorbNFT) - [Source](https://github.com/ourzora/zorb/tree/main/packages/zorb-contracts) from [Zora](https://github.com/ourzora)
-
-### Disclaimer
-
-All rights reserved to the individual authors and licensing of the specific packages.
-
-I do not at all reserve the rights to the contracts that are not derived from my work. (specified in the package licensing field)
-
-This repository is specifically for my own learning purposes to get better at solidity.
