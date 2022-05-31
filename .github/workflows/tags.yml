@@ -2,8 +2,6 @@ on:
   push:
     tags:
       - "v*.*.*"
-  workflow_call:
-  workflow_dispatch:
 jobs:
   tag-docker:
     uses: ./.github/workflows/docker.yml
