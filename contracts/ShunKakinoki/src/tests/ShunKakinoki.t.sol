@@ -14,5 +14,9 @@ contract ShunKakinokiTest is Test {
 
   function testHashShunKakinoki() public {
     assertEq(uint256(keccak256("shunkakinoki")), shunkakinoki.shunkakinoki());
+    assertEq(
+      shunkakinoki.shunkakinoki(),
+      75851138138918604175079504560600488958015440181295160126060851023364826770682
+    );
   }
 }
