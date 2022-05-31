@@ -1,3 +1,9 @@
+# [1.32.0](https://github.com/shunkakinoki/contracts/compare/v1.31.1...v1.32.0) (2022-05-31)
+
+### Features
+
+- ini shun kakinoki ([e9d7c1e](https://github.com/shunkakinoki/contracts/commit/e9d7c1ea689e5afe235e69ff403bf690e6bc963d))
+
 ## [1.31.1](https://github.com/shunkakinoki/contracts/compare/v1.31.0...v1.31.1) (2022-05-31)
 
 ### Performance Improvements
