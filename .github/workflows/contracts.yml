@@ -28,12 +28,13 @@ jobs:
         uses: tj-actions/changed-files@main
         with:
           files: |
+            lib/**
             **/*.sol
       - if: github.event_name == 'pull_request'
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             forge test -vvv --gas-report -c $file
           done
-      - if: contains(steps.changed-files.outputs.deleted_files, '.gitmodules')
+      - if: contains(steps.changed-files.outputs.modified_files, 'lib')
         run: |
           forge test --vvv
