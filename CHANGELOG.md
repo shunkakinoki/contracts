@@ -1,3 +1,9 @@
+## [1.30.1](https://github.com/shunkakinoki/contracts/compare/v1.30.0...v1.30.1) (2022-05-31)
+
+### Bug Fixes
+
+- ini docker gha ([8005401](https://github.com/shunkakinoki/contracts/commit/800540179578f6eb2956c42796ffddc5320fce26))
+
 # [1.30.0](https://github.com/shunkakinoki/contracts/compare/v1.29.1...v1.30.0) (2022-05-31)
 
 ### Features
