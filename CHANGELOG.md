@@ -1,3 +1,9 @@
+# [1.31.0](https://github.com/shunkakinoki/contracts/compare/v1.30.2...v1.31.0) (2022-05-31)
+
+### Features
+
+- ini shields contracts ([7d37e4e](https://github.com/shunkakinoki/contracts/commit/7d37e4ebfee5b19e0d497ce0f4ca670ba50bde13))
+
 ## [1.30.2](https://github.com/shunkakinoki/contracts/compare/v1.30.1...v1.30.2) (2022-05-31)
 
 ### Performance Improvements
