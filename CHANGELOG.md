@@ -1,3 +1,9 @@
+## [1.30.2](https://github.com/shunkakinoki/contracts/compare/v1.30.1...v1.30.2) (2022-05-31)
+
+### Performance Improvements
+
+- refactor readme sources ([c869a43](https://github.com/shunkakinoki/contracts/commit/c869a43491ad76ad916f3adae1f142109a787c22))
+
 ## [1.30.1](https://github.com/shunkakinoki/contracts/compare/v1.30.0...v1.30.1) (2022-05-31)
 
 ### Bug Fixes
