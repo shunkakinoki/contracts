@@ -28,7 +28,7 @@ jobs:
         uses: tj-actions/changed-files@main
         with:
           files: |
-            **/*.t.sol
+            **/*.sol
       - if: github.event_name == 'pull_request'
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
