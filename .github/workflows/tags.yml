@@ -1,0 +1,9 @@
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  schedule:
+  workflow_dispatch:
+jobs:
+  tag-docker:
+    uses: ./.github/workflows/docker.yml
