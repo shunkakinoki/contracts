@@ -28,6 +28,7 @@ jobs:
         uses: tj-actions/changed-files@main
         with:
           files: |
+            lib/**
             **/*.sol
       - if: github.event_name == 'pull_request'
         run: |
