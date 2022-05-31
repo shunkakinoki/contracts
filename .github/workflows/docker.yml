@@ -7,10 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: docker/build-push-action@v1
+        uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          username: "shunkakinoki"
+          username: ${{ github.repository_owner }}
           password: ${{ secrets.ACCESS_TOKEN }}
-          repository: shunkakinoki/contracts
-          tags: latest
+      - uses: docker/build-push-action@v2
+        with:
+          file: "Dockerfile"
+          tags: |
+            ghcr.io/shunkakinoki/contracts:latest
