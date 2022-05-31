@@ -1,3 +1,9 @@
+## [1.32.2](https://github.com/shunkakinoki/contracts/compare/v1.32.1...v1.32.2) (2022-05-31)
+
+### Performance Improvements
+
+- invoke docker ([62b3ee4](https://github.com/shunkakinoki/contracts/commit/62b3ee49ee631a22fb71b872152b37c569d3c84a))
+
 ## [1.32.1](https://github.com/shunkakinoki/contracts/compare/v1.32.0...v1.32.1) (2022-05-31)
 
 ### Bug Fixes
