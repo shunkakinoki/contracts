@@ -1,3 +1,9 @@
+## [1.32.3](https://github.com/shunkakinoki/contracts/compare/v1.32.2...v1.32.3) (2022-05-31)
+
+### Bug Fixes
+
+- docker release ([581d688](https://github.com/shunkakinoki/contracts/commit/581d688324e52524f44e52424eb3b0708a4b018c))
+
 ## [1.32.2](https://github.com/shunkakinoki/contracts/compare/v1.32.1...v1.32.2) (2022-05-31)
 
 ### Performance Improvements
