@@ -6,7 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN forge --help
 RUN forge install
 RUN forge build
 RUN forge test
