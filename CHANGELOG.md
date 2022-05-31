@@ -1,3 +1,9 @@
+## [1.32.1](https://github.com/shunkakinoki/contracts/compare/v1.32.0...v1.32.1) (2022-05-31)
+
+### Bug Fixes
+
+- run docker on tag ([d2292ac](https://github.com/shunkakinoki/contracts/commit/d2292ac97f19899e1d55e719cfda74bfbca1298a))
+
 # [1.32.0](https://github.com/shunkakinoki/contracts/compare/v1.31.1...v1.32.0) (2022-05-31)
 
 ### Features
