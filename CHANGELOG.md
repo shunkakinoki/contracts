@@ -1,3 +1,9 @@
+# [1.30.0](https://github.com/shunkakinoki/contracts/compare/v1.29.1...v1.30.0) (2022-05-31)
+
+### Features
+
+- ini forge update ([6a63be6](https://github.com/shunkakinoki/contracts/commit/6a63be6d96e4e3f1362f14c81af70937ad59e104))
+
 ## [1.29.1](https://github.com/shunkakinoki/contracts/compare/v1.29.0...v1.29.1) (2022-05-31)
 
 ### Performance Improvements
