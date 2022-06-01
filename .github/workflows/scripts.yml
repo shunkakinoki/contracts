@@ -16,9 +16,9 @@ jobs:
   scripts:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: recursive
+      - uses: ./.github/actions/yarn
+      - run: |
+          yarn run build
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
@@ -28,11 +28,6 @@ jobs:
           forge script ${{ github.event.inputs.contract }} -vvvvv --rpc-url $RPC_URL --broadcast --private-key $WALLET_PRIVATE_KEY --sig '${{ github.event.inputs.sig }}'
         env:
           WALLET_PRIVATE_KEY: ${{ secrets.WALLET_PRIVATE_KEY }}
-      - uses: actions/setup-node@v2
-      - run: |
-          yarn install --frozen-lockfile
-      - run: |
-          yarn run build
       - run: |
           yarn run fix
       - uses: stefanzweifel/git-auto-commit-action@v4

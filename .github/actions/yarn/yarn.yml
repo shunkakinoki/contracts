@@ -1,0 +1,22 @@
+name: Yarn
+runs:
+  using: "composite"
+  steps:
+    - if: github.event_name == 'push'
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive
+    - uses: actions/setup-node@v2
+    - id: yarn-cache-dir-path
+      run: |
+        echo "::set-output name=dir::$(yarn cache dir)"
+    - uses: actions/cache@v3
+      with:
+        path: |
+          **/cache
+          **/foundry
+          **/node_modules
+          ${{ steps.yarn-cache-dir-path.outputs.dir }}
+        key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+    - run: |
+        yarn install --frozen-lockfile
