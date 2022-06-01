@@ -25,7 +25,7 @@ jobs:
       - run: |
           RPC_URL=$(cat $GITHUB_EVENT_PATH | jq -r '.inputs.rpc' )
           echo "::add-mask::$RPC_URL"
-          forge script ${{ github.event.inputs.contract }} -vvvvv --rpc-url $RPC_URL --broadcast --private-key $WALLET_PRIVATE_KEY --sig ${{ github.event.inputs.sig }}
+          forge script ${{ github.event.inputs.contract }} -vvvvv --rpc-url $RPC_URL --broadcast --private-key $WALLET_PRIVATE_KEY --sig '${{ github.event.inputs.sig }}'
         env:
           WALLET_PRIVATE_KEY: ${{ secrets.WALLET_PRIVATE_KEY }}
       - uses: actions/setup-node@v2
