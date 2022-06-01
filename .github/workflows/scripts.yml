@@ -9,7 +9,7 @@ on:
         required: true
         type: string
       sig:
-        required: false
+        required: true
         default: "run()"
         type: string
 jobs:
