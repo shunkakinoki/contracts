@@ -1,4 +1,4 @@
-name: Script
+name: Scripts
 on:
   workflow_dispatch:
     inputs:
@@ -13,7 +13,7 @@ on:
         default: "30"
         type: string
 jobs:
-  script:
+  scripts:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -25,7 +25,7 @@ jobs:
           echo "::add-mask::$RPC_URL"
           forge script ${{ github.event.inputs.contract }} -vvvvv --rpc-url $RPC_URL --broadcast --private-key $WALLET_PRIVATE_KEY --gas-price ${{ github.event.inputs.gas_price }}
         env:
-          WALLET_PRIVATE_KEY: ${ secrets.WALLET_PRIVATE_KEY }
+          WALLET_PRIVATE_KEY: ${{ secrets.WALLET_PRIVATE_KEY }}
       - uses: actions/setup-node@v2
       - run: |
           yarn install --frozen-lockfile
