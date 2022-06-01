@@ -35,6 +35,3 @@ jobs:
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             forge test -vvv --gas-report -c $file
           done
-      - if: contains(steps.changed-files.outputs.modified_files, 'lib')
-        run: |
-          forge test --vvv
