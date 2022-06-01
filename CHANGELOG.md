@@ -1,3 +1,9 @@
+# [1.33.0](https://github.com/shunkakinoki/contracts/compare/v1.32.3...v1.33.0) (2022-06-01)
+
+### Features
+
+- ini foundry scripts ([5d76006](https://github.com/shunkakinoki/contracts/commit/5d76006d610a80c437176c2d77df7be32cd6c75f))
+
 ## [1.32.3](https://github.com/shunkakinoki/contracts/compare/v1.32.2...v1.32.3) (2022-05-31)
 
 ### Bug Fixes
