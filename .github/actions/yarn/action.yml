@@ -2,8 +2,7 @@ name: Yarn
 runs:
   using: "composite"
   steps:
-    - if: github.event_name == 'push'
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
       with:
         submodules: recursive
     - uses: actions/setup-node@v2
