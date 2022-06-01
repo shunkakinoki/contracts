@@ -25,4 +25,4 @@ jobs:
           forge script ${{ github.event.inputs.contract }} -vvvvv --rpc-url $RPC_URL --broadcast --private-key $WALLET_PRIVATE_KEY --gas-price ${{ github.event.inputs.gas_price }}
         env:
           WALLET_PRIVATE_KEY: ${ secrets.WALLET_PRIVATE_KEY }
-        - uses: stefanzweifel/git-auto-commit-action@v4
+      - uses: stefanzweifel/git-auto-commit-action@v4
