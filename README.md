@@ -12,7 +12,7 @@
 
 ### Abstract
 
-A repository containing of various contracts (from my personal [inspirations](https://github.com/m1guelpf) to [Fundamental Solidity](https://solidity-by-example.org) to [Huff](https://github.com/huff-language/huffc)) with [Forge](https://github.com/foundry-rs/foundry) testing and [Natspec](https://docs.soliditylang.org/en/latest/natspec-format.html) comments.
+A repository containing of various contracts (my personal inspiration [m1guelpf](https://github.com/m1guelpf)'s [lil-web3](https://github.com/m1guelpf/lil-web3) to [Solidity by Example](https://solidity-by-example.org) to [Huff Language](https://github.com/huff-language/huffc)) with [Forge](https://github.com/foundry-rs/foundry) testing and [Natspec](https://docs.soliditylang.org/en/latest/natspec-format.html) comments.
 
 This repository is specifically for my own learning purposes to understand EVM.
 
