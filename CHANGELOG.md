@@ -1,3 +1,9 @@
+# [1.34.0](https://github.com/shunkakinoki/contracts/compare/v1.33.0...v1.34.0) (2022-06-01)
+
+### Features
+
+- ini renoun contracts ([d40570d](https://github.com/shunkakinoki/contracts/commit/d40570dab9f5e8078c666e4f8313c43528a0e62e))
+
 # [1.33.0](https://github.com/shunkakinoki/contracts/compare/v1.32.3...v1.33.0) (2022-06-01)
 
 ### Features
