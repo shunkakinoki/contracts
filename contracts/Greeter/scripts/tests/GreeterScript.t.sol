@@ -10,6 +10,7 @@ contract GreeterTest is Test {
 
   function setUp() public {
     script = new GreeterScript();
+    script.run();
   }
 
   function testGreetIsHelloWorld() public {
