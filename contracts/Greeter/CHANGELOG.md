@@ -1,3 +1,9 @@
+# @shunkakinoki/greeter [1.2.0](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/greeter@1.1.1...@shunkakinoki/greeter@1.2.0) (2022-06-01)
+
+### Features
+
+- ini foundry scripts ([5d76006](https://github.com/shunkakinoki/contracts/commit/5d76006d610a80c437176c2d77df7be32cd6c75f))
+
 ## @shunkakinoki/greeter [1.1.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/greeter@1.1.0...@shunkakinoki/greeter@1.1.1) (2022-05-14)
 
 ### Performance Improvements
