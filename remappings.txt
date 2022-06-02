@@ -13,4 +13,4 @@ ds-test/=lib/ds-test/src/
 
 @shunkakinoki/box/=contracts/Box/src/
 @shunkakinoki/aave/=contracts/Aave/src/
-@shunkakinoki/greeter/=contracts/Greeter/src/
+@shunkakinoki/huff/=contracts/HuffDeployer/src/
