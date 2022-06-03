@@ -3,6 +3,7 @@ artifacts
 lib
 cache
 dist
+foundry
 out
 node_modules
 templates
