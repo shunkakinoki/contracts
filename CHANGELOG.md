@@ -1,3 +1,13 @@
+# [1.35.0](https://github.com/shunkakinoki/contracts/compare/v1.34.0...v1.35.0) (2022-06-03)
+
+### Bug Fixes
+
+- remove yarn contracts ([a0ffb05](https://github.com/shunkakinoki/contracts/commit/a0ffb0561fa5a7efe80705b449ce0de8a1ede3e8))
+
+### Features
+
+- ini huff ([d325720](https://github.com/shunkakinoki/contracts/commit/d32572093e6edf716844c7db3d6224bdcac216cb))
+
 # [1.34.0](https://github.com/shunkakinoki/contracts/compare/v1.33.0...v1.34.0) (2022-06-01)
 
 ### Features
