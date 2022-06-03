@@ -6,6 +6,6 @@ COPY . .
 
 RUN forge install
 RUN forge build
-RUN forge test
+RUN forge test --ffi
 
 ENTRYPOINT ["forge"]

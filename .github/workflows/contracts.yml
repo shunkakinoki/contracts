@@ -18,7 +18,7 @@ jobs:
           version: nightly
       - if: github.event_name == 'push'
         run: |
-          forge test -vvv --gas-report
+          forge test -vvv --ffi --gas-report
       - if: github.event_name == 'pull_request'
         id: changed-files
         uses: tj-actions/changed-files@main
@@ -29,5 +29,5 @@ jobs:
       - if: github.event_name == 'pull_request'
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            forge test -vvv --gas-report -c $file
+            forge test -vvv --ffi --gas-report -c $file
           done
