@@ -1,3 +1,9 @@
+## [1.36.1](https://github.com/shunkakinoki/contracts/compare/v1.36.0...v1.36.1) (2022-06-04)
+
+### Performance Improvements
+
+- ini scripts test ([19ded5a](https://github.com/shunkakinoki/contracts/commit/19ded5a80d87d4a3d1f9a1dd1cbd954fe6dc08af))
+
 # [1.36.0](https://github.com/shunkakinoki/contracts/compare/v1.35.0...v1.36.0) (2022-06-04)
 
 ### Features
