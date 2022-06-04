@@ -1,3 +1,9 @@
+## [1.36.2](https://github.com/shunkakinoki/contracts/compare/v1.36.1...v1.36.2) (2022-06-04)
+
+### Bug Fixes
+
+- remove unncessary func ([fe99a73](https://github.com/shunkakinoki/contracts/commit/fe99a733173e748bd33c7747475e0ade12b17c24))
+
 ## [1.36.1](https://github.com/shunkakinoki/contracts/compare/v1.36.0...v1.36.1) (2022-06-04)
 
 ### Performance Improvements
