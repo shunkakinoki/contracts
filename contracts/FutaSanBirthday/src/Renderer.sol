@@ -7,7 +7,7 @@ import "./SVG.sol";
 import "./Utils.sol";
 
 contract Renderer {
-  function render() public returns (string memory) {
+  function render() public view returns (string memory) {
     uint256 NEXT_BIRTHDAY_TIMESTAMP = 1685862000;
     uint256 YEAR_SECONDS = 31536000;
     uint256 TIMESTAMP_NOW = 1654309451;
