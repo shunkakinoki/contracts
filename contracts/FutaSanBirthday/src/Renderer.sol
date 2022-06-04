@@ -10,7 +10,6 @@ contract Renderer {
   function render() public view returns (string memory) {
     uint256 NEXT_BIRTHDAY_TIMESTAMP = 1685862000;
     uint256 YEAR_SECONDS = 31536000;
-    uint256 TIMESTAMP_NOW = 1654309451;
 
     return
       string.concat(
@@ -32,7 +31,8 @@ contract Renderer {
             svg.prop(
               "width",
               utils.uint2str(
-                ((NEXT_BIRTHDAY_TIMESTAMP - TIMESTAMP_NOW) / YEAR_SECONDS) * 270
+                ((NEXT_BIRTHDAY_TIMESTAMP - block.timestamp) / YEAR_SECONDS) *
+                  270
               )
             ),
             svg.prop("height", utils.uint2str(12))
@@ -46,7 +46,10 @@ contract Renderer {
             svg.prop("font-size", "18"),
             svg.prop("fill", "white")
           ),
-          string.concat(svg.cdata("Time left: "), utils.uint2str(TIMESTAMP_NOW))
+          string.concat(
+            svg.cdata("Time left: "),
+            utils.uint2str(block.timestamp)
+          )
         ),
         "</svg>"
       );

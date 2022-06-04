@@ -15,6 +15,7 @@ contract FutaSanBirthdayTest is Test {
 
   function testMint() public {
     vm.deal(kaki, 1 ether);
+    vm.warp(1654309451);
     vm.prank(kaki);
     nft.mint{ value: 0.01 ether }();
     assertEq(nft.ownerOf(1), kaki);
