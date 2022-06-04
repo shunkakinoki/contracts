@@ -17,6 +17,14 @@ contract EVMTest is Test {
     assertEq(evm.add(1, 2), 3);
     // overflows on 2**256
     assertEq(evm.add(1, (2**256 - 1)), 0);
+    // same as above
+    assertEq(
+      evm.add(
+        1,
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      ),
+      0
+    );
   }
 
   // GAS 5: mul(uint256, uint256)
@@ -24,5 +32,13 @@ contract EVMTest is Test {
     assertEq(evm.mul(1, 2), 2);
     // overflows on 2**256
     assertEq(evm.mul(2, (2**256 - 1)), (2**256 - 2));
+    // same as above
+    assertEq(
+      evm.mul(
+        2,
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      ),
+      0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE
+    );
   }
 }
