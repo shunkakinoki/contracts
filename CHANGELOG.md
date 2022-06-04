@@ -1,3 +1,9 @@
+# [1.36.0](https://github.com/shunkakinoki/contracts/compare/v1.35.0...v1.36.0) (2022-06-04)
+
+### Features
+
+- ini futa san birthday ([bb7e7a2](https://github.com/shunkakinoki/contracts/commit/bb7e7a222b5124fe14c2ec20df41a50664ad279b))
+
 # [1.35.0](https://github.com/shunkakinoki/contracts/compare/v1.34.0...v1.35.0) (2022-06-03)
 
 ### Bug Fixes
