@@ -1,3 +1,9 @@
+# [1.38.0](https://github.com/shunkakinoki/contracts/compare/v1.37.0...v1.38.0) (2022-06-04)
+
+### Features
+
+- ini eip 712 ([fa3c019](https://github.com/shunkakinoki/contracts/commit/fa3c0191097ea2b37660668d58c5427e90ae69ca))
+
 # [1.37.0](https://github.com/shunkakinoki/contracts/compare/v1.36.2...v1.37.0) (2022-06-04)
 
 ### Features
