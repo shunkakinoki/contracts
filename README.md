@@ -30,6 +30,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [Ethernaut](/contracts/Ethernaut) - [Source](https://github.com/abdulsamijay/ethernaut) from [abdulsamijay](https://github.com/abdulsamijay)
 - [x] [EthernautBounty](/contracts/EthernautBounty) - [Source](https://github.com/tahos81/ethernaut-bounty) from [tahos81](https://github.com/tahos81)
 - [x] [Femplate](/contracts/Femplate) - [Source](https://github.com/abigger87/femplate) from [abigger87](https://github.com/abigger87)
+- [x] [FutaSanBirthday](/contracts/FutaSanBirthday)
 - [x] [Greeter](/contracts/Greeter)
 - [x] [HackReentrancy](/contracts/HackReentrancy) - [Source](https://solidity-by-example.org/hacks/re-entrancy) from [t4sk](https://github.com/t4sk)
 - [x] [HackPhishing](/contracts/HackPhishing) - [Source](https://solidity-by-example.org/hacks/phishing-with-tx-origin) from [t4sk](https://github.com/t4sk)
