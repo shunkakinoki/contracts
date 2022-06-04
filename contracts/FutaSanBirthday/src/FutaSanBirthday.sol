@@ -69,13 +69,13 @@ contract FutaSanBirthday {
       interfaceId == 0x5b5e139f;
   }
 
-  function mint() public payable {
+  function mint(address _to) public payable {
     unchecked {
-      balanceOf[msg.sender]++;
+      balanceOf[_to]++;
     }
 
-    ownerOf[nextTokenId] = msg.sender;
-    emit Transfer(address(0), msg.sender, nextTokenId++);
+    ownerOf[nextTokenId] = _to;
+    emit Transfer(address(0), _to, nextTokenId++);
   }
 
   function renderSVG() internal view returns (string memory) {
