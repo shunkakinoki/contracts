@@ -17,6 +17,9 @@ contract FutaSanBirthday {
   uint256 internal nextTokenId = 1;
   Renderer public renderer;
 
+  string public constant symbol = "FUTA";
+  string public constant name = "Futa-san Birthday NFT";
+
   constructor() {
     renderer = new Renderer();
   }
