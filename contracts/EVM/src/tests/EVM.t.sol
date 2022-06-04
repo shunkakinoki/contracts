@@ -41,4 +41,16 @@ contract EVMTest is Test {
       0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE
     );
   }
+
+  // GAS 3: sub(uint256, uint256)
+  function testSub() public {
+    assertEq(evm.sub(10, 10), 0);
+    // underflow on 2**256
+    assertEq(evm.sub(0, 1), (2**256 - 1));
+    // same as above
+    assertEq(
+      evm.sub(0, 1),
+      0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    );
+  }
 }

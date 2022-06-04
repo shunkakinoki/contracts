@@ -14,4 +14,10 @@ contract EVM {
       result := mul(a, b)
     }
   }
+
+  function sub(uint256 a, uint256 b) public pure returns (uint256 result) {
+    assembly {
+      result := sub(a, b)
+    }
+  }
 }
