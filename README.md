@@ -28,6 +28,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site) from by [DDAO](https://github.com/Developer-DAO)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts) from [Crypto Coven](https://github)
 - [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft) from [FredCoen](https://github.com/FredCoen)
+- [x] [EIP712](/contracts/EIP712) - [Source](https://github.com/kulkarohan/deposit) from [kulkarohan](https://github.com/kulkarohan)
 - [x] [Ethernaut](/contracts/Ethernaut) - [Source](https://github.com/abdulsamijay/ethernaut) from [abdulsamijay](https://github.com/abdulsamijay)
 - [x] [EthernautBounty](/contracts/EthernautBounty) - [Source](https://github.com/tahos81/ethernaut-bounty) from [tahos81](https://github.com/tahos81)
 - [x] [EVM](/contracts/EVM)
