@@ -1,3 +1,9 @@
+## [1.39.1](https://github.com/shunkakinoki/contracts/compare/v1.39.0...v1.39.1) (2022-06-05)
+
+### Performance Improvements
+
+- only release docker on v tag ([55d7070](https://github.com/shunkakinoki/contracts/commit/55d707070a0f2671dbab3b6335bdca768492382a))
+
 # [1.39.0](https://github.com/shunkakinoki/contracts/compare/v1.38.0...v1.39.0) (2022-06-05)
 
 ### Features
