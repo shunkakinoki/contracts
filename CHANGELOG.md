@@ -1,3 +1,14 @@
+# [1.39.0](https://github.com/shunkakinoki/contracts/compare/v1.38.0...v1.39.0) (2022-06-05)
+
+### Features
+
+- ini streaming ([46421e5](https://github.com/shunkakinoki/contracts/commit/46421e5bc2cd0ff3b77ce7ce7dc6b8a3e9938bf6))
+
+### Performance Improvements
+
+- ini llama pay ([87b26c7](https://github.com/shunkakinoki/contracts/commit/87b26c7e6960ce1c03e4c6177207c819db0199ee))
+- ini mod evm ([cbf6fd1](https://github.com/shunkakinoki/contracts/commit/cbf6fd1056e2d51c05085535c083216ae8d45603))
+
 # [1.38.0](https://github.com/shunkakinoki/contracts/compare/v1.37.0...v1.38.0) (2022-06-04)
 
 ### Features
