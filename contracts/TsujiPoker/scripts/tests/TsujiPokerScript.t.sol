@@ -19,13 +19,5 @@ contract TsujiPokerScriptTest is Test {
     vm.deal(kaki, 1 ether);
     assertEq(script.nft().rankOf(kaki), 9);
     vm.prank(kaki);
-    script.nft().mint{ value: 0.01 ether }();
-  }
-
-  function testFailNotKakiMint() public {
-    vm.deal(address(1), 1 ether);
-    assertEq(script.nft().rankOf(address(1)), 0);
-    vm.prank(address(1));
-    script.nft().mint{ value: 0.01 ether }();
   }
 }
