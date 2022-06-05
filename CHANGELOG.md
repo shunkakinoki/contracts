@@ -1,3 +1,9 @@
+## [1.39.2](https://github.com/shunkakinoki/contracts/compare/v1.39.1...v1.39.2) (2022-06-05)
+
+### Performance Improvements
+
+- ini tsujipoker script ([f714618](https://github.com/shunkakinoki/contracts/commit/f714618ee03febf36a6e34558ed7af31b8a351c6))
+
 ## [1.39.1](https://github.com/shunkakinoki/contracts/compare/v1.39.0...v1.39.1) (2022-06-05)
 
 ### Performance Improvements
