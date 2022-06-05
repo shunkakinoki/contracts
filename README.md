@@ -44,6 +44,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [LilFlashloan](/contracts/LilFlashloan) - [Source](https://github.com/m1guelpf/lil-web3) from [m1guelpf](https://github.com/m1guelpf)
 - [x] [LilFractional](/contracts/LilFractional) - [Source](https://github.com/m1guelpf/lil-web3) from [m1guelpf](https://github.com/m1guelpf)
 - [x] [LilSuperfluid](/contracts/LilSuperfluid) - [Source](https://github.com/m1guelpf/lil-web3) from [m1guelpf](https://github.com/m1guelpf)
+- [ ] [LlamaPay](/contracts/LlamaPay) - [Souce](https://github.com/LlamaPay/llamapay) from [LlamaPay](https://github.com/LlamaPay)
 - [ ] [Loot](/contracts/Loot) - [Source](https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7#code) from [FredCoen](https://github.com/abdulsamijay)
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter) from [Anish](https://github.com/Anish-Agnihotri)
 - [ ] [MultiRaffle](/contracts/MultiRaffle) - [Source](https://github.com/Anish-Agnihotri/MultiRaffle) from [Anish](https://github.com/Anish-Agnihotri)
