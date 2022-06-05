@@ -1,3 +1,9 @@
+## @shunkakinoki/evm [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/evm@1.0.0...@shunkakinoki/evm@1.0.1) (2022-06-05)
+
+### Performance Improvements
+
+- ini mod evm ([cbf6fd1](https://github.com/shunkakinoki/contracts/commit/cbf6fd1056e2d51c05085535c083216ae8d45603))
+
 # @shunkakinoki/evm 1.0.0 (2022-06-04)
 
 ### Features
