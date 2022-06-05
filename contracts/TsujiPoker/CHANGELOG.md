@@ -1,3 +1,9 @@
+## @shunkakinoki/tsujipoker [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/tsujipoker@1.0.0...@shunkakinoki/tsujipoker@1.0.1) (2022-06-05)
+
+### Performance Improvements
+
+- ini tsujipoker script ([f714618](https://github.com/shunkakinoki/contracts/commit/f714618ee03febf36a6e34558ed7af31b8a351c6))
+
 # @shunkakinoki/tsujipoker 1.0.0 (2022-05-30)
 
 ### Features
