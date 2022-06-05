@@ -44,4 +44,33 @@ contract EVM {
       result := mod(a, b)
     }
   }
+
+  // 07: SMOD
+  function smod(uint256 a, uint256 b) public pure returns (uint256 result) {
+    assembly {
+      result := smod(a, b)
+    }
+  }
+
+  // 08: ADDMOD
+  function addMod(
+    uint256 a,
+    uint256 b,
+    uint256 n
+  ) public pure returns (uint256 result) {
+    assembly {
+      result := addmod(a, b, n)
+    }
+  }
+
+  // 09: MULMOD
+  function mulMod(
+    uint256 a,
+    uint256 b,
+    uint256 n
+  ) public pure returns (uint256 result) {
+    assembly {
+      result := mulmod(a, b, n)
+    }
+  }
 }

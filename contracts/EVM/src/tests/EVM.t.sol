@@ -94,4 +94,49 @@ contract EVMTest is Test {
     // underflow on 2**256
     assertEq(evm.mod(17, 5), 2);
   }
+
+  // 07 GAS 5: smod(uint256, uint256)
+  function testSmod() public {
+    assertEq(evm.smod(10, 3), 1);
+    // underflow on 2**256
+    assertEq(evm.smod(17, 5), 2);
+    // underflows on -2**255
+    assertEq(
+      evm.smod((2**256 - 6), (2**256 - 4)),
+      0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE
+    );
+    assertEq(
+      evm.smod(
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8,
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD
+      ),
+      0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE
+    );
+  }
+
+  // 08 GAS 8: addMod(uint256, uint256, uint256)
+  function testAddMod() public {
+    assertEq(evm.addMod(10, 10, 8), 4);
+    assertEq(
+      evm.addMod(
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,
+        2,
+        2
+      ),
+      1
+    );
+  }
+
+  // 09 GAS 8: mulMod(uint256, uint256, uint256)
+  function testMulMod() public {
+    assertEq(evm.mulMod(10, 10, 8), 4);
+    assertEq(
+      evm.mulMod(
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,
+        12
+      ),
+      9
+    );
+  }
 }
