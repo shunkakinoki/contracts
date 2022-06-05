@@ -193,7 +193,7 @@ contract TsujiPokerTest is Test {
     assertEq(address(1).balance, 1 ether);
 
     vm.prank(address(1));
-    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    vm.expectRevert(TsujiPoker.NotPlayer.selector);
     poker.mint{ value: 0.01 ether }();
   }
 
@@ -202,7 +202,7 @@ contract TsujiPokerTest is Test {
     assertEq(address(2).balance, 1 ether);
 
     vm.prank(address(2));
-    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    vm.expectRevert(TsujiPoker.NotPlayer.selector);
     poker.mint{ value: 0.01 ether }();
   }
 
@@ -212,7 +212,7 @@ contract TsujiPokerTest is Test {
     poker.mint{ value: 0.01 ether }();
 
     vm.prank(address(2));
-    vm.expectRevert(TsujiPoker.PokerBound.selector);
+    vm.expectRevert(TsujiPoker.NotPlayer.selector);
     poker.withdraw();
   }
 
@@ -365,5 +365,10 @@ contract TsujiPokerTest is Test {
       poker.tokenURI(1),
       "data:application/json;base64,eyJuYW1lIjoiVHN1amkgUG9rZXIiLCJpbWFnZSI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIQnlaWE5sY25abFFYTndaV04wVW1GMGFXODlJbmhOYVc1WlRXbHVJRzFsWlhRaUlIWnBaWGRDYjNnOUlqQWdNQ0F6TlRBZ016VXdJajQ4YzNSNWJHVStMbUpoYzJVZ2V5Qm1hV3hzT2lCM2FHbDBaVHNnWm05dWRDMW1ZVzFwYkhrNklITmxjbWxtT3lCbWIyNTBMWE5wZW1VNklERTBjSGc3SUgwOEwzTjBlV3hsUGp4eVpXTjBJSGRwWkhSb1BTSXhNREFsSWlCb1pXbG5hSFE5SWpFd01DVWlJR1pwYkd3OUltSnNZV05ySWlBdlBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeU1DSWdZMnhoYzNNOUltSmhjMlVpUGxSemRXcHBJRkJ2YTJWeUlFNXBaMmgwUEM5MFpYaDBQangwWlhoMElIZzlJakV3SWlCNVBTSTBNQ0lnWTJ4aGMzTTlJbUpoYzJVaVBsQnNZWGxsY2pvOEwzUmxlSFErUEhSbGVIUWdlRDBpTVRBaUlIazlJall3SWlCamJHRnpjejBpWW1GelpTSSthMjlvWldrdVpYUm9QQzkwWlhoMFBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJNE1DSWdZMnhoYzNNOUltSmhjMlVpUGxKaGJtczZQQzkwWlhoMFBqeDBaWGgwSUhnOUlqRXdJaUI1UFNJeE1EQWlJR05zWVhOelBTSmlZWE5sSWo0MlBDOTBaWGgwUGp3dmMzWm5QZz09IiwgImRlc2NyaXB0aW9uIjogIlRzdWppIFBva2VyIE5pZ2h0IGluIFNhbiBGcmFuY2lzY28gb24gMjAyMi8wNS8yOSJ9"
     );
+  }
+
+  function testSendEther() public {
+    address(poker).call{ value: 3 ether }("");
+    assertEq(address(poker).balance, 3 ether);
   }
 }

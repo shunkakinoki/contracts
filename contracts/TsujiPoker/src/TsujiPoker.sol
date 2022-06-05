@@ -10,6 +10,7 @@ import "./Renderer.sol";
 /// @notice Contract for certifying "poker bound" nfts
 /// @notice Soulbount nft code is heavily taken from Miguel's awesome Souminter contracts: https://github.com/m1guelpf/soulminter-contracts
 contract TsujiPoker is Renderer {
+  error NotPlayer();
   error PokerBound();
   error NotEnoughEth();
   error TsujiNotBack();
@@ -101,7 +102,7 @@ contract TsujiPoker is Renderer {
   }
 
   modifier onlyIfPlayer() {
-    if (playerOf[msg.sender].rank == 0) revert PokerBound();
+    if (playerOf[msg.sender].rank == 0) revert NotPlayer();
     _;
   }
 
@@ -212,4 +213,6 @@ contract TsujiPoker is Renderer {
   function withdraw() public onlyIfPlayer onlyIfTsujiBack {
     shugo.transfer(address(this).balance);
   }
+
+  fallback() external payable {}
 }
