@@ -1,3 +1,10 @@
+# [1.40.0](https://github.com/shunkakinoki/contracts/compare/v1.39.2...v1.40.0) (2022-06-08)
+
+### Features
+
+- ini ownable upgradeable ([0f61d11](https://github.com/shunkakinoki/contracts/commit/0f61d11f0150fda9ccc58d101a067591189c0e2b))
+- ini the merge ([a4b4be1](https://github.com/shunkakinoki/contracts/commit/a4b4be1127bcf8c4d6c872b8fdbefd696300a79e))
+
 ## [1.39.2](https://github.com/shunkakinoki/contracts/compare/v1.39.1...v1.39.2) (2022-06-05)
 
 ### Performance Improvements
