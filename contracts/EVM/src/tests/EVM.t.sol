@@ -139,4 +139,25 @@ contract EVMTest is Test {
       9
     );
   }
+
+  // 0A GAS 10: exp(uint256, uint256)
+  function testExp() public {
+    assertEq(evm.exp(10, 2), 100);
+    assertEq(evm.exp(2, 2), 4);
+  }
+
+  // 0B GAS 5: mulMod(uint256, uint256, uint256)
+  function testSignExtend() public {
+    assertEq(
+      evm.signExtend(0, 0xFF),
+      0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    );
+    assertEq(evm.signExtend(0, 0x7F), 0x7F);
+  }
+
+  // 10 GAS 3: mulMod(uint256, uint256, uint256)
+  function testLt() public {
+    assertEq(evm.lt(9, 10), 1);
+    assertEq(evm.lt(10, 10), 0);
+  }
 }

@@ -73,4 +73,33 @@ contract EVM {
       result := mulmod(a, b, n)
     }
   }
+
+  // 0A: EXP
+  function exp(uint256 a, uint256 exponent)
+    public
+    pure
+    returns (uint256 result)
+  {
+    assembly {
+      result := exp(a, exponent)
+    }
+  }
+
+  // 0B: SIGNEXTEND
+  function signExtend(uint256 b, uint256 x)
+    public
+    pure
+    returns (uint256 result)
+  {
+    assembly {
+      result := signextend(b, x)
+    }
+  }
+
+  // 10: lt
+  function lt(uint256 a, uint256 b) public pure returns (uint256 result) {
+    assembly {
+      result := lt(a, b)
+    }
+  }
 }
