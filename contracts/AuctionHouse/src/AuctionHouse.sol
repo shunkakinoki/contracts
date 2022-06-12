@@ -9,8 +9,8 @@ import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuar
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import { Counters } from "@openzeppelin/contracts/utils/Counters.sol";
-import { IMarket, Decimal } from "@zoralabs/core/contracts/interfaces/IMarket.sol";
-import { IMedia } from "@zoralabs/core/contracts/interfaces/IMedia.sol";
+import { IMarket, Decimal } from "./interfaces/IMarket.sol";
+import { IMedia } from "./interfaces/IMedia.sol";
 import { IAuctionHouse } from "./interfaces/IAuctionHouse.sol";
 
 interface IWETH {
@@ -114,7 +114,7 @@ contract AuctionHouse is IAuctionHouse, ReentrancyGuard {
       reservePrice: reservePrice,
       curatorFeePercentage: curatorFeePercentage,
       tokenOwner: tokenOwner,
-      bidder: address(0),
+      bidder: payable(address(0)),
       curator: curator,
       auctionCurrency: auctionCurrency
     });
@@ -249,7 +249,7 @@ contract AuctionHouse is IAuctionHouse, ReentrancyGuard {
     _handleIncomingBid(amount, auctions[auctionId].auctionCurrency);
 
     auctions[auctionId].amount = amount;
-    auctions[auctionId].bidder = msg.sender;
+    auctions[auctionId].bidder = payable(msg.sender);
 
     bool extended = false;
     // at this point we know that the timestamp is less than start + duration (since the auction would be over, otherwise)
