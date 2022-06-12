@@ -1,5 +1,5 @@
-// Copyright (C) 2017, 2018, 2019, 2020 dbrock, rain, mrchico, d-xo
 // SPDX-License-Identifier: AGPL-3.0-only
+// Copyright (C) 2017, 2018, 2019, 2020 dbrock, rain, mrchico, d-xo
 
 pragma solidity ^0.8.13;
 
