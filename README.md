@@ -70,3 +70,14 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer) - [Source](https://etherscan.io/address/0x3aee59ca9cea21389d167112091ceace86747124#code) from [Watchfaces World](https://www.watchfaces.world/)
 - [ ] [WatchfacesWorld](/contracts/WatchfacesWorld) - [Source](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1#code) from [FredCoen](https://github.com/abdulsamijay)
 - [ ] [ZorbNFT](/contracts/ZorbNFT) - [Source](https://github.com/ourzora/zorb/tree/main/packages/zorb-contracts) from [Zora](https://github.com/ourzora)
+
+## Resources
+
+### Gas Optimizations
+
+https://github.com/kadenzipfel/gas-optimizations
+
+## Security
+
+https://github.com/kadenzipfel/smart-contract-attack-vectors
+https://github.com/ConsenSys/smart-contract-best-practices
