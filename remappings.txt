@@ -1,6 +1,7 @@
 @0xsequence/sstore2/=lib/sstore2/
 @chainlink/=lib/chainlink/
 @divergencetech/ethier/=lib/ethier/
+@gnosis.pm/safe-contracts/=lib/safe-contracts/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
 @rari-capital/solmate/=lib/solmate/
