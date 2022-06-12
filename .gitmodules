@@ -43,6 +43,3 @@
 [submodule "lib/safe-contracts"]
 	path = lib/safe-contracts
 	url = https://github.com/safe-global/safe-contracts
-[submodule "lib/core"]
-	path = lib/core
-	url = https://github.com/ourzora/core
