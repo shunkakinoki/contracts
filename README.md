@@ -70,7 +70,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [WagumiToken](/contracts/WagumiToken)
 - [ ] [WatchfacesPFP](/contracts/WatchfacesPFP) - [Source](https://etherscan.io/address/0x1b57e04c02f9328bdd417fde6698b236b543c47f#code) from [Watchfaces World](https://www.watchfaces.world/)
 - [ ] [WatchfacesSVGRenderer](/contracts/WatchfacesSVGRenderer) - [Source](https://etherscan.io/address/0x3aee59ca9cea21389d167112091ceace86747124#code) from [Watchfaces World](https://www.watchfaces.world/)
-- [ ] [WatchfacesWorld](/contracts/WatchfacesWorld) - [Source](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1#code) from [FredCoen](https://github.com/abdulsamijay)
+- [ ] [WatchfacesWorld](/contracts/WatchfacesWorld) - [Source](https://etherscan.io/address/0x8d3b078d9d9697a8624d4b32743b02d270334af1#code) from [Watchfaces](https://www.watchfaces.world/)
 - [x] [WeirdERC20](/contracts/WeirdERC20) from [d-xo](https://github.com/d-xo/weird-erc20)
 - [ ] [ZorbNFT](/contracts/ZorbNFT) - [Source](https://github.com/ourzora/zorb/tree/main/packages/zorb-contracts) from [Zora](https://github.com/ourzora)
 
