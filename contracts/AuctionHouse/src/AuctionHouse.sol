@@ -9,8 +9,8 @@ import { ReentrancyGuard } from "@openzeppelin/contracts/security/ReentrancyGuar
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import { SafeERC20 } from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import { Counters } from "@openzeppelin/contracts/utils/Counters.sol";
-import { IMarket, Decimal } from "@zoralabs/core/dist/contracts/interfaces/IMarket.sol";
-import { IMedia } from "@zoralabs/core/dist/contracts/interfaces/IMedia.sol";
+import { IMarket, Decimal } from "@zoralabs/core/contracts/interfaces/IMarket.sol";
+import { IMedia } from "@zoralabs/core/contracts/interfaces/IMedia.sol";
 import { IAuctionHouse } from "./interfaces/IAuctionHouse.sol";
 
 interface IWETH {
