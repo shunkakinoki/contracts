@@ -1,3 +1,16 @@
+# [1.42.0](https://github.com/shunkakinoki/contracts/compare/v1.41.0...v1.42.0) (2022-06-12)
+
+### Features
+
+- ini upgradeable controller ([4c739a0](https://github.com/shunkakinoki/contracts/commit/4c739a0a609bc5faa1a61c822c489beca5a29498))
+- ini weird erc20 ([b2d8380](https://github.com/shunkakinoki/contracts/commit/b2d8380b7e536a54a36a1dbeead094b00d1dc7cd))
+
+### Performance Improvements
+
+- ini auction house ([1ac555b](https://github.com/shunkakinoki/contracts/commit/1ac555b47ccba4f0613596c38dfa07a81e4bd36b))
+- ini lil juicebox ([c9408be](https://github.com/shunkakinoki/contracts/commit/c9408be908ac1e41be39660436518e63f4c773c6))
+- ini zodiac module ([d7f3f44](https://github.com/shunkakinoki/contracts/commit/d7f3f44f45017088f6679f92f4c6ca0debedfe62))
+
 # [1.41.0](https://github.com/shunkakinoki/contracts/compare/v1.40.0...v1.41.0) (2022-06-11)
 
 ### Features
