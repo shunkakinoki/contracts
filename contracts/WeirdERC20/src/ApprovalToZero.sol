@@ -1,5 +1,5 @@
-// Copyright (C) 2020 d-xo
 // SPDX-License-Identifier: AGPL-3.0-only
+// Copyright (C) 2020 d-xo
 
 pragma solidity ^0.8.13;
 
