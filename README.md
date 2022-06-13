@@ -29,6 +29,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts) from [Crypto Coven](https://github)
 - [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft) from [FredCoen](https://github.com/FredCoen)
 - [x] [EIP712](/contracts/EIP712) - [Source](https://github.com/kulkarohan/deposit) from [kulkarohan](https://github.com/kulkarohan)
+- [x] [EIP4973](/contracts/EIP4973) - [Source](https://github.com/rugpullindex/ERC4973) from [rugpullindex](https://github.com/rugpullindex)
 - [x] [Ethernaut](/contracts/Ethernaut) - [Source](https://github.com/abdulsamijay/ethernaut) from [abdulsamijay](https://github.com/abdulsamijay)
 - [x] [EthernautBounty](/contracts/EthernautBounty) - [Source](https://github.com/tahos81/ethernaut-bounty) from [tahos81](https://github.com/tahos81)
 - [x] [EVM](/contracts/EVM)
