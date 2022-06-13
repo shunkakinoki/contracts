@@ -1,3 +1,10 @@
+## [1.42.1](https://github.com/shunkakinoki/contracts/compare/v1.42.0...v1.42.1) (2022-06-13)
+
+### Performance Improvements
+
+- ini eip 4973 ([27210c2](https://github.com/shunkakinoki/contracts/commit/27210c23eef37e5b5a083bf1d3901d5f14bebe6c))
+- ini proxy admin ([401289a](https://github.com/shunkakinoki/contracts/commit/401289a5ff5360ce6938c2107b464870ab3c50b4))
+
 # [1.42.0](https://github.com/shunkakinoki/contracts/compare/v1.41.0...v1.42.0) (2022-06-12)
 
 ### Features
