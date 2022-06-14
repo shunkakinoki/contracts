@@ -1,3 +1,15 @@
+# [1.43.0](https://github.com/shunkakinoki/contracts/compare/v1.42.1...v1.43.0) (2022-06-14)
+
+### Features
+
+- ini auction proxy ([e803715](https://github.com/shunkakinoki/contracts/commit/e8037157747c3965a3b7dcd7987c00fd750e3f16))
+- ini minimal proxy ([a4d88fa](https://github.com/shunkakinoki/contracts/commit/a4d88faf082cea50fe8308bc07607bb628ba5fe1))
+
+### Performance Improvements
+
+- ini transparent upgradeable proxy ([a55200a](https://github.com/shunkakinoki/contracts/commit/a55200af809457e1055241b6a7e5f05e1ac8902c))
+- ini uups upgradeable ([7077c1e](https://github.com/shunkakinoki/contracts/commit/7077c1e39b8a0011bc3baf20227c06453ef02180))
+
 ## [1.42.1](https://github.com/shunkakinoki/contracts/compare/v1.42.0...v1.42.1) (2022-06-13)
 
 ### Performance Improvements
