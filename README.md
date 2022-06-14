@@ -63,6 +63,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [Renoun](/contracts/Renoun) - [Source](https://github.com/Jon-Becker/renoun) from [Jon Becker](https://github.com/Jon-Becker)
 - [ ] [Shrine](/contracts/Shrine) - [Source](https://github.com/Astrodrop/shrine) from [Astrodrop](https://github.com/Astrodrop)
 - [x] [SolmateNFT](/contracts/SolmateNFT) - [Source](https://github.com/FredCoen/nft-tutorial) from [FredCoen](https://github.com/FredCoen)
+- [x] [TransparentUpgradeableProxy](/contracts/TransparentUpgradeableProxy) - [Source](https://github.com/fracton-ventures/foundry-transparent-proxy-pattern) from [fracton-ventures](https://github.com/fracton-ventures)
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
 - [x] [TsujiPoker](/contracts/TsujiPoker) - [Deployment](https://etherscan.io/address/0x2442f53979e9d0b990a7029e95cfdac6ad3a81df)
 - [ ] [Upgadeable](/contracts/Upgadeable)
