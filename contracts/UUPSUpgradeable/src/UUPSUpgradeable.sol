@@ -4,4 +4,4 @@ pragma solidity ^0.8.13;
 
 import "hardhat/console.sol";
 
-contract MoshDAOAuctionHouse {}
+contract UUPSUpgradeable {}

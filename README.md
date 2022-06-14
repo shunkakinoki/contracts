@@ -49,6 +49,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [LlamaPay](/contracts/LlamaPay) - [Souce](https://github.com/LlamaPay/llamapay) from [LlamaPay](https://github.com/LlamaPay)
 - [ ] [Loot](/contracts/Loot) - [Source](https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7#code) from [FredCoen](https://github.com/abdulsamijay)
 - [ ] [MerkleAirdopStarter](/contracts/MerkleAirdopStarter) - [Source](https://github.com/Anish-Agnihotri/merkle-airdrop-starter) from [Anish](https://github.com/Anish-Agnihotri)
+- [x] [MinimalProxy](/contracts/MinimalProxy) - [Source](https://github.com/fracton-ventures/foundry-minimal-proxy-patten) from [fracton-ventures](https://github.com/fracton-ventures)
 - [ ] [MultiRaffle](/contracts/MultiRaffle) - [Source](https://github.com/Anish-Agnihotri/MultiRaffle) from [Anish](https://github.com/Anish-Agnihotri)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop) from [m1guelpf](https://github.com/m1guelpf)
@@ -63,9 +64,11 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [Renoun](/contracts/Renoun) - [Source](https://github.com/Jon-Becker/renoun) from [Jon Becker](https://github.com/Jon-Becker)
 - [ ] [Shrine](/contracts/Shrine) - [Source](https://github.com/Astrodrop/shrine) from [Astrodrop](https://github.com/Astrodrop)
 - [x] [SolmateNFT](/contracts/SolmateNFT) - [Source](https://github.com/FredCoen/nft-tutorial) from [FredCoen](https://github.com/FredCoen)
+- [x] [TransparentUpgradeableProxy](/contracts/TransparentUpgradeableProxy) - [Source](https://github.com/fracton-ventures/foundry-transparent-proxy-pattern) from [fracton-ventures](https://github.com/fracton-ventures)
 - [ ] [TWiDAOs](/contracts/TWiDAOs)
 - [x] [TsujiPoker](/contracts/TsujiPoker) - [Deployment](https://etherscan.io/address/0x2442f53979e9d0b990a7029e95cfdac6ad3a81df)
 - [ ] [Upgadeable](/contracts/Upgadeable)
+- [x] [UUPSUpgradeable](/contracts/UUPSUpgradeable) - [Source](https://github.com/fracton-ventures/foundry-UUPS-proxy-pattern) from [fracton-ventures](https://github.com/fracton-ventures)
 - [ ] [ViewAndPure](/contracts/ViewAndPure)
 - [ ] [WagumiCats](/contracts/WagumiCats) - [Source](https://github.com/wagumi/wagumi) from [Wagumi DAO](https://github.com/wagumi)
 - [ ] [WagumiCatsV2](/contracts/WagumiCatsV2)
@@ -86,3 +89,4 @@ https://github.com/kadenzipfel/gas-optimizations
 
 https://github.com/kadenzipfel/smart-contract-attack-vectors
 https://github.com/ConsenSys/smart-contract-best-practices
+https://github.com/iskdrews/awesome-solidity-gas-optimization
