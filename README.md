@@ -53,6 +53,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [MultiRaffle](/contracts/MultiRaffle) - [Source](https://github.com/Anish-Agnihotri/MultiRaffle) from [Anish](https://github.com/Anish-Agnihotri)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop) from [m1guelpf](https://github.com/m1guelpf)
+- [x] [NFTVanity](/contracts/NFTVanity) - [Source](https://github.com/RagePit/NFTVanity) from [RagePit](https://github.com/RagePit)
 - [ ] [Nouns](/contracts/Nouns) - [Source](https://github.com/nounsDAO/nouns-monorepo) from [Nouns DAO](https://github.com/nounsDAO)
 - [x] [OpenZeppelinNFT](/contracts/OpenZeppelinNFT) - [Source](https://github.com/FredCoen/nft-tutorial) from [FredCoen](https://github.com/FredCoen)
 - [ ] [OKPC](/contracts/OKPC) - [Source](https://etherscan.io/token/0x7183209867489e1047f3a7c23ea1aed9c4e236e8#code) from [OKPC](https://okpc.app/)
