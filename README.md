@@ -28,6 +28,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [Clones](/contracts/Clones)
 - [x] [ClonesWithImmutableArgs](/contracts/ClonesWithImmutableArgs) - [Source](https://github.com/wighawag/clones-with-immutable-args) from [wighawag](https://github.com/wighawag)
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site) from by [DDAO](https://github.com/Developer-DAO)
+- [x] [CodeForDAO](/contracts/CodeForDAO) - [Source](https://github.com/CodeforDAO/contracts) from [CodeforDAO](https://github.com/CodeforDAO)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts) from [Crypto Coven](https://github)
 - [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft) from [FredCoen](https://github.com/FredCoen)
 - [x] [EIP712](/contracts/EIP712) - [Source](https://github.com/kulkarohan/deposit) from [kulkarohan](https://github.com/kulkarohan)
