@@ -25,6 +25,8 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [Box](/contracts/Box)
 - [x] [BitsAndBytes](/contracts/BitsAndBytes)
 - [x] [Create2](/contracts/Create2)
+- [x] [Clones](/contracts/Clones)
+- [x] [ClonesWithImmutableArgs](/contracts/ClonesWithImmutableArgs) - [Source](https://github.com/wighawag/clones-with-immutable-args) from [wighawag](https://github.com/wighawag)
 - [ ] [CODE](/contracts/CODE) - [Source](https://github.com/Developer-DAO/code-claim-site) from by [DDAO](https://github.com/Developer-DAO)
 - [ ] [CryptoCoven](/contracts/CryptoCoven) - [Source](https://github.com/crypto-coven/contracts) from [Crypto Coven](https://github)
 - [x] [CryptoTestersNFT](/contracts/CryptoTestersNFT) - [Source](https://github.com/FredCoen/cryptotesters-merkle-whitelist-nft) from [FredCoen](https://github.com/FredCoen)
@@ -53,6 +55,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [MultiRaffle](/contracts/MultiRaffle) - [Source](https://github.com/Anish-Agnihotri/MultiRaffle) from [Anish](https://github.com/Anish-Agnihotri)
 - [ ] [NFT](/contracts/NFT)
 - [ ] [NFTTokenDrop](/contracts/NFTTokenDrop) - [Source](https://github.com/m1guelpf/nft-token-drop) from [m1guelpf](https://github.com/m1guelpf)
+- [x] [NFTVanity](/contracts/NFTVanity) - [Source](https://github.com/RagePit/NFTVanity) from [RagePit](https://github.com/RagePit)
 - [ ] [Nouns](/contracts/Nouns) - [Source](https://github.com/nounsDAO/nouns-monorepo) from [Nouns DAO](https://github.com/nounsDAO)
 - [x] [OpenZeppelinNFT](/contracts/OpenZeppelinNFT) - [Source](https://github.com/FredCoen/nft-tutorial) from [FredCoen](https://github.com/FredCoen)
 - [ ] [OKPC](/contracts/OKPC) - [Source](https://etherscan.io/token/0x7183209867489e1047f3a7c23ea1aed9c4e236e8#code) from [OKPC](https://okpc.app/)
@@ -83,10 +86,15 @@ All rights reserved to the individual authors and licensing of the specific pack
 
 ### Gas Optimizations
 
-https://github.com/kadenzipfel/gas-optimizations
+- https://github.com/kadenzipfel/gas-optimizations
+- https://github.com/ZeroEkkusu/re-golf-course
 
-## Security
+### Reproductions
 
-https://github.com/kadenzipfel/smart-contract-attack-vectors
-https://github.com/ConsenSys/smart-contract-best-practices
-https://github.com/iskdrews/awesome-solidity-gas-optimization
+- https://github.com/SunWeb3Sec/DeFiHackLabs
+
+### Security
+
+- https://github.com/kadenzipfel/smart-contract-attack-vectors
+- https://github.com/ConsenSys/smart-contract-best-practices
+- https://github.com/iskdrews/awesome-solidity-gas-optimization
