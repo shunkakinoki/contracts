@@ -155,9 +155,39 @@ contract EVMTest is Test {
     assertEq(evm.signExtend(0, 0x7F), 0x7F);
   }
 
-  // 10 GAS 3: mulMod(uint256, uint256, uint256)
+  // 10 GAS 3: lt(uint256, uint256)
   function testLt() public {
     assertEq(evm.lt(9, 10), 1);
     assertEq(evm.lt(10, 10), 0);
+  }
+
+  // 11 GAS 3: gt(uint256, uint256)
+  function testGt() public {
+    assertEq(evm.gt(10, 9), 1);
+    assertEq(evm.gt(10, 10), 0);
+  }
+
+  // 12 GAS 3: slt(uint256, uint256)
+  function testSlt() public {
+    assertEq(
+      evm.slt(
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF,
+        0
+      ),
+      1
+    );
+    assertEq(evm.slt(10, 10), 0);
+  }
+
+  // 13 GAS 3: sgt(uint256, uint256)
+  function testSgt() public {
+    assertEq(
+      evm.sgt(
+        0,
+        0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      ),
+      1
+    );
+    assertEq(evm.sgt(10, 10), 0);
   }
 }
