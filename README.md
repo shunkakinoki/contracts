@@ -84,10 +84,11 @@ All rights reserved to the individual authors and licensing of the specific pack
 
 ### Gas Optimizations
 
-https://github.com/kadenzipfel/gas-optimizations
+- https://github.com/kadenzipfel/gas-optimizations
+- https://github.com/ZeroEkkusu/re-golf-course
 
 ## Security
 
-https://github.com/kadenzipfel/smart-contract-attack-vectors
-https://github.com/ConsenSys/smart-contract-best-practices
-https://github.com/iskdrews/awesome-solidity-gas-optimization
+- https://github.com/kadenzipfel/smart-contract-attack-vectors
+- https://github.com/ConsenSys/smart-contract-best-practices
+- https://github.com/iskdrews/awesome-solidity-gas-optimization
