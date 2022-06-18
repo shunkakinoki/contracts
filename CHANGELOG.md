@@ -1,3 +1,14 @@
+# [1.44.0](https://github.com/shunkakinoki/contracts/compare/v1.43.0...v1.44.0) (2022-06-18)
+
+### Features
+
+- ini clones with immutable arge ([c18bd8b](https://github.com/shunkakinoki/contracts/commit/c18bd8b7aa63c95319a47c608623f0e4b9e1c3c2))
+
+### Performance Improvements
+
+- ini clones contracts ([83b0d7f](https://github.com/shunkakinoki/contracts/commit/83b0d7f56c68e6c0de951e10a531c772d78a0af2))
+- ini vanity resolver ([8fd19be](https://github.com/shunkakinoki/contracts/commit/8fd19bed78f767748dd6adbeb5d4ed1232c18d5a))
+
 # [1.43.0](https://github.com/shunkakinoki/contracts/compare/v1.42.1...v1.43.0) (2022-06-14)
 
 ### Features
