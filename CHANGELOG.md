@@ -1,3 +1,9 @@
+# [1.45.0](https://github.com/shunkakinoki/contracts/compare/v1.44.0...v1.45.0) (2022-06-18)
+
+### Features
+
+- ini codefordao ([8899b73](https://github.com/shunkakinoki/contracts/commit/8899b73cf6aeb7d833eb7e711eb30b7a8220bfaa))
+
 # [1.44.0](https://github.com/shunkakinoki/contracts/compare/v1.43.0...v1.44.0) (2022-06-18)
 
 ### Features
