@@ -87,7 +87,11 @@ All rights reserved to the individual authors and licensing of the specific pack
 - https://github.com/kadenzipfel/gas-optimizations
 - https://github.com/ZeroEkkusu/re-golf-course
 
-## Security
+### Reproductions
+
+- https://github.com/SunWeb3Sec/DeFiHackLabs
+
+### Security
 
 - https://github.com/kadenzipfel/smart-contract-attack-vectors
 - https://github.com/ConsenSys/smart-contract-best-practices
