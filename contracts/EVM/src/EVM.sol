@@ -96,10 +96,31 @@ contract EVM {
     }
   }
 
-  // 10: lt
+  // 10: LT
   function lt(uint256 a, uint256 b) public pure returns (uint256 result) {
     assembly {
       result := lt(a, b)
+    }
+  }
+
+  // 11: GT
+  function gt(uint256 a, uint256 b) public pure returns (uint256 result) {
+    assembly {
+      result := gt(a, b)
+    }
+  }
+
+  // 12: LT
+  function slt(uint256 a, uint256 b) public pure returns (uint256 result) {
+    assembly {
+      result := slt(a, b)
+    }
+  }
+
+  // 13: GT
+  function sgt(uint256 a, uint256 b) public pure returns (uint256 result) {
+    assembly {
+      result := sgt(a, b)
     }
   }
 }
