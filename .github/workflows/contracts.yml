@@ -16,6 +16,9 @@ jobs:
       - uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
+      - uses: huff-language/huff-toolchain@v2
+        with:
+          version: nightly
       - if: github.event_name == 'push'
         run: |
           forge test -vvv --ffi --gas-report

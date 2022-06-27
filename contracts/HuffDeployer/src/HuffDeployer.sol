@@ -21,11 +21,10 @@ contract HuffDeployer {
 
   function deploy(string memory fileName) public returns (address) {
     ///@notice create a list of strings with the commands necessary to compile Huff contracts
-    string[] memory cmds = new string[](4);
-    cmds[0] = "./node_modules/.bin/huffc";
+    string[] memory cmds = new string[](3);
+    cmds[0] = "huffc";
     cmds[1] = string(string.concat(fileName, ".huff"));
-    cmds[2] = "--bytecode";
-    cmds[3] = "-n";
+    cmds[2] = "-b";
 
     ///@notice compile the Huff contract and return the bytecode
     bytes memory bytecode = cheatCodes.ffi(cmds);
