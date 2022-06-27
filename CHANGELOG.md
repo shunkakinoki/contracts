@@ -1,3 +1,10 @@
+# [1.46.0](https://github.com/shunkakinoki/contracts/compare/v1.45.1...v1.46.0) (2022-06-27)
+
+### Features
+
+- ini forge std release ([5edb5e5](https://github.com/shunkakinoki/contracts/commit/5edb5e5c68fe24ecbfd464d73ac55a0b0d15a796))
+- ini simple store ([c03c777](https://github.com/shunkakinoki/contracts/commit/c03c777817282841a6cbbe59e9bc9ff568b40486))
+
 ## [1.45.1](https://github.com/shunkakinoki/contracts/compare/v1.45.0...v1.45.1) (2022-06-27)
 
 ### Performance Improvements
