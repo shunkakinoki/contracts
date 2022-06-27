@@ -1,31 +1,38 @@
+/* Interface */
+#define function setValue(uint256) nonpayable returns ()
+#define function getValue() view returns (uint256)
 
 /* Storage Slots */
-#define constant VAL_LOCATION = FREE_STORAGE_POINTER()
+#define constant VALUE_LOCATION = FREE_STORAGE_POINTER()
 
-/* Constructor */
-#define macro CONSTRUCTOR() = takes(0) returns (0) {}
+/* Methods */
+#define macro SET_VALUE() = takes (0) returns (0) {
+    0x04 calldataload   // [value]
+    [VALUE_LOCATION]    // [ptr, value]
+    sstore              // []
+}
 
-//Get the value from storage
-#define macro GET() = takes (0) returns (1) {
-    [VAL_LOCATION] sload 0x00 mstore                     
+#define macro GET_VALUE() = takes (0) returns (0) {
+    // Load value from storage.
+    [VALUE_LOCATION]   // [ptr]
+    sload                // [value]
+
+    // Store value in memory.
+    0x00 mstore
+
+    // Return value
     0x20 0x00 return
 }
 
-//Update the value in storage
-#define macro STORE() = takes (1) returns (0) {
-    [VAL_LOCATION] sstore                     
-}
-
-
-// Main Macro
-#define macro MAIN() = takes(0) returns (0) {
+#define macro MAIN() = takes (0) returns (0) {
     // Identify which function is being called.
     0x00 calldataload 0xE0 shr
-    dup1 0xa9059cbb eq get jumpi
-    dup1 0x6d4ce63c eq store jumpi
+    dup1 0x55241077 eq set jumpi
+    dup1 0x20965255 eq get jumpi
 
+    set:
+        SET_VALUE()
     get:
-        GET()
-    store:
-        STORE()
+        GET_VALUE()
+
 }
