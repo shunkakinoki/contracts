@@ -1,3 +1,9 @@
+## [1.45.1](https://github.com/shunkakinoki/contracts/compare/v1.45.0...v1.45.1) (2022-06-27)
+
+### Performance Improvements
+
+- ini huff deployer ([fa4035d](https://github.com/shunkakinoki/contracts/commit/fa4035d5e9d9e4d2e33156f3d1c2e9d0093052e9))
+
 # [1.45.0](https://github.com/shunkakinoki/contracts/compare/v1.44.0...v1.45.0) (2022-06-18)
 
 ### Features
