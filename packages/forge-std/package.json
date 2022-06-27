@@ -6,8 +6,10 @@
   "license": "Apache-2.0",
   "author": "Foundry",
   "files": [
+    "test",
     "console.sol",
     "console2.sol",
+    "Script.sol",
     "Test.sol",
     "Vm.sol"
   ],
