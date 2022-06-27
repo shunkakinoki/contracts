@@ -14,12 +14,15 @@ contract SimpleStoreTest is Test {
 
   function setUp() public {
     ///@notice deploy a new instance of ISimplestore by passing in the address of the deployed Huff contract
-    string memory gm = huffDeployer.deployContract();
-    console.log(gm);
+    simpleStore = ISimpleStore(
+      huffDeployer.deploy("huff_contracts/SimpleStore")
+    );
   }
 
-  function testGet() public {
-    string memory gm = huffDeployer.deployContract();
-    assertEq(gm, "gm");
+  function testSetAndGetValue(uint256 value) public {
+    simpleStore.setValue(value);
+    console.log(value);
+    console.log(simpleStore.getValue());
+    assertEq(value, simpleStore.getValue());
   }
 }
