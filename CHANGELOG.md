@@ -1,3 +1,9 @@
+## [1.47.1](https://github.com/shunkakinoki/contracts/compare/v1.47.0...v1.47.1) (2022-06-28)
+
+### Bug Fixes
+
+- contract minutes 60 ([5c09c81](https://github.com/shunkakinoki/contracts/commit/5c09c81c97a5583517aa52bab26ffdca168d92b2))
+
 # [1.47.0](https://github.com/shunkakinoki/contracts/compare/v1.46.0...v1.47.0) (2022-06-28)
 
 ### Features
