@@ -1,3 +1,9 @@
+# [1.47.0](https://github.com/shunkakinoki/contracts/compare/v1.46.0...v1.47.0) (2022-06-28)
+
+### Features
+
+- ini huff foundry docker ([c54db55](https://github.com/shunkakinoki/contracts/commit/c54db55dadd4dd781cf851c7de1a76b9fd6754db))
+
 # [1.46.0](https://github.com/shunkakinoki/contracts/compare/v1.45.1...v1.46.0) (2022-06-27)
 
 ### Features
