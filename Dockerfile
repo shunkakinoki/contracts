@@ -27,10 +27,12 @@ RUN wget -q -O ${GLIBC_KEY_FILE} ${GLIBC_KEY} \
     && wget -O glibc.apk ${GLIBC_RELEASE} \
     && apk add glibc.apk --force
 
-COPY --from=build /opt/huff-rs/target/release/huffc /usr/local/bin/hufc
-COPY --from=build /opt/foundry/target/release/forge /usr/local/bin/forge
-COPY --from=build /opt/foundry/target/release/cast /usr/local/bin/cast
-COPY --from=build /opt/foundry/target/release/anvil /usr/local/bin/anvil
+COPY --from=build /opt/huff-rs/target/release/huffc .
+COPY --from=build /opt/foundry/target/release/forge .
+COPY --from=build /opt/foundry/target/release/cast .
+COPY --from=build /opt/foundry/target/release/anvil .
+
+COPY . .
 
 RUN forge install
 RUN forge build
