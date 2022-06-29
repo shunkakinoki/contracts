@@ -1,3 +1,9 @@
+## [1.47.2](https://github.com/shunkakinoki/contracts/compare/v1.47.1...v1.47.2) (2022-06-29)
+
+### Bug Fixes
+
+- ini bin to local path ([7402b96](https://github.com/shunkakinoki/contracts/commit/7402b9635cd5cba107731786c5085aa58c0ca9d6))
+
 ## [1.47.1](https://github.com/shunkakinoki/contracts/compare/v1.47.0...v1.47.1) (2022-06-28)
 
 ### Bug Fixes
