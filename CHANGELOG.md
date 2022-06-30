@@ -1,3 +1,13 @@
+# [1.48.0](https://github.com/shunkakinoki/contracts/compare/v1.47.2...v1.48.0) (2022-06-30)
+
+### Features
+
+- ini the possessed ([ed659ec](https://github.com/shunkakinoki/contracts/commit/ed659ec45a37b87118a2845f5b5ffba9646ed3fa))
+
+### Performance Improvements
+
+- invoke release ([764b193](https://github.com/shunkakinoki/contracts/commit/764b1932ba5e1edd301556de8a987c45ec7ebf90))
+
 ## [1.47.2](https://github.com/shunkakinoki/contracts/compare/v1.47.1...v1.47.2) (2022-06-29)
 
 ### Bug Fixes
