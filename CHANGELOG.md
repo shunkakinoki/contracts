@@ -1,3 +1,9 @@
+## [1.48.1](https://github.com/shunkakinoki/contracts/compare/v1.48.0...v1.48.1) (2022-06-30)
+
+### Performance Improvements
+
+- invoke release bin ([26b516a](https://github.com/shunkakinoki/contracts/commit/26b516aa4cb2ea04e941587427df7de382d7ec55))
+
 # [1.48.0](https://github.com/shunkakinoki/contracts/compare/v1.47.2...v1.48.0) (2022-06-30)
 
 ### Features
