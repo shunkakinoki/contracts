@@ -34,8 +34,8 @@ COPY --from=build /opt/foundry/target/release/anvil .
 
 COPY . .
 
-RUN forge install
-RUN forge build
-RUN forge test --ffi
+RUN /bin/sh -c forge install
+RUN /bin/sh -c forge build
+RUN /bin/sh -c forge test --ffi
 
-ENTRYPOINT ["forge"]
+ENTRYPOINT ["/bin/sh", "-c"]
