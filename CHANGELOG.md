@@ -1,3 +1,9 @@
+## [1.48.2](https://github.com/shunkakinoki/contracts/compare/v1.48.1...v1.48.2) (2022-07-01)
+
+### Performance Improvements
+
+- invoke release v3 ([5649bd2](https://github.com/shunkakinoki/contracts/commit/5649bd26b012eec96767006fdff96b2febc2c055))
+
 ## [1.48.1](https://github.com/shunkakinoki/contracts/compare/v1.48.0...v1.48.1) (2022-06-30)
 
 ### Performance Improvements
