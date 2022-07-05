@@ -1,3 +1,9 @@
+## [1.48.3](https://github.com/shunkakinoki/contracts/compare/v1.48.2...v1.48.3) (2022-07-05)
+
+### Performance Improvements
+
+- update docker contracts ([5d3262a](https://github.com/shunkakinoki/contracts/commit/5d3262acbcdc38585b70bbe3f2f28c35f4ac47b3))
+
 ## [1.48.2](https://github.com/shunkakinoki/contracts/compare/v1.48.1...v1.48.2) (2022-07-01)
 
 ### Performance Improvements
