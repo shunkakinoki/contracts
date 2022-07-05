@@ -1,3 +1,9 @@
+# [1.49.0](https://github.com/shunkakinoki/contracts/compare/v1.48.3...v1.49.0) (2022-07-05)
+
+### Features
+
+- ini chain toadz ([c5a44c3](https://github.com/shunkakinoki/contracts/commit/c5a44c3fc5cbdd09d0cfddc8e51f7e14313b40da))
+
 ## [1.48.3](https://github.com/shunkakinoki/contracts/compare/v1.48.2...v1.48.3) (2022-07-05)
 
 ### Performance Improvements
