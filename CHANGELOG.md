@@ -1,3 +1,9 @@
+## [1.49.1](https://github.com/shunkakinoki/contracts/compare/v1.49.0...v1.49.1) (2022-07-06)
+
+### Performance Improvements
+
+- ini forge double quotes ([34c3b03](https://github.com/shunkakinoki/contracts/commit/34c3b030104d9ffb2f6050ba411b55984723ffe4))
+
 # [1.49.0](https://github.com/shunkakinoki/contracts/compare/v1.48.3...v1.49.0) (2022-07-05)
 
 ### Features
