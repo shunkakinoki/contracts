@@ -1,3 +1,9 @@
+## [1.49.2](https://github.com/shunkakinoki/contracts/compare/v1.49.1...v1.49.2) (2022-07-07)
+
+### Performance Improvements
+
+- ini forge ([89fbdd3](https://github.com/shunkakinoki/contracts/commit/89fbdd37fa8affd83ce629b0f2be9c7e9c261ef6))
+
 ## [1.49.1](https://github.com/shunkakinoki/contracts/compare/v1.49.0...v1.49.1) (2022-07-06)
 
 ### Performance Improvements
