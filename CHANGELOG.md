@@ -1,3 +1,9 @@
+## [1.49.3](https://github.com/shunkakinoki/contracts/compare/v1.49.2...v1.49.3) (2022-07-07)
+
+### Performance Improvements
+
+- ini run sh ([91151fd](https://github.com/shunkakinoki/contracts/commit/91151fd105b4273fa54ddfb5fbbd893df6a24ce0))
+
 ## [1.49.2](https://github.com/shunkakinoki/contracts/compare/v1.49.1...v1.49.2) (2022-07-07)
 
 ### Performance Improvements
