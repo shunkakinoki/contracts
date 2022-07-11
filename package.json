@@ -94,9 +94,6 @@
     "watch": "yarn run watch:compile",
     "watch:compile": "hardhat watch compile"
   },
-  "npmpackagejsonlint": {
-    "extends": "@shunkakinoki/npm-package-json-lint-config"
-  },
   "dependencies": {
     "@ethersproject/providers": "^5.6.5",
     "@nomiclabs/eslint-plugin-hardhat-internal-rules": "^1.0.0",
