@@ -1,8 +1,0 @@
-{
-  "extends": "npm-package-json-lint-config-default",
-  "rules": {
-    "license-type": "off",
-    "require-author": "off",
-    "require-description": "off"
-  }
-}
