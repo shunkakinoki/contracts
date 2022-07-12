@@ -1,0 +1,117 @@
+/* Storage */
+#define constant ARRAY_LOCATION = FREE_STORAGE_POINTER()
+
+/* Methods */
+// Sets the whole array to a given value
+#define macro SET_ARRAY() = takes (1) returns (0) {
+    [ARRAY_LOCATION] sstore
+}
+
+// Returns the whole array
+#define macro GET_ARRAY() = takes (0) returns (1) {
+    [ARRAY_LOCATION] sload
+}
+
+// Sets the whole array to 0x0
+#define macro EMPTY_ARRAY() = takes (0) returns (0) {
+    0x0
+    [ARRAY_LOCATION] sstore
+}
+
+// Generates a bitmask for SET_NUMBER() given an index
+#define macro GET_BITMASK() = takes (1) returns (1) {
+    // [index]
+    0x03                        // [0x03, index]
+    shl                         // [index << 0x03]
+    0xff                        // [0xff, index << 0x03]
+    swap1                       // [index << 0x03, 0xff]
+    shl                         // [0xff << (index << 3)]
+    0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+    xor                         // [bitmask]
+}
+
+// Offsets a given number to a given index in the array for SET_NUMBER()
+#define macro OFFSET_NUMBER() = takes (2) returns (1) {
+    // [index, number]
+    0x0100                      // [0x0100, index, number]
+    exp                         // [0x0100 ** index, number]
+    mul                         // [(0x10 ** index) * number]
+}
+
+// Stores a given byte at a given index
+#define macro SET_NUMBER() = takes (2) returns (0) {
+    // [number, index]
+    dup2                        // [index, number, index]
+    OFFSET_NUMBER()             // [offsetted number, index]
+    swap1                       // [index, offsetted number]
+    GET_BITMASK()               // [bitmask, offsetted number]
+    GET_ARRAY()                 // [slot, bitmask, offsetted number]
+    and                         // [cleared slot, offsetted number]
+    xor                         // [modified slot]
+    SET_ARRAY()                 // []
+}
+
+// Retrives the byte stored at index in the array
+#define macro GET_NUMBER() = takes (1) returns (1) {
+    // [index]
+    0x08                        // [0x08, index]
+    mul                         // [0x08 * index]
+    GET_ARRAY()                 // [slot, 0x08 * index]
+    swap1                       // [0x08 * index, slot]
+    shr                         // [shifted slot]
+    0xff                        // [0xff, shifted slot]
+    and                         // [number]
+}
+
+/* Interface */
+#define function testBitmask(uint8) view returns (bytes32)
+#define function testNumberOffset(uint8,uint8) view returns (bytes32)
+#define function testNumberWrite(uint8,uint8) nonpayable returns (bytes32)
+#define function testNumberRead(uint8) view returns (bytes32)
+
+/* Methods */
+#define macro TEST_BITMASK() = takes (0) returns (0) {
+    0x04 calldataload   // [index]
+    GET_BITMASK()       // [bitmask]
+    0x00 mstore
+    0x20 0x00 return
+}
+
+#define macro TEST_NUMBER_OFFSET() = takes (0) returns (0) {
+    0x04 calldataload   // [number]
+    0x24 calldataload   // [index, number]
+    OFFSET_NUMBER()     // [offsetted number]
+    0x00 mstore
+    0x20 0x00 return
+}
+
+#define macro TEST_NUMBER_WRITE() = takes (0) returns (0) {
+    0x24 calldataload   // [index]
+    0x04 calldataload   // [number, index]
+    SET_NUMBER()
+}
+
+#define macro TEST_NUMBER_READ() = takes (0) returns (0) {
+    0x04 calldataload   // [index]
+    GET_NUMBER()        // [number]
+    0x00 mstore
+    0x20 0x00 return
+}
+
+#define macro MAIN() = takes (0) returns (0) {
+    // Identify which function is being called.
+    0x00 calldataload 0xE0 shr
+    dup1 0xd5073304 eq testbitmask jumpi
+    dup1 0xa0255793 eq testnumberoffset jumpi
+    dup1 0x810bcd90 eq testnumberwrite jumpi
+    dup1 0x41279ea3 eq testnumberread jumpi
+
+    testbitmask:
+        TEST_BITMASK()
+    testnumberoffset:
+        TEST_NUMBER_OFFSET()
+    testnumberwrite:
+        TEST_NUMBER_WRITE()
+    testnumberread:
+        TEST_NUMBER_READ()
+}
