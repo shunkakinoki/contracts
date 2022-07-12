@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: MIT
+// Code from: https://github.com/h00p30/8bitArray
 pragma solidity ^0.8.13;
 
 import { Test } from "forge-std/Test.sol";
