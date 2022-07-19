@@ -1,0 +1,11 @@
+{
+  "name": "@shunkakinoki/boundlayerable",
+  "version": "1.0.0",
+  "private": false,
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "fix": "cd ../.. && yarn run fix"
+  }
+}
