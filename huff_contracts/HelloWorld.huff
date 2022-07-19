@@ -1,0 +1,5 @@
+#define macro MAIN() = takes (0) returns (0) {
+    // cast --from-utf8 "Hello, World\!"
+    0x48656c6c6f2c20576f726c6421
+    0x00 mstore
+}

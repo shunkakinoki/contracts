@@ -1,0 +1,47 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.4;
+
+import { BoundLayerable } from "../BoundLayerable.sol";
+import { BoundLayerableVariations } from "../BoundLayerableVariations.sol";
+import { LayerVariation } from "../interface/Structs.sol";
+import { ImageLayerable } from "../metadata/ImageLayerable.sol";
+import { LayerType } from "../interface/Enums.sol";
+import { RandomTraitsImpl } from "../traits/RandomTraitsImpl.sol";
+import { RandomTraits } from "../traits/RandomTraits.sol";
+import { MAX_INT } from "../interface/Constants.sol";
+
+contract BoundLayerableSnapshotImpl is BoundLayerable, RandomTraitsImpl {
+  constructor() BoundLayerable("", "", address(1234), 5555, 7, 1, address(0)) {
+    packedBatchRandomness = bytes32(uint256(1));
+    for (uint256 i; i < 8; ++i) {
+      uint256 dist;
+      for (uint256 j; j < 32; ++j) {
+        dist |= ((j + 1) * 7) << (256 - (j + 1) * 8);
+      }
+      layerTypeToPackedDistributions[getLayerType(i)] = dist;
+    }
+    metadataContract = new ImageLayerable("default", msg.sender);
+  }
+
+  function setPackedBatchRandomness(bytes32 seed) public {
+    packedBatchRandomness = seed;
+  }
+
+  function mint() public {
+    _setPlaceholderBinding(_nextTokenId());
+    super._mint(msg.sender, 7);
+  }
+
+  function setBoundLayers(uint256 tokenId, uint256 bindings) public {
+    _tokenIdToBoundLayers[tokenId] = bindings;
+  }
+
+  function setBoundLayersBulk(
+    uint256[] calldata tokenIds,
+    uint256[] calldata bindings
+  ) public {
+    for (uint256 i = 0; i < tokenIds.length; ++i) {
+      _tokenIdToBoundLayers[tokenIds[i]] = bindings[i];
+    }
+  }
+}
