@@ -6,7 +6,7 @@ pragma solidity ^0.8.13;
 import { Vm } from "forge-std/Vm.sol";
 import { DSTest } from "ds-test/test.sol";
 import { stdError } from "forge-std/test/StdError.t.sol";
-import { ERC721 } from "@rari-capital/solmate/src/tokens/ERC721.sol";
+import { ERC721 } from "solmate/src/tokens/ERC721.sol";
 import { LilFractional, NFTShare } from "../LilFractional.sol";
 
 contract User {}

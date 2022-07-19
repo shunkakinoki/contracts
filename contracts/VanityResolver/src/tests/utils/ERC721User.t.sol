@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.13;
 
-import { ERC721, ERC721TokenReceiver } from "@rari-capital/solmate/src/tokens/ERC721.sol";
+import { ERC721, ERC721TokenReceiver } from "solmate/src/tokens/ERC721.sol";
 
 contract ERC721User is ERC721TokenReceiver {
   ERC721 token;

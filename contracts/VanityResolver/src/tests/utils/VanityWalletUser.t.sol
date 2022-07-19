@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.13;
 
-import { ERC721 } from "@rari-capital/solmate/src/tokens/ERC721.sol";
+import { ERC721 } from "solmate/src/tokens/ERC721.sol";
 
 import { ERC721User } from "./ERC721User.t.sol";
 import { VanityResolver } from "../../VanityResolver.sol";

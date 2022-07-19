@@ -95,6 +95,7 @@
     "watch:compile": "hardhat watch compile"
   },
   "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
     "@ethersproject/providers": "^5.6.5",
     "@nomiclabs/eslint-plugin-hardhat-internal-rules": "^1.0.0",
     "@nomiclabs/hardhat-ethers": "^2.0.5",
@@ -115,6 +116,7 @@
     "hardhat-watcher": "^2.3.0",
     "solc": "^0.8.13",
     "solidity-coverage": "^0.7.21",
+    "solmate": "^6.5.0",
     "ts-node": "^10.7.0"
   },
   "devDependencies": {

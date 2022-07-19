@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 
 import { DSTest } from "ds-test/test.sol";
 
-import { ERC20 } from "@rari-capital/solmate/src/tokens/ERC20.sol";
+import { ERC20 } from "solmate/src/tokens/ERC20.sol";
 
 import { Shrine } from "../Shrine.sol";
 import { MockERC20 } from "./mocks/MockERC20.t.sol";
