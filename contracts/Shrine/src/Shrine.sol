@@ -19,8 +19,8 @@ pragma solidity ^0.8.13;
  */
 
 import { MerkleProof } from "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
-import { ERC20 } from "solmate/src/tokens/ERC20.sol";
-import { SafeTransferLib } from "solmate/src/utils/SafeTransferLib.sol";
+import { ERC20 } from "@rari-capital/solmate/src/tokens/ERC20.sol";
+import { SafeTransferLib } from "@rari-capital/solmate/src/utils/SafeTransferLib.sol";
 
 import { Ownable } from "./lib/Ownable.sol";
 import { ReentrancyGuard } from "./lib/ReentrancyGuard.sol";

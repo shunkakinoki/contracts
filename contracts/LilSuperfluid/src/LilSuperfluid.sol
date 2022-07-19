@@ -3,7 +3,7 @@
 
 pragma solidity ^0.8.13;
 
-import { ERC20 } from "solmate/src/tokens/ERC20.sol";
+import { ERC20 } from "@rari-capital/solmate/src/tokens/ERC20.sol";
 
 /// @title lil superfluid
 /// @author Miguel Piedrafita

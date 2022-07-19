@@ -2,8 +2,8 @@
 
 pragma solidity ^0.8.13;
 
-import { ERC721 } from "solmate/src/tokens/ERC721.sol";
-import { SafeTransferLib } from "solmate/src/utils/SafeTransferLib.sol";
+import { ERC721 } from "@rari-capital/solmate/src/tokens/ERC721.sol";
+import { SafeTransferLib } from "@rari-capital/solmate/src/utils/SafeTransferLib.sol";
 
 /// @title lil opensea
 /// @author Miguel Piedrafita

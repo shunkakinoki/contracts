@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.8.4;
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
-import {SafeTransferLib} from "solmate/src/utils/SafeTransferLib.sol";
-import {ERC20} from "solmate/src/tokens/ERC20.sol";
-import {ERC721} from "solmate/src/tokens/ERC721.sol";
+import {SafeTransferLib} from "@rari-capital/solmate/src/utils/SafeTransferLib.sol";
+import {ERC20} from "@rari-capital/solmate/src/tokens/ERC20.sol";
+import {ERC721} from "@rari-capital/solmate/src/tokens/ERC721.sol";
 
 ///@notice Ownable helper contract to withdraw ether or tokens from the contract address balance
 contract Withdrawable is Ownable {

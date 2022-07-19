@@ -3,8 +3,8 @@
 
 pragma solidity ^0.8.13;
 
-import "solmate/src/tokens/ERC20.sol";
-import "solmate/src/tokens/ERC721.sol";
+import "@rari-capital/solmate/src/tokens/ERC20.sol";
+import "@rari-capital/solmate/src/tokens/ERC721.sol";
 
 contract NFTTokenDrop is ERC20 {
   ERC721 internal immutable nft;
