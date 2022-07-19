@@ -12,6 +12,7 @@ erc721a/=lib/ERC721A/
 forge-std/=lib/forge-std/src/
 hardhat/=lib/hardhat/packages/hardhat-core/
 ds-test/=lib/ds-test/src/
+utility-contracts/=lib/utility-contracts/src/
 
 @shunkakinoki/box/=contracts/Box/src/
 @shunkakinoki/aave/=contracts/Aave/src/
