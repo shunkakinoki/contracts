@@ -4,6 +4,7 @@
 @gnosis.pm/safe-contracts/=lib/safe-contracts/
 @openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
 @openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
+openzepplin-contracts/=lib/openzeppelin-contracts/contracts/
 solmate/=lib/solmate/
 @zoralabs/core/=lib/core/
 @zoralabs/nft-editions-contracts/=lib/nft-editions/

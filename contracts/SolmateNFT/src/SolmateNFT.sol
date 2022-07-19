@@ -3,7 +3,7 @@
 
 pragma solidity 0.8.13;
 
-import "@rari-capital/solmate/src/tokens/ERC721.sol";
+import "solmate/src/tokens/ERC721.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/security/PullPayment.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";

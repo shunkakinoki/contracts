@@ -4,7 +4,7 @@
 pragma solidity ^0.8.13;
 
 import "./ILevelChecker.sol";
-import "@rari-capital/solmate/src/tokens/ERC721.sol";
+import "solmate/src/tokens/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "base64-sol/base64.sol";
 
