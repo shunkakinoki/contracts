@@ -25,6 +25,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [ ] [AaveFlashloan](/contracts/AaveFlashLoan) - [Source](https://github.com/t4sk/defi-by-example) from [ts4k](https://github.com/t4sk)
 - [x] [BatchRevealToken](/contracts/BatchRevealToken) - [Source](https://github.com/jameswenzel/batch-reveal-token) from [jameswenzel](https://github.com/jameswenzel)
 - [x] [Box](/contracts/Box)
+- [x] [BoundLayerable](/contracts/BoundLayerable) - [Source](https://github.com/jameswenzel/bound-layerable) from [jameswenzel](https://github.com/jameswenzel)
 - [x] [BitsAndBytes](/contracts/BitsAndBytes)
 - [x] [Create2](/contracts/Create2)
 - [x] [Clones](/contracts/Clones)
