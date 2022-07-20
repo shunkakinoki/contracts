@@ -1,3 +1,9 @@
+## [1.50.4](https://github.com/shunkakinoki/contracts/compare/v1.50.3...v1.50.4) (2022-07-20)
+
+### Performance Improvements
+
+- ini test sol ([c68c6fd](https://github.com/shunkakinoki/contracts/commit/c68c6fd9a351782536d7606eefe603817a9c8dd0))
+
 ## [1.50.3](https://github.com/shunkakinoki/contracts/compare/v1.50.2...v1.50.3) (2022-07-20)
 
 ### Performance Improvements
