@@ -1,3 +1,14 @@
+## [1.50.1](https://github.com/shunkakinoki/contracts/compare/v1.50.0...v1.50.1) (2022-07-20)
+
+### Bug Fixes
+
+- ds test run ([c6eb64b](https://github.com/shunkakinoki/contracts/commit/c6eb64b0156e6c2881a2cd275532f48d02df98d3))
+
+### Performance Improvements
+
+- ini contracts ([53179f1](https://github.com/shunkakinoki/contracts/commit/53179f1a247e3a3182ce266f2fc1c2967b9d3022))
+- ini ds test ([4813e8b](https://github.com/shunkakinoki/contracts/commit/4813e8b21dfd81ea86ee4eb82a282695ab23fafa))
+
 # [1.50.0](https://github.com/shunkakinoki/contracts/compare/v1.49.3...v1.50.0) (2022-07-20)
 
 ### Bug Fixes
