@@ -11,5 +11,9 @@
   ],
   "scripts": {
     "fix": "cd ../.. && yarn run fix"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

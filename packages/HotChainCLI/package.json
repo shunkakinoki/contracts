@@ -27,5 +27,9 @@
     "@openzeppelin/contracts": "^4.6.0",
     "solc": "^0.8.13",
     "xmldom": "^0.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }

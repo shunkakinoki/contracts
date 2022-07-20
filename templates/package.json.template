@@ -6,6 +6,14 @@
     "type": "git",
     "url": "https://github.com/shunkakinoki/contracts.git"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "files": [
     "src"
   ],
