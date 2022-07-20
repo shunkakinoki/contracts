@@ -1,3 +1,9 @@
+## [1.50.2](https://github.com/shunkakinoki/contracts/compare/v1.50.1...v1.50.2) (2022-07-20)
+
+### Bug Fixes
+
+- ini forge ([b377dcf](https://github.com/shunkakinoki/contracts/commit/b377dcf29585e1de1657f28560c7f941e1243df8))
+
 ## [1.50.1](https://github.com/shunkakinoki/contracts/compare/v1.50.0...v1.50.1) (2022-07-20)
 
 ### Bug Fixes
