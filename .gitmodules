@@ -46,3 +46,6 @@
 [submodule "lib/foundry-huff"]
 	path = lib/foundry-huff
 	url = https://github.com/huff-language/foundry-huff
+[submodule "lib/utility-contracts"]
+	path = lib/utility-contracts
+	url = https://github.com/jameswenzel/utility-contracts
