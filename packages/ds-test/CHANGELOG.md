@@ -1,3 +1,9 @@
+## ds-test [1.0.2](https://github.com/shunkakinoki/contracts/compare/ds-test@1.0.1...ds-test@1.0.2) (2022-07-20)
+
+### Bug Fixes
+
+- ds test run ([c6eb64b](https://github.com/shunkakinoki/contracts/commit/c6eb64b0156e6c2881a2cd275532f48d02df98d3))
+
 ## ds-test [1.0.1](https://github.com/shunkakinoki/contracts/compare/ds-test@1.0.0...ds-test@1.0.1) (2022-05-12)
 
 ### Performance Improvements
