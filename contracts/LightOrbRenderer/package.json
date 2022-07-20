@@ -1,6 +1,6 @@
 {
   "name": "@shunkakinoki/lightorbrenderer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "fix": "cd ../.. && yarn run fix"
   },
   "dependencies": {
-    "@shunkakinoki/hotchaincli": "1.4.0"
+    "@shunkakinoki/hotchaincli": "1.4.1"
   },
   "publishConfig": {
     "access": "public",
