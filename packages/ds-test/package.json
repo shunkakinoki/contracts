@@ -1,13 +1,21 @@
 {
   "name": "ds-test",
   "version": "1.0.1",
-  "private": true,
+  "private": false,
   "description": "Unofficial NPM distribution of DS Test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunkakinoki/contracts.git"
+  },
   "license": "GPL-3.0-or-later",
   "author": "Foundry",
   "scripts": {
     "build": "cp -r ../../lib/ds-test/src/* .",
     "fix": "cd ../.. && yarn run fix",
     "postinstall": "yarn run build"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
