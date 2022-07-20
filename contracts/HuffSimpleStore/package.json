@@ -1,0 +1,19 @@
+{
+  "name": "@shunkakinoki/huffsimplestore",
+  "version": "1.0.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunkakinoki/contracts.git"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "fix": "cd ../.. && yarn run fix"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
