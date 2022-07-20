@@ -15,7 +15,6 @@
   ],
   "scripts": {
     "build": "cp -r ../../lib/forge-std/src/* .",
-    "fix": "cd ../.. && yarn run fix",
-    "postinstall": "yarn run build"
+    "fix": "cd ../.. && yarn run fix"
   }
 }
