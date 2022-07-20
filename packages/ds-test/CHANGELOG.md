@@ -1,3 +1,9 @@
+## @shunkakinoki/ds-test [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/ds-test@1.0.0...@shunkakinoki/ds-test@1.0.1) (2022-07-20)
+
+### Performance Improvements
+
+- ini contracts ([3df88af](https://github.com/shunkakinoki/contracts/commit/3df88af95c333d3673c6d2ca1ab620b460f6efc8))
+
 # @shunkakinoki/ds-test 1.0.0 (2022-07-20)
 
 ### Bug Fixes
