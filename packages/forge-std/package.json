@@ -3,6 +3,10 @@
   "version": "1.1.0",
   "private": false,
   "description": "Unofficial NPM distribution of Forge Standard Library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shunkakinoki/contracts.git"
+  },
   "license": "Apache-2.0",
   "author": "Foundry",
   "files": [
