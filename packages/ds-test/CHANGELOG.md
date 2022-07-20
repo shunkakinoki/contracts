@@ -1,3 +1,9 @@
+## @shunkakinoki/ds-test [1.0.2](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/ds-test@1.0.1...@shunkakinoki/ds-test@1.0.2) (2022-07-20)
+
+### Performance Improvements
+
+- ini test sol ([c68c6fd](https://github.com/shunkakinoki/contracts/commit/c68c6fd9a351782536d7606eefe603817a9c8dd0))
+
 ## @shunkakinoki/ds-test [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/ds-test@1.0.0...@shunkakinoki/ds-test@1.0.1) (2022-07-20)
 
 ### Performance Improvements
