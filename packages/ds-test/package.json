@@ -11,8 +11,7 @@
   "author": "Foundry",
   "scripts": {
     "build": "cp -r ../../lib/ds-test/src/* .",
-    "fix": "cd ../.. && yarn run fix",
-    "postinstall": "yarn run build"
+    "fix": "cd ../.. && yarn run fix"
   },
   "publishConfig": {
     "access": "public",
