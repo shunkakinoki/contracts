@@ -9,6 +9,9 @@
   },
   "license": "GPL-3.0-or-later",
   "author": "Foundry",
+  "files": [
+    "test.sol"
+  ],
   "scripts": {
     "build": "cp -r ../../lib/ds-test/src/* .",
     "fix": "cd ../.. && yarn run fix"
