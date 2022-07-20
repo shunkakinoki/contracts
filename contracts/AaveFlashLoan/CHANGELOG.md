@@ -1,3 +1,9 @@
+## @shunkakinoki/aaveflashloan [1.0.2](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/aaveflashloan@1.0.1...@shunkakinoki/aaveflashloan@1.0.2) (2022-07-20)
+
+### Performance Improvements
+
+- ini release repo ([d981546](https://github.com/shunkakinoki/contracts/commit/d981546cf1a440703acee787be764d3afaf053bc))
+
 ## @shunkakinoki/aaveflashloan [1.0.1](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/aaveflashloan@1.0.0...@shunkakinoki/aaveflashloan@1.0.1) (2022-07-11)
 
 ### Bug Fixes
