@@ -1,3 +1,15 @@
+## forge-std [1.1.1](https://github.com/shunkakinoki/contracts/compare/forge-std@1.1.0...forge-std@1.1.1) (2022-07-20)
+
+### Bug Fixes
+
+- forge std release ([b82828a](https://github.com/shunkakinoki/contracts/commit/b82828a6b628e567eb66d4372aaa5633cdfebde8))
+- ini forge std ([8e1c8d4](https://github.com/shunkakinoki/contracts/commit/8e1c8d43f73a137a7057deeffc431bccd44cceeb))
+
+### Performance Improvements
+
+- ini release repo ([d981546](https://github.com/shunkakinoki/contracts/commit/d981546cf1a440703acee787be764d3afaf053bc))
+- ini remove postbuild ([ff27143](https://github.com/shunkakinoki/contracts/commit/ff27143979debc4c4c8a2d25a5d5df65cfb721ac))
+
 # forge-std [1.1.0](https://github.com/shunkakinoki/contracts/compare/forge-std@1.0.2...forge-std@1.1.0) (2022-06-27)
 
 ### Features
