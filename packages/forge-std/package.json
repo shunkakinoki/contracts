@@ -18,7 +18,7 @@
     "Vm.sol"
   ],
   "scripts": {
-    "build": "cp -r ../../lib/forge-std/src/* .",
+    "build": "cp -r ../../lib/forge-std/src/* . && mkdir -p ds-test && cp ../../lib/ds-test/src/test.sol ds-test/test.sol",
     "fix": "cd ../.. && yarn run fix"
   },
   "publishConfig": {

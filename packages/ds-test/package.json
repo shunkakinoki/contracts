@@ -1,5 +1,5 @@
 {
-  "name": "ds-test",
+  "name": "@shunkakinoki/ds-test",
   "version": "1.0.2",
   "private": false,
   "description": "Unofficial NPM distribution of DS Test",
