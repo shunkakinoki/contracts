@@ -1,3 +1,9 @@
+## @shunkakinoki/aaveflashloan [1.0.3](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/aaveflashloan@1.0.2...@shunkakinoki/aaveflashloan@1.0.3) (2022-07-20)
+
+### Performance Improvements
+
+- ini publish config ([3869312](https://github.com/shunkakinoki/contracts/commit/3869312ec4a979930e54bacb6ebae3d2078818cd))
+
 ## @shunkakinoki/aaveflashloan [1.0.2](https://github.com/shunkakinoki/contracts/compare/@shunkakinoki/aaveflashloan@1.0.1...@shunkakinoki/aaveflashloan@1.0.2) (2022-07-20)
 
 ### Performance Improvements
