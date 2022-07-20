@@ -1,3 +1,13 @@
+## forge-std [1.1.2](https://github.com/shunkakinoki/contracts/compare/forge-std@1.1.1...forge-std@1.1.2) (2022-07-20)
+
+### Bug Fixes
+
+- ds test run ([c6eb64b](https://github.com/shunkakinoki/contracts/commit/c6eb64b0156e6c2881a2cd275532f48d02df98d3))
+
+### Performance Improvements
+
+- ini ds test ([4813e8b](https://github.com/shunkakinoki/contracts/commit/4813e8b21dfd81ea86ee4eb82a282695ab23fafa))
+
 ## forge-std [1.1.1](https://github.com/shunkakinoki/contracts/compare/forge-std@1.1.0...forge-std@1.1.1) (2022-07-20)
 
 ### Bug Fixes
