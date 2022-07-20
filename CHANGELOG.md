@@ -1,3 +1,9 @@
+## [1.50.3](https://github.com/shunkakinoki/contracts/compare/v1.50.2...v1.50.3) (2022-07-20)
+
+### Performance Improvements
+
+- ini contracts ([3df88af](https://github.com/shunkakinoki/contracts/commit/3df88af95c333d3673c6d2ca1ab620b460f6efc8))
+
 ## [1.50.2](https://github.com/shunkakinoki/contracts/compare/v1.50.1...v1.50.2) (2022-07-20)
 
 ### Bug Fixes
