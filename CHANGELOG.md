@@ -1,3 +1,9 @@
+## [1.50.7](https://github.com/shunkakinoki/contracts/compare/v1.50.6...v1.50.7) (2022-07-21)
+
+### Bug Fixes
+
+- workdir app ([051af19](https://github.com/shunkakinoki/contracts/commit/051af19fc24a5d31e2d6cf8f71dff9d7d8b4a2d0))
+
 ## [1.50.6](https://github.com/shunkakinoki/contracts/compare/v1.50.5...v1.50.6) (2022-07-21)
 
 ### Bug Fixes
