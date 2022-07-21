@@ -22,5 +22,9 @@ contract HuffHelloWorldTest is Test {
   function testFallback() public {
     (, result) = address(helloWorld).call{ value: 0 ether }("");
     console2.logBytes(result);
+    assertEq(
+      result,
+      hex"0000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000d48656c6c6f2c20776f726c642100000000000000000000000000000000000000"
+    );
   }
 }
