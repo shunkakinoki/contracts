@@ -1,0 +1,25 @@
+// Code from https://deploy-preview-24--huffdocs.netlify.app/tutorial/hello-world/#primer-abi-encoding
+
+#define macro MAIN() = takes(0) returns(0) {
+    // Store string "Hello, world1" in memory at 0x40
+    // 0x2d is listed as mstore pads the value
+    // cast --from-utf8 "shunkakinoki"
+    0x7368756e6b616b696e6f6b69        // ["Hello, world!"]
+    0x2d                                // ["Hello, world!", 0x40]
+    mstore                              // []
+
+    // store length of string at 0x20
+    0x0c                                // [0x0d]
+    0x20                                // [0x20, 0x0d]
+    mstore                              // []
+
+    // store dynamic offset at 0x00 (string encoding starts at 0x20)
+    0x20                                // [0x20]
+    0x00                                // [0x00, 0x20]
+    mstore                              // []
+
+    // return full 96 byte value
+    0x60                                // [0x60]
+    0x00                                // [0x00, 0x60]
+    return                              // []
+}
