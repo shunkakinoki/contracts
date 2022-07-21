@@ -1,3 +1,9 @@
+## [1.50.6](https://github.com/shunkakinoki/contracts/compare/v1.50.5...v1.50.6) (2022-07-21)
+
+### Bug Fixes
+
+- ini huff shunkakinoki ([6b7f2cd](https://github.com/shunkakinoki/contracts/commit/6b7f2cd30d781a162adfc57d63500fa72d8e04c0))
+
 ## [1.50.5](https://github.com/shunkakinoki/contracts/compare/v1.50.4...v1.50.5) (2022-07-21)
 
 ### Bug Fixes
