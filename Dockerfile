@@ -32,6 +32,7 @@ COPY --from=build /opt/foundry/target/release/forge /usr/local/bin/forge
 COPY --from=build /opt/foundry/target/release/cast /usr/local/bin/cast
 COPY --from=build /opt/foundry/target/release/anvil /usr/local/bin/anvil
 
+WORKDIR /app
 COPY . .
 
 RUN forge install
