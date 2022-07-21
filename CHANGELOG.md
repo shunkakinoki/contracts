@@ -1,3 +1,9 @@
+## [1.50.5](https://github.com/shunkakinoki/contracts/compare/v1.50.4...v1.50.5) (2022-07-21)
+
+### Bug Fixes
+
+- ini hello world from huff contracts ([ec44c78](https://github.com/shunkakinoki/contracts/commit/ec44c78139b241a1681f91058ab72b89bfc19813))
+
 ## [1.50.4](https://github.com/shunkakinoki/contracts/compare/v1.50.3...v1.50.4) (2022-07-20)
 
 ### Performance Improvements
