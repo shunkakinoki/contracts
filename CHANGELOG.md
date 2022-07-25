@@ -1,3 +1,9 @@
+## [1.50.9](https://github.com/shunkakinoki/contracts/compare/v1.50.8...v1.50.9) (2022-07-25)
+
+### Performance Improvements
+
+- ini docker yaml ([988966e](https://github.com/shunkakinoki/contracts/commit/988966e5bdeaf14e518ab3c8c768329efce77de2))
+
 ## [1.50.8](https://github.com/shunkakinoki/contracts/compare/v1.50.7...v1.50.8) (2022-07-24)
 
 ### Performance Improvements
