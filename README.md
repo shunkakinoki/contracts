@@ -104,3 +104,4 @@ All rights reserved to the individual authors and licensing of the specific pack
 - https://github.com/kadenzipfel/smart-contract-attack-vectors
 - https://github.com/ConsenSys/smart-contract-best-practices
 - https://github.com/iskdrews/awesome-solidity-gas-optimization
+- https://github.com/0xsomnus/secure-smart-contract-design-principles
