@@ -47,6 +47,7 @@ All rights reserved to the individual authors and licensing of the specific pack
 - [x] [HackPhishing](/contracts/HackPhishing) - [Source](https://solidity-by-example.org/hacks/phishing-with-tx-origin) from [t4sk](https://github.com/t4sk)
 - [x] [HelloWorld](/contracts/HelloWorld)
 - [ ] [HotChainSvg](/contracts/HotChainSvg)- [Source](https://github.com/w1nt3r-eth/hot-chain-svg) from [w1nt3r](https://github.com/w1nt3r-eth)
+- [x] [HuffWETH](/contracts/HuffWETH) - [Source](https://github.com/Philogy/huff-weth) from [Philogy](https://github.com/Philogy)
 - [ ] [KiyoSanBirthday](/contracts/KiyoSanBirthday)
 - [x] [LilENS](/contracts/LilENS) - [Source](https://github.com/m1guelpf/lil-web3) from [m1guelpf](https://github.com/m1guelpf)
 - [x] [LilFlashloan](/contracts/LilFlashloan) - [Source](https://github.com/m1guelpf/lil-web3) from [m1guelpf](https://github.com/m1guelpf)
