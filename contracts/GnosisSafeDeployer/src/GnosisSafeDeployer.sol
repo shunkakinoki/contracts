@@ -14,6 +14,8 @@ contract GnosisScript is Script {
     address(0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552);
   address GNOSIS_L2_SINGLETON_ADDRESS_1_3_0 =
     address(0x3E5c63644E683549055b9Be8653de26E0B4CD36E);
+  address GNOSIS_COMPATIBILITY_FALLBACK_HANDLER =
+    address(0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4);
 
   address[] internal owners = new address[](0);
   GnosisSafeProxy proxy;
@@ -37,7 +39,7 @@ contract GnosisScript is Script {
           1,
           address(0),
           "",
-          address(0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4),
+          GNOSIS_COMPATIBILITY_FALLBACK_HANDLER,
           address(0),
           0,
           0
@@ -54,7 +56,7 @@ contract GnosisScript is Script {
           1,
           address(0),
           "",
-          address(0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4),
+          GNOSIS_COMPATIBILITY_FALLBACK_HANDLER,
           address(0),
           0,
           0
