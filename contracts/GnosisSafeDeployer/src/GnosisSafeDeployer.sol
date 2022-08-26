@@ -17,7 +17,7 @@ contract GnosisScript is Script {
   address GNOSIS_COMPATIBILITY_FALLBACK_HANDLER =
     address(0xf48f2B2d2a534e402487b3ee7C18c33Aec0Fe5e4);
 
-  address[] internal owners = new address[](0);
+  address[] internal owners = new address[](1);
   GnosisSafeProxy proxy;
   GnosisSafe safe;
   GnosisSafeL2 public safeL2;
