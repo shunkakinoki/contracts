@@ -1,3 +1,9 @@
+# [1.51.0](https://github.com/shunkakinoki/contracts/compare/v1.50.9...v1.51.0) (2022-08-27)
+
+### Features
+
+- ini gnosis safe deployer ([4b7d688](https://github.com/shunkakinoki/contracts/commit/4b7d6886750749fd38885e053cbb20da563ebd61))
+
 ## [1.50.9](https://github.com/shunkakinoki/contracts/compare/v1.50.8...v1.50.9) (2022-07-25)
 
 ### Performance Improvements
